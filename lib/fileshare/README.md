@@ -5,17 +5,15 @@ A web-client used to share files in the TorBox Project.
 ###### Note: Instructions are exclusive for TorBox Project.
 
 ### Requirements
-**TFS** was developed using Python 3.9, so it is recommended to use this version or higher.
+**TFS** is implemented in Go as a standalone binary with zero external runtime dependencies (no Python, Flask, or Gunicorn needed).
 
-Dependencies:
-- Flask
-- Flask_compress
-- Flask_CORS
-- click
-
-To install dependencies, run
-
-```sudo pip install -r requirements.txt```
+### Building
+To build `tfs`, run:
+```bash
+./build.sh          # Builds for current host OS/ARCH
+./build.sh arm64    # Builds for Linux ARM64 (Raspberry Pi 3/4/5)
+./build.sh armv6    # Builds for Linux ARMv6 (Raspberry Pi Zero/1)
+```
 
 ## Usage
 To allow download and upload to one of your directories, simply run

@@ -14,3 +14,12 @@ lib/__pycache__/
 .env.*.local
 *.key
 *.pem
+
+# Go compiled binaries and build artifacts
+lib/chatsecure/tcs
+lib/chatsecure/tcs-*
+lib/chatsecure/pid/*.pid
+lib/fileshare/tfs
+lib/fileshare/tfs-*
+lib/fileshare/pid/*.pid
+*.sock

@@ -4,12 +4,9 @@ import Sha256 from "crypto-js/sha256.js";
 import { Identicon } from "@polkadot/react-identicon";
 import { useContext, useEffect, useState } from "react";
 import { ChatContext } from "../../context/ChatContext.jsx";
-import {
-	MdOutlineKeyboardArrowDown,
-	MdOutlineKeyboardArrowRight,
-	TiGroup,
-	BsCircleFill,
-} from "react-icons/all.js";
+import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { TiGroup } from "react-icons/ti";
+import { BsCircleFill } from "react-icons/bs";
 import {UserContext} from "../../context/UserContext.jsx";
 
 export const ContactList = props => {
@@ -39,9 +36,8 @@ export const ContactList = props => {
 		}, [unreadMessagesRef.current])
 
 		useEffect(() => {
-			if (contact.msg !== null) {
-				console.log(contact.msg)
-				decryptMessage(contact.msg).then(r => setLastMessage(r))
+			if (contact.msg && typeof contact.msg === "string") {
+				decryptMessage(contact.msg).then(r => setLastMessage(r)).catch(() => {})
 			}
 		}, [])
 

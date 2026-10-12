@@ -1,6 +1,6 @@
 import {InputTextarea} from "primereact/inputtextarea";
 import {Button} from "primereact/button";
-import {BsEmojiLaughing, BsSendFill} from "react-icons/all.js";
+import {BsEmojiLaughing, BsSendFill} from "react-icons/bs";
 import data from '@emoji-mart/data'
 import Picker from '@emoji-mart/react'
 import {useContext, useEffect, useRef, useState} from "react";
@@ -93,6 +93,15 @@ export const MessageBox = props => {
             ref={messagesContainerRef}
           >
             {chatMessages.map(m => {
+              if (m.is_system || m.sender === 0 || m.sender === "system") {
+                return (
+                  <div key={m.id} className="w-full flex justify-center my-2">
+                    <span className="text-xs text-slate-300 bg-slate-700/80 border border-slate-600/50 px-3 py-1 rounded-full font-light shadow-sm">
+                      {m.msg}
+                    </span>
+                  </div>
+                )
+              }
               if (m.sender === userId) {
                 return (
                   <MessageOut key={m.id} text={m.msg} messageData={m} />

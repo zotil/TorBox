@@ -29,20 +29,30 @@ export const MessageIn = props => {
 
   const getFp = () => {
     const user_id = messageData.sender
-    const user = userList.filter(u => u.id === user_id )
-    return user[0].fp
+    const user = userList.filter(u => u.id === user_id)
+    if (user && user.length > 0 && user[0].fp) {
+      return user[0].fp
+    }
+    return ""
   }
 
   useEffect(() => {
     if (messageData) {
-      const fp = String("0x" + Sha256(getFp()))
+      const userFp = getFp()
+      const fp = userFp ? String("0x" + Sha256(userFp)) : ""
       setFp(fp)
-			const ui = getUserInfo(messageData.sender)
-			setUserInfo(ui)
+      const ui = getUserInfo(messageData.sender)
+      if (ui) {
+        setUserInfo(ui)
+      }
     }
 
-		decryptMessage(props.text).then(r => setMessage(r))
-  }, [])
+    if (props.text && props.text.includes("-----BEGIN PGP MESSAGE-----")) {
+      decryptMessage(props.text).then(r => setMessage(r)).catch(() => {})
+    } else {
+      setMessage(props.text || "")
+    }
+  }, [messageData, userList])
 
   return (
     <div className={'grid gap-4 w-full sm:grid-cols-[84px_2fr_1fr] grid-cols-[64px_1fr] place-items-start ' + (userInfo.active===false&&"grayscale hover:grayscale-0")}>

@@ -120,10 +120,24 @@ export const ChatProvider = (props) => {
 				updateUserList([...userListRef.current, data])
 			}
 
+			// Central system notification in general chat
+			if (chatIdRef.current === "default") {
+				const sysMsg = {
+					id: "sys_" + Date.now() + "_" + Math.random(),
+					sender: 0,
+					recipient: "default",
+					msg: `${data.name} connected`,
+					is_system: true,
+					ts: new Date().toISOString()
+				}
+				setChatMessages([...chatMessagesRef.current, sysMsg])
+			}
 		}
 	}
 
 	function onUserDisconnected (data) {
+		const targetUser = userListRef.current.find(obj => obj.id === data.id)
+		const userName = data.name || (targetUser ? targetUser.name : "Un usuario")
 		updateUserList(
 			userListRef.current.map(obj => {
 				if (obj.id === data.id) {
@@ -132,6 +146,19 @@ export const ChatProvider = (props) => {
 				return obj
 			})
 		)
+
+		// Central system notification in general chat
+		if (chatIdRef.current === "default") {
+			const sysMsg = {
+				id: "sys_" + Date.now() + "_" + Math.random(),
+				sender: 0,
+				recipient: "default",
+				msg: `${userName} disconnected`,
+				is_system: true,
+				ts: new Date().toISOString()
+			}
+			setChatMessages([...chatMessagesRef.current, sysMsg])
+		}
 	}
 
 	const initSocket = () => {
@@ -141,8 +168,11 @@ export const ChatProvider = (props) => {
 	}
 
 	const initSocketEvents = () => {
-		// socket.on('connect', onConnect)
-		// socket.on('disconnect', onDisconnect)
+		socket.on('connect', () => {
+			// Refresh user list once the socket is established to catch any
+			// user_connected events that may have fired during the handshake.
+			api.getUserList().then(r => { if (r) updateUserList(r) })
+		})
 		socket.on('message', onMessage)
 		socket.on('user_connected', onUserConnected)
 		socket.on('user_disconnected', onUserDisconnected)
