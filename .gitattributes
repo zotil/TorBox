@@ -1,0 +1,9 @@
+# Keep bytes as they are (original PGP key with CRLF, zip, images)
+*.asc -text
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.woff binary
+*.woff2 binary

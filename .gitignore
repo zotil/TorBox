@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Local reports and caches
+.postprocess-report.json
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+
+# Local data and the restored WordPress: must never enter the repository
+/work/
+/mirror/
+wp-local/db/
+wp-local/html/
+/wp-content/
+*.sql
+*.sql.gz
+*.sqlite
+wget.log
+installer*.php
+*-backup-*.zip
+*.img
+*.img.xz
+*.wpress
+.env

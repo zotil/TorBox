@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; form-action 'self'; base-uri 'self'" http-equiv="Content-Security-Policy"/><meta content="no-referrer" name="referrer"/><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<script>
+(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+//# sourceURL=twentysixteen_javascript_detection
+</script>
+<title>February 2018 – TorBox</title>
+
+
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #1a1a1a;--wp--preset--color--medium-gray: #686868;--wp--preset--color--light-gray: #e5e5e5;--wp--preset--color--blue-gray: #4d545c;--wp--preset--color--bright-blue: #007acc;--wp--preset--color--light-blue: #9adffd;--wp--preset--color--dark-brown: #402b30;--wp--preset--color--medium-brown: #774e24;--wp--preset--color--dark-red: #640c1f;--wp--preset--color--bright-red: #ff675f;--wp--preset--color--yellow: #ffef8e;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-color{color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-color{color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-color{color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-color{color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-color{color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-color{color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-color{color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-color{color: var(--wp--preset--color--bright-red) !important;}.has-yellow-color{color: var(--wp--preset--color--yellow) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-background-color{background-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-background-color{background-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-background-color{background-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-background-color{background-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-background-color{background-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-background-color{background-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-background-color{background-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-background-color{background-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-background-color{background-color: var(--wp--preset--color--yellow) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-border-color{border-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-border-color{border-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-border-color{border-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-border-color{border-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-border-color{border-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-border-color{border-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-border-color{border-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-border-color{border-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-border-color{border-color: var(--wp--preset--color--yellow) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/fonts/merriweather-plus-montserrat-plus-inconsolata.css" id="twentysixteen-fonts-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen/genericons/genericons.css" id="genericons-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen-child/style.css" id="twentysixteen-style-css" media="all" rel="stylesheet"/>
+<style id="twentysixteen-style-inline-css">
+
+		/* Custom Link Color */
+		.menu-toggle:hover,
+		.menu-toggle:focus,
+		a,
+		.main-navigation a:hover,
+		.main-navigation a:focus,
+		.dropdown-toggle:hover,
+		.dropdown-toggle:focus,
+		.social-navigation a:hover:before,
+		.social-navigation a:focus:before,
+		.post-navigation a:hover .post-title,
+		.post-navigation a:focus .post-title,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.site-branding .site-title a:hover,
+		.site-branding .site-title a:focus,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.entry-footer a:hover,
+		.entry-footer a:focus,
+		.comment-metadata a:hover,
+		.comment-metadata a:focus,
+		.pingback .comment-edit-link:hover,
+		.pingback .comment-edit-link:focus,
+		.comment-reply-link,
+		.comment-reply-link:hover,
+		.comment-reply-link:focus,
+		.required,
+		.site-info a:hover,
+		.site-info a:focus {
+			color: #dd3333;
+		}
+
+		mark,
+		ins,
+		button:hover,
+		button:focus,
+		input[type="button"]:hover,
+		input[type="button"]:focus,
+		input[type="reset"]:hover,
+		input[type="reset"]:focus,
+		input[type="submit"]:hover,
+		input[type="submit"]:focus,
+		.pagination .prev:hover,
+		.pagination .prev:focus,
+		.pagination .next:hover,
+		.pagination .next:focus,
+		.widget_calendar tbody a,
+		.page-links a:hover,
+		.page-links a:focus {
+			background-color: #dd3333;
+		}
+
+		input[type="date"]:focus,
+		input[type="time"]:focus,
+		input[type="datetime-local"]:focus,
+		input[type="week"]:focus,
+		input[type="month"]:focus,
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="password"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="number"]:focus,
+		textarea:focus,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.menu-toggle:hover,
+		.menu-toggle:focus {
+			border-color: #dd3333;
+		}
+
+		@media screen and (min-width: 56.875em) {
+			.main-navigation li:hover > a,
+			.main-navigation li.focus > a {
+				color: #dd3333;
+			}
+		}
+	
+/*# sourceURL=twentysixteen-style-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/css/blocks.css" id="twentysixteen-block-style-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" src="../../wp-includes/js/jquery/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="../../wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script id="twentysixteen-script-js-extra">
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+//# sourceURL=twentysixteen-script-js-extra
+</script>
+<script data-wp-strategy="defer" defer="" id="twentysixteen-script-js" src="../../wp-content/themes/twentysixteen/js/functions.js"></script>
+
+
+<link href="../../wp-content/plugins/simple-pull-quote/css/simple-pull-quote.css" rel="stylesheet" type="text/css"/>
+<style id="twentysixteen-header-css">
+		.site-branding {
+			margin: 0 auto 0 0;
+		}
+
+		.site-branding .site-title,
+		.site-description {
+			clip-path: inset(50%);
+			position: absolute;
+		}
+		</style>
+<style id="custom-background-css">
+body.custom-background { background-color: #444444; }
+</style>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-150x150.jpg" rel="icon" sizes="32x32"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="icon" sizes="192x192"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="apple-touch-icon"/>
+<meta content="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" name="msapplication-TileImage"/>
+<style id="wp-custom-css">
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+html {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.header-image a:hover img,
+.header-image a:focus img {
+}
+
+.site-header {
+	padding: 2.5em 7.6923%;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.site-content {
+	padding: 0 7.6923%;
+}
+
+.entry-title {
+	font-size: 1.5rem;
+}
+
+ul,
+ol {
+  margin: -36px 0 0 15px; 
+  padding: 18px; 
+}
+
+ul {
+  list-style-type: disc; 
+  list-style-position: outside; 
+}
+
+ol {
+	list-style: decimal;
+	margin-left: 1.5em;
+}
+
+.widget {
+	border-top: 4px solid #1a1a1a;
+	margin-bottom: 1.75em;
+	padding-top: 1.75em;
+}
+
+.widget-area > :last-child,
+.widget > :last-child {
+	margin-bottom: 0;
+}
+
+.widget .widget-title {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.046875em;
+	line-height: 1.3125;
+	margin: 0 0 0em;
+	text-transform: none;
+}
+
+.widget .widget-title:empty {
+	margin-bottom: 0;
+}
+
+.widget-title a {
+	color: #1a1a1a;
+}
+
+.widget ul {
+	margin: 0 0 0 15px; 
+  padding: 0px; 
+}
+</style>
+<link href="@@SITE_BASE_URL@@2018/02/" rel="canonical"/><link href="../../assets/torbox-static.css" rel="stylesheet"/><link href="../../pagefind/pagefind-ui.css" rel="stylesheet"/></head>
+<body class="archive date custom-background wp-embed-responsive wp-theme-twentysixteen wp-child-theme-twentysixteen-child group-blog hfeed">
+<div class="site" id="page">
+<div class="site-inner">
+<a class="skip-link screen-reader-text" href="#content">
+			Skip to content		</a>
+<header class="site-header" id="masthead">
+<div class="site-header-main">
+<div class="site-branding">
+<p class="site-title"><a href="../../" rel="home">TorBox</a></p>
+<p class="site-description">TorBox is an easy-to-use, anonymising router based on Raspberry Pi, which also runs on Debian and Ubuntu-based systems.</p>
+</div>
+<button class="menu-toggle" id="menu-toggle">Menu</button>
+<div class="site-header-menu" id="site-header-menu">
+<nav aria-label="Primary Menu" class="main-navigation" id="site-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8" id="menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647" id="menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178" id="menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695" id="menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649" id="menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919" id="menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001" id="menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892" id="menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003" id="menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161" id="menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055" id="menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683" id="menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934" id="menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640" id="menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935" id="menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943" id="menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947" id="menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701" id="menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721" id="menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455" id="menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431" id="menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265" id="menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124" id="menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802" id="menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148" id="menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419" id="menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29" id="menu-item-29"><a href="../../category/blog/">Blog</a></li>
+</ul></div> </nav>
+</div>
+<a class="search-jump" href="../../search/">Search</a></div>
+<div class="header-image">
+<a href="../../" rel="home">
+<img alt="TorBox" decoding="async" fetchpriority="high" height="420" sizes="(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px" src="../../wp-content/uploads/2015/12/torbox-banner.jpg" srcset="../../wp-content/uploads/2015/12/torbox-banner.jpg 1200w, ../../wp-content/uploads/2015/12/torbox-banner-300x105.jpg 300w, ../../wp-content/uploads/2015/12/torbox-banner-768x269.jpg 768w, ../../wp-content/uploads/2015/12/torbox-banner-1024x358.jpg 1024w" width="1200"/> </a>
+</div>
+</header>
+<div class="site-content" id="content">
+<div class="content-area" id="primary">
+<main class="site-main" data-pagefind-ignore="" id="main">
+<header class="page-header">
+<h1 class="page-title">Month: <span>February 2018</span></h1> </header>
+<article class="post-189 post type-post status-publish format-standard hentry category-blog category-security category-surveillance" id="post-189">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../mass-surveillance-and-security-on-the-internet/" rel="bookmark">Mass surveillance and security on the Internet</a></h2> </header>
+<div class="entry-content">
+<p><a href="../../wp-content/uploads/2018/02/NSA-selfie.jpg"><img alt="" class="alignright size-full wp-image-32559" decoding="async" height="331" src="../../wp-content/uploads/2018/02/NSA-selfie.jpg" width="330"/></a>Not five years ago, as <a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> unveiled thousands of classified and secret documents, the world became shockingly aware of a covert, suspicion-independent and global mass-surveillance of the Internet and telecommunication networks, which had been operated by the so-called “<a href="https://en.wikipedia.org/wiki/Five_Eyes">Five Eyes”</a> (Australia, Canada, New Zeeland, UK and the USA) at least since 2007. This surveillance relied on monitoring programs such as <a href="https://en.wikipedia.org/wiki/PRISM_(surveillance_program)">PRISM</a> (with the more or less voluntary participation of Microsoft, Yahoo!, Google, Facebook, Paltalk, YouTube, AOL, Skype und Apple), <a href="https://en.wikipedia.org/wiki/XKeyscore">XKeyscore</a> (a system to perform virtually unlimited monitoring of anyone around the world using metadata and content), and <a href="https://en.wikipedia.org/wiki/Tempora">Tempora</a> (skimming and caching almost all Internet traffic directly from the network hubs and transatlantic data links). While the public outrage after Snowden’s revelations was unprecedented, this has since largely subsided, and Intelligence Services enjoy once again nearly unhindered ability to siphon off, evaluate and store data on a large scale. With all probability, the methods of the “Five Eyes” and those of their larger partners are even more sophisticated today. What is more, initial sporadic protests had little if any effect: in the US, for example, <a href="https://en.wikipedia.org/wiki/Foreign_Intelligence_Surveillance_Act_of_1978_Amendments_Act_of_2008">the legal basis for PRISM and the like</a> was not even challenged at the time, hence it remains firmly in place. Not even the US President, Donald Trump, seems inclined to curtail the powers and behaviour of US intelligence agencies in this respect.</p>
+<p>But does global mass surveillance help prevent terrorism? To date, <a href="https://www.nbcnews.com/news/other/nsa-program-stopped-no-terror-attacks-says-white-house-panel-f2D11783588">there are no facts that support this thesis</a>. In fact, <a href="https://www.wired.com/2017/03/mass-spying-isnt-just-intrusive-ineffective/">most attack perpetrators</a> over the last 15 years <a href="https://www.nytimes.com/2015/11/18/opinion/mass-surveillance-isnt-the-answer-to-fighting-terrorism.html">were already known to the authorities</a>. And very often, intelligence services focus on completely unrelated people and interests. For example, the legal framework in the US allows interception of foreign officials, as well as the gathering of economic and decision-making information with undue purposes such as predicting the future price of oil, or gaining a favourable position in international negotiations – <a href="http://www.dw.com/en/report-foreign-spy-agencies-anxious-over-germanys-bnd-intelligence-revelations/a-18441745">and the NSA is not the only organisation with a political and economic agenda</a> (Emmanuel-Pierre Guittet, “<a href="http://mappingsecurity.net/blog/is-mass-surveillance-effective-in-the-fight-against-terrorism/">Is Mass Surveillance Effective in the Fight against Terrorism?</a>“, Mapping Security, 11.12.2015).</p>
+<figure aria-describedby="caption-attachment-32561" class="wp-caption aligncenter" id="attachment_32561" style="width: 640px"><a href="../../wp-content/uploads/2018/02/tor-https-0.png"><img alt="Access to a website without anonymisation and without encryption: Potential data identification and interception. Everyone can potentially read (click to enlarge) Potentiell liest jeder mit." class="size-full wp-image-32561" decoding="async" src="../../wp-content/uploads/2018/02/tor-https-0-e1589575109701.png" width="620"/></a><figcaption class="wp-caption-text" id="caption-attachment-32561">Access to a website without anonymisation and without encryption: Potential data identification and interception. Everyone can potentially read (click to enlarge).</figcaption></figure>
+<p>To make matters worse, various intelligence services and law enforcement agencies make unrestricted use of the same data pool (Sam Adler-Bell, “<a href="https://tcf.org/content/facts/10-reasons-still-worry-nsa-surveillance/">10 Reasons You Should Still Worry About NSA Surveillance</a>“, The Century Foundation, 16.03.2017). This creates the prerequisites for undermining the <a href="https://en.wikipedia.org/wiki/Presumption_of_innocence">presumption of innocence</a>. And we can hardly understand its relevance: It is nothing less than a human right (<a href="http://www.ohchr.org/EN/UDHR/Pages/Language.aspx?LangID=eng">Article 11 of the General Declaration of Human Rights</a>), and a basic principle, which distinguishes proceedings based on the rule of law from a <a href="https://en.wikipedia.org/wiki/Witch-hunt">witch hunt</a>. For example, it is much harder for a person to prove why research on terrorism was only meant to gather necessary knowledge, and not to prepare for an attack, than it is for state authorities to prove not just vague evidence, but a concrete offence (one or two students can sing a song about it – see <a href="https://www.theguardian.com/education/2015/sep/24/student-accused-being-terrorist-reading-book-terrorism">here</a> or <a href="https://www.theguardian.com/uk/2012/jul/14/police-evidence-muslim-student-rizwaan-sabir">here</a>). At the same time, another fundamental human right is utterly disregarded: the right to privacy (Article 12).</p>
+<p>The mass accumulation of data, regardless of whether an actual suspicion exists, not only places each individual under a disproportionate general suspicion, but also disrespects fundamental human rights. All in all, Snowden’s revelations have not eroded the data gathering voracity of the major intelligence agencies. For example, <a href="https://www.offiziere.ch/?p=8380">the NSA Data Centre in Utah</a> is seemingly operative since 2014, after some initial difficulties. This facility is responsible for evaluating and storing data collected by PRISM and other monitoring programs. <a href="https://www.offiziere.ch/?p=10622">According to William Binney</a>, former senior technical director at the NSA, this data centre alone holds at least 5 zettabytes (5,000,000,000,000,000,000,000 bytes) of data, which should be enough for the next 100 years.</p>
+<blockquote><p>We kill people based on metadata. — <a href="https://en.wikipedia.org/wiki/Michael_Hayden_(general)" rel="noopener noreferrer" target="_blank">General Michael Hayden</a>, ehemaliger Direktor der NSA und der CIA in “<a href="https://www.youtube.com/watch?v=kV2HDM86XgI" rel="noopener noreferrer" target="_blank">The Price of Privacy: Re-Evaluating the NSA</a>“, The Johns Hopkins Foreign Affairs Symposium, 2014, ab 18′.</p></blockquote>
+<p>For all their power, the “Five Eyes” are not the only organisations that massively siphon off network and telecommunications data. The <a href="https://en.wikipedia.org/wiki/Federal_Intelligence_Service_(Germany)">German Federal Intelligence Service</a> (BND) collects around 220 million metadata records per day, and stores them for up to 10 years (as of 2014; see also: Kai Biermann, “<a href="http://www.zeit.de/digital/datenschutz/2015-01/bnd-nsa-metadaten-ueberwachung/komplettansicht">BND speichert jeden Tag 220 Millionen Metadaten</a>“, Die Zeit, 06.02.2015). Of these, the BND submits 1.3 million data records to the NSA on a monthly basis. Another example: Switzerland’s <a href="https://en.wikipedia.org/wiki/Swiss_intelligence_agencies">Federal Intelligence Service</a> (NDB) monitors satellite, telecommunication and relating thereto internet connections. Under the name <a href="https://en.wikipedia.org/wiki/Onyx_(interception_system)?wprov=sfti1">ONYX</a>, the NDB runs a smaller version of the global <a href="https://en.wikipedia.org/wiki/ECHELON">ECHELON</a> interception system. True to the bartering nature of the intelligence services business, the NDB cooperates with other foreign intelligence services. As a matter of course, Switzerland would not receive any key information from the Americans without some form of trade-off; this was the case, for example, in September 2014 (see: Thomas Knellwolf, “<a href="https://www.tagesanzeiger.ch/schweiz/standard/Terrormiliz-IS-plante-Anschlag-in-der-Schweiz/story/10694719">Terrormiliz IS plante Anschlag in der Schweiz</a>“, Tagesanzeiger, 23.09.2014). Ironically, on the very day when <a href="https://en.wikipedia.org/wiki/Ueli_Maurer">Federal Councillor Ueli Maurer</a> publicly stated the “<a href="http://www.srf.ch/news/schweiz/wir-tauschen-mit-der-nsa-keine-daten-aus">lack of contact</a>” between the NDB and the NSA, <a href="http://www.steigerlegal.ch/2013/10/30/nsa-schweizerisch-amerikanische-zusammenarbeit/">documents leaked by Edward Snowden</a> explicitly mentioned Switzerland as a cooperation partner (see picture below).</p>
+<p><a href="../../wp-content/uploads/2018/02/nsa_schweiz_cooperation_001_600.jpg"><img alt="" class="aligncenter size-full wp-image-32551" decoding="async" height="277" src="../../wp-content/uploads/2018/02/nsa_schweiz_cooperation_001_600.jpg" width="600"/></a></p>
+<p>In spite of all criticisms, every constitutional state establishes political control bodies of varying power, whether this is weak (USA) or strong (Switzerland). And the fact remains that this situation is notably more unpleasant in countries with little respect for the rule of law, let alone in authoritarian regimes, regardless of whether a person lives, does business, or spends his holidays there. In such regions, it is safe to assume that, without protection, all network and telecommunication traffic will be recorded, evaluated and stored. What is more, boundaries between state intelligence services and criminal or violent groups could be fluid. In this type of state, open criticism can swiftly lead to long-term prison sentences (<a href="https://media.ccc.de/v/34c3-9190-catch_me_if_you_can_internet_activism_in_saudi_arabia">or even worse</a>). Whilst locals develop a certain sensitivity to protect – or censor – themselves, business people and tourists make an easy target for such often shady organisations. Open wireless networks in Internet cafes and hotels invite to work and surf. <strong>Are all data really encrypted at all times?</strong> Who knows who is sniffing around or actually operating these wireless networks (<a href="https://null-byte.wonderhowto.com/how-to/hack-wi-fi-capturing-wpa-passwords-by-targeting-users-with-fluxion-attack-0176134/">and do not be misled by the “Starbucks” network name – this says nothing about the actual network operator</a> – see video below).</p>
+<p><p class="embed-placeholder">Embedded video not loaded (to avoid contacting third parties). <a href="https://www.youtube.com/watch?v=YzP3ZL4vlkY" rel="noopener noreferrer">Watch it on YouTube</a> (external site; opening the link contacts YouTube).</p></p>
+<p>Or might it be that you have nothing to hide? If so, feel free to disclose all your passwords, emails, credit card details, bank statements, pay slips, tax returns, political orientation, health status, sexual preferences, etc. (see <a href="https://www.offiziere.ch/?page_id=9315">here</a>, <a href="https://www.youtube.com/watch?v=qh5wpQKNYcA">here</a>, <a href="https://www.youtube.com/watch?v=iHlzsURb0WI">here</a> ).</p>
+<p>But this goes far beyond the rights and safety of each individual. <a href="https://www.reuters.com/article/us-wikipedia-usage/traffic-to-wikipedia-terrorism-entries-plunged-after-snowden-revelations-study-finds-idUSKCN0XO080">Surveillance exerts a sustained influence on society’s behaviour</a>. The Chinese government (and the <a href="https://en.wikipedia.org/wiki/Alibaba_Group">Alibaba Group</a>) already endeavour to reap the “benefits” of this social effect: By 2020, a <a href="https://www.youtube.com/watch?v=FASrTv2oCno">social credit system</a> – already partially implemented – will become binding for the Chinese citizens. Among other things, the allocation of social credit points depends on the individual’s online behaviour – needless to say, always from the point of view of the government. But the system does not stop there: the evaluation and corresponding rating will also factor in offline information. For example, the acquisition of domestic goods may have a rather positive impact on the rating, while favouring imports from certain countries may drag it down significantly. The “social rating” is not only influenced by the own actions, but also by social network i.e. friends and their actions, etc. For example, strong ratings may improve creditworthiness and access to jobs, as well as the celerity in dealing with your bureaucratic processes; conversely, poor ratings might have an adverse effect on all those areas (Stanley Lubman, “<a href="https://blogs.wsj.com/chinarealtime/2016/12/21/chinas-social-credit-system-turning-big-data-into-mass-surveillance">China’s ‘Social Credit’ System: Turning Big Data Into Mass Surveillance</a>“, Wall Street Journal, 21.12.2016). It seems obvious that this sort of system implements social control mechanisms that put people straying from the norm under considerable pressure. Indirectly, this enacts a social re-education program to enforce state-compliant behaviour, without any apparent government involvement.</p>
+<p>Although China is the salient example of such a social credit system, similar approaches are internationally recognisable. In fact, <a href="https://en.wikipedia.org/wiki/Schufa?wprov=sfti1">companies assessing individual creditworthiness</a> have been around for a long time. And are you still wondering why you cannot get an <a href="https://en.wikipedia.org/wiki/Uber_(company)">Uber cab</a> anymore? Well, chances are you have a dismal passenger rating (<a href="https://www.taz.de/Fahrdienst-wertet-One-Night-Stands-aus/!5024463/">in any case, Uber knows if their customers had a one-night-stand</a>). If you have your eyes open, you will spot such rating systems in many services and apps. In the long run, however, these systems may prove problematic, as increasingly independent social aspects are considered and evaluated. The Danish company <a href="https://deemly.co/">Deemly</a> is a good case in point. In this context, the “<a href="https://en.wikipedia.org/wiki/Nosedive">Nosedive</a>” episode in the “<a href="https://en.wikipedia.org/wiki/Black_Mirror">Black Mirror</a>” series, a popular critique of technology and its social impact, seems to have a prophetic nature.</p>
+<p><p class="embed-placeholder">Embedded video not loaded (to avoid contacting third parties). <a href="https://www.youtube.com/watch?v=i8sv-JIJ3pc" rel="noopener noreferrer">Watch it on YouTube</a> (external site; opening the link contacts YouTube).</p></p>
+<p>Such long-term trends and their social effects can only be tackled through legally guaranteed protection of privacy and personal data (including the resulting metadata). In doing so, the state plays a pioneering role and sets an example. However, since we are not ready yet, and the current development provides no reason for exuberant optimism, it is worthwhile to build up a certain, minimum self-protection.</p>
+<p>But aren’t such protective measures technically complex and expensive to implement? This argument cannot be completely dismissed, as privacy protection and data security do not by improve by themselves. The exchange of encrypted emails between Edward Snowden and the <a href="https://en.wikipedia.org/wiki/Glenn_Greenwald">journalist Glenn Greenwald</a> failed initially due to the complexity of the <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy">PGP encryption program</a> – despite or possibly because of <a href="https://vimeo.com/56881481">Snowden’s 12-minute explanatory video</a> (Andy Greenberg, “<a href="https://www.wired.com/2014/07/minilock-simple-encryption/">The ultra-simple App that lets anyone encrypt anything</a>“, Wired, 07.03.2014). We would like to present a few examples and references to show that achieving certain protection level is not rocket science. Of course, the extent of protective measures and their complexity also depends on one’s risk assessment. If, for example, someone in an authoritarian state writes an article for <em>offiziere.ch</em> criticising government policy, or publicly disclosing intelligence information, the author should at least consider an encrypted connection. This also explains why, after a long testing phase, <em>offiziere.ch</em> enforces encrypted connections (recognisable by the “https://” in the address bar of the browser or by the closed lock) – effort for the user: Zero. But that’s not all: If possible, all links included on <em>offiziere.ch</em> are delivered in the encrypted version. This means that a link to Wikipedia – regardless of how it was originally linked in an article – is called in the encrypted version (which is of course only possible where such a variant is actually offered).</p>
+<figure aria-describedby="caption-attachment-32552" class="wp-caption aligncenter" id="attachment_32552" style="width: 620px"><a href="../../wp-content/uploads/2018/02/tor-https-1.png"><img alt="Access to a website without anonymisation but using encryption: Contents are protected but meta-data are available and visible to all (click to enlarge)" class="size-full wp-image-32552" decoding="async" height="480" loading="lazy" src="../../wp-content/uploads/2018/02/tor-https-1-e1589574918421.png" width="620"/></a><figcaption class="wp-caption-text" id="caption-attachment-32552">Access to a website without anonymisation but using encryption: Contents are protected but meta-data are available and visible to all (click to enlarge)</figcaption></figure>
+<p>With the above-described measure, in which the user himself is not even involved, the content data is encrypted, which increases the security against eavesdropping. And coverage can be increased significantly with little extra work: the add-on <em><a href="https://www.eff.org/https-everywhere">https-everywhere</a></em> is available for almost every web browser. It ensures that users always reach the encrypted version of a website — if available. However, this does not prevent the accumulation of metadata. Unfortunately, it is still plain to see who communicates with whom and for how long (and much more). Let’s face it: Real anonymity is much harder to achieve, and encryption is but a first step.</p>
+<p>The anonymisation effort also depends on the person or organisation from which we wish to conceal our identity. For example, concealing meta-data provides scant protection when the author points to the recently published system-critical article on Facebook. Logging in to Facebook can jeopardise anonymity. This is acceptable as long as the user recognises this authentication. However, there are also applications where this happens automatically (for example with a Google Account for all sorts of things), or where the user remains unaware. One of these hidden methods is so-called “<a href="https://en.wikipedia.org/wiki/Device_fingerprint">fingerprinting</a>“, whereby the browser inherently transmits metadata, such as the location of the user, if this is not prevented by appropriate measures. If somebody accesses website A and then tries to access content from website B anonymously, an organisation with access to data streams on both websites can use the browser’s “fingerprint” to determine that both websites have been accessed by the same user. Preventing such fingerprinting is very time-consuming for users (preventing cookies is not enough), unless they use the <a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Browser</a> or <a href="https://tails.boum.org/">Tails</a> exclusively.</p>
+<p>The Tor Browser encrypts and anonymises the entire web data stream and overcomes Internet censorship, with a negligible effort on the part of the user. As for Tails, it consists of a operating system designed to protect users’ privacy and anonymity. Nevertheless, the effort required from users is slightly higher in this case, because they are limited to a specific operating system, with a certain selection of applications. An interesting yet still budding project is <a href="../../">TorBox</a>, which may require some extra effort in the future to provide full anonymisation functionality. In particular, TorBox creates its own wireless network to which desktop, laptop, tablets and smartphone can connect, and their data is encrypted via the Tor network. Still, responsibility for keeping anonymity safe from methods such as “fingerprinting” lies with the user (but the website has some <a href="../../faq/#fingerprinting">good tips)</a>.</p>
+<figure aria-describedby="caption-attachment-32554" class="wp-caption aligncenter" id="attachment_32554" style="width: 620px"><a href="../../wp-content/uploads/2018/02/tor-https-3.png"><img alt="Anonymised (with Tor) access to a website and using encryption: Contents are protected and meta-data concealed (click to enlarge)." class="size-full wp-image-32554" decoding="async" height="479" loading="lazy" src="../../wp-content/uploads/2018/02/tor-https-3.png" width="620"/></a><figcaption class="wp-caption-text" id="caption-attachment-32554">Anonymised (with Tor) access to a website and using encryption: Contents are protected and meta-data concealed (click to enlarge).</figcaption></figure>
+<p>Of course, the above measures are only the beginning of a comprehensive security concept. Additional measures include encrypting disks, <a href="https://securityinabox.org/en/guide/passwords/">ensuring strong passwords</a> (which, however, need not be memorised due to the availability of good <a href="https://en.wikipedia.org/wiki/Password_manager?wprov=sfti1">password managers</a>), <a href="https://protonmail.com/">using a secure email environment</a>, <a href="https://onionshare.org/">transferring encrypted data</a>, and more. Whilst all of these measures are beyond the scope of this article, there is extensive, additional information available. The <a href="https://tacticaltech.org/">Tactical Technology Collective offers</a> a comprehensive selection of How-Tos under the project name “<a href="https://securityinabox.org/">Security in-a-Box</a>“. If the account has already been hacked, the smartphone already stolen, trapped by malware, or you are exposed to a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">denial of service attack</a>, Digital Defenders offers first aid with their “<a href="https://www.digitaldefenders.org/digitalfirstaid/">Digital First Aid Kit</a>“. For journalists, in particular, there is the “<a href="https://cpj.org/reports/2012/04/journalist-security-guide.php">Journalist Security Guide</a>” recommended by the <a href="https://cpj.org/">Committee to Protect Journalists</a>.</p>
+<p><em><strong>Comments or further tips? Contribute to the comment section below!</strong></em></p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../mass-surveillance-and-security-on-the-internet/" rel="bookmark"><time class="entry-date published" datetime="2018-02-13T12:49:11+01:00">February 13, 2018</time><time class="updated" datetime="2020-05-15T21:40:06+01:00">May 15, 2020</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../../category/blog/" rel="category tag">Blog</a>, <a href="../../category/security/" rel="category tag">Security</a>, <a href="../../category/surveillance/" rel="category tag">Surveillance</a></span> </footer>
+</article>
+</main>
+</div>
+<aside class="sidebar widget-area" id="secondary">
+<section class="widget widget_recent_entries" id="recent-posts-2">
+<h2 class="widget-title">Recent Posts</h2><nav aria-label="Recent Posts">
+<ul>
+<li>
+<a href="../../torbox-project-discontinued/">⚠️ TorBox Project Discontinued</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-openvpn-update-22-march-2026/">TorBox v.0.5.5 – OpenVPN Update, 22 March 2026</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-debian-13-trixie-update-01-december-2025/">TorBox v.0.5.5 – Debian 13 (Trixie) Update, 01 December 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-and-maintenance-update-20-july-2025/">TorBox v.0.5.4 – Security and Maintenance Update 20 July 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-update-17-april-2025/">TorBox v.0.5.4 – Security Update 17 April 2025</a>
+</li>
+</ul>
+</nav></section><section class="widget widget_search" id="search-widget"><h2 class="widget-title">Search</h2><div class="pagefind-host" id="search"></div><p class="search-hint"><a href="../../search/">Full-page search</a></p></section><section class="widget widget_archive" id="archives-2"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
+<ul>
+<li><a href="../../2026/09/">September 2026</a></li>
+<li><a href="../../2026/04/">April 2026</a></li>
+<li><a href="../../2025/12/">December 2025</a></li>
+<li><a href="../../2025/07/">July 2025</a></li>
+<li><a href="../../2025/04/">April 2025</a></li>
+<li><a href="../../2024/12/">December 2024</a></li>
+<li><a href="../../2024/10/">October 2024</a></li>
+<li><a href="../../2023/12/">December 2023</a></li>
+<li><a href="../../2023/07/">July 2023</a></li>
+<li><a href="../../2023/04/">April 2023</a></li>
+<li><a href="../../2023/03/">March 2023</a></li>
+<li><a href="../../2023/01/">January 2023</a></li>
+<li><a href="../../2022/10/">October 2022</a></li>
+<li><a href="../../2022/07/">July 2022</a></li>
+<li><a href="../../2022/04/">April 2022</a></li>
+<li><a href="../../2022/01/">January 2022</a></li>
+<li><a href="../../2021/11/">November 2021</a></li>
+<li><a href="../../2021/08/">August 2021</a></li>
+<li><a href="../../2021/06/">June 2021</a></li>
+<li><a href="../../2021/04/">April 2021</a></li>
+<li><a href="../../2021/01/">January 2021</a></li>
+<li><a href="../../2020/08/">August 2020</a></li>
+<li><a href="../../2020/06/">June 2020</a></li>
+<li><a href="../../2020/05/">May 2020</a></li>
+<li><a href="../../2020/04/">April 2020</a></li>
+<li><a href="../../2020/01/">January 2020</a></li>
+<li><a href="../../2019/09/">September 2019</a></li>
+<li><a href="../../2019/08/">August 2019</a></li>
+<li><a href="../../2019/06/">June 2019</a></li>
+<li><a href="../../2019/05/">May 2019</a></li>
+<li><a href="../../2019/02/">February 2019</a></li>
+<li><a href="../../2019/01/">January 2019</a></li>
+<li><a href="../12/">December 2018</a></li>
+<li><a href="../08/">August 2018</a></li>
+<li><a href="../07/">July 2018</a></li>
+<li><a aria-current="page" href="./">February 2018</a></li>
+<li><a href="../01/">January 2018</a></li>
+</ul>
+</nav></section><section class="widget widget_categories" id="categories-2"><h2 class="widget-title">Categories</h2><nav aria-label="Categories">
+<ul>
+<li class="cat-item cat-item-16"><a href="../../category/anonymity/">Anonymity</a>
+</li>
+<li class="cat-item cat-item-3"><a href="../../category/blog/">Blog</a>
+</li>
+<li class="cat-item cat-item-8"><a href="../../category/censorship/">Censorship</a>
+</li>
+<li class="cat-item cat-item-13"><a href="../../category/states/china/">China</a>
+</li>
+<li class="cat-item cat-item-10"><a href="../../category/states/egypt/">Egypt</a>
+</li>
+<li class="cat-item cat-item-14"><a href="../../category/github/">GitHub</a>
+</li>
+<li class="cat-item cat-item-4"><a href="../../category/on-our-own-behalf/">On our own behalf</a>
+</li>
+<li class="cat-item cat-item-6"><a href="../../category/security/">Security</a>
+</li>
+<li class="cat-item cat-item-11"><a href="../../category/states/south-sudan/">South Sudan</a>
+</li>
+<li class="cat-item cat-item-9"><a href="../../category/states/">States</a>
+</li>
+<li class="cat-item cat-item-5"><a href="../../category/surveillance/">Surveillance</a>
+</li>
+<li class="cat-item cat-item-7"><a href="../../category/tor-community/">Tor community</a>
+</li>
+<li class="cat-item cat-item-15"><a href="../../category/states/turkey/">Turkey</a>
+</li>
+<li class="cat-item cat-item-12"><a href="../../category/states/venezuela/">Venezuela</a>
+</li>
+</ul>
+</nav></section><section class="widget_text widget widget_custom_html" id="custom_html-3"><h2 class="widget-title">Blogroll</h2><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://www.torproject.org">Tor Project</a> (<a href="http://expyuzz4wqqyqhjn.onion/">onion</a>)</li>
+</ul></div></section> </aside>
+</div>
+<footer class="site-footer" id="colophon">
+<nav aria-label="Footer Primary Menu" class="main-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="../../category/blog/">Blog</a></li>
+</ul></div> </nav>
+<div class="site-info">
+<span class="site-title"><a href="../../" rel="home">TorBox</a></span>
+
+</div>
+</footer>
+</div>
+</div>
+
+
+
+<script src="../../pagefind/pagefind-ui.js"></script><script src="../../assets/torbox-search.js"></script></body>
+</html>

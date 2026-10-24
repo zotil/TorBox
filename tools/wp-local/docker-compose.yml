@@ -1,0 +1,30 @@
+name: torbox-wp
+services:
+  db:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wp
+      MARIADB_PASSWORD: wp_local_only
+      MARIADB_ROOT_PASSWORD: root_local_only
+    command: ["--max-allowed-packet=256M", "--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    volumes:
+      - ./db:/var/lib/mysql
+    networks: [internal]
+  wordpress:
+    image: wordpress:php8.3-apache
+    depends_on: [db]
+    volumes:
+      - ./html:/var/www/html
+      - ./php.ini:/usr/local/etc/php/conf.d/zz-local.ini:ro
+    networks: [internal]
+  proxy:
+    image: alpine/socat:latest
+    command: ["TCP-LISTEN:80,fork,reuseaddr", "TCP:wordpress:80"]
+    ports: ["127.0.0.1:8080:80"]
+    depends_on: [wordpress]
+    networks: [internal, edge]
+networks:
+  internal:
+    internal: true
+  edge: {}

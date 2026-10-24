@@ -1,0 +1,11 @@
+{
+  "name": "torbox-website",
+  "private": true,
+  "description": "Static TorBox website (search index: Pagefind)",
+  "scripts": {
+    "build": "python3 tools/build.py && pagefind --site dist"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2"
+  }
+}

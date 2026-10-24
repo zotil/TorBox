@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; form-action 'self'; base-uri 'self'" http-equiv="Content-Security-Policy"/><meta content="no-referrer" name="referrer"/><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<script>
+(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+//# sourceURL=twentysixteen_javascript_detection
+</script>
+<title>June 2021 – TorBox</title>
+
+
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-gallery-inline-css">
+.blocks-gallery-grid:not(.has-nested-images),.wp-block-gallery:not(.has-nested-images){display:flex;flex-wrap:wrap;list-style-type:none;margin:0;padding:0}.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-image,.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-item,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-image,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-item{display:flex;flex-direction:column;flex-grow:1;justify-content:center;margin:0 1em 1em 0;position:relative;width:calc(50% - 1em)}.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-image:nth-of-type(2n),.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-item:nth-of-type(2n),.wp-block-gallery:not(.has-nested-images) .blocks-gallery-image:nth-of-type(2n),.wp-block-gallery:not(.has-nested-images) .blocks-gallery-item:nth-of-type(2n){margin-right:0}.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-image figure,.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-item figure,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-image figure,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-item figure{align-items:flex-end;display:flex;height:100%;justify-content:flex-start;margin:0}.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-image img,.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-item img,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-image img,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-item img{display:block;height:auto;max-width:100%;width:auto}.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-image figcaption,.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-item figcaption,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-image figcaption,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-item figcaption{background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 70%,transparent);bottom:0;box-sizing:border-box;color:#fff;font-size:.8em;margin:0;max-height:100%;overflow:auto;padding:3em .77em .7em;position:absolute;text-align:center;width:100%;z-index:2}.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-image figcaption img,.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-item figcaption img,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-image figcaption img,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-item figcaption img{display:inline}.blocks-gallery-grid:not(.has-nested-images) figcaption,.wp-block-gallery:not(.has-nested-images) figcaption{flex-grow:1}.blocks-gallery-grid:not(.has-nested-images).is-cropped .blocks-gallery-image a,.blocks-gallery-grid:not(.has-nested-images).is-cropped .blocks-gallery-image img,.blocks-gallery-grid:not(.has-nested-images).is-cropped .blocks-gallery-item a,.blocks-gallery-grid:not(.has-nested-images).is-cropped .blocks-gallery-item img,.wp-block-gallery:not(.has-nested-images).is-cropped .blocks-gallery-image a,.wp-block-gallery:not(.has-nested-images).is-cropped .blocks-gallery-image img,.wp-block-gallery:not(.has-nested-images).is-cropped .blocks-gallery-item a,.wp-block-gallery:not(.has-nested-images).is-cropped .blocks-gallery-item img{flex:1;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.blocks-gallery-grid:not(.has-nested-images).columns-1 .blocks-gallery-image,.blocks-gallery-grid:not(.has-nested-images).columns-1 .blocks-gallery-item,.wp-block-gallery:not(.has-nested-images).columns-1 .blocks-gallery-image,.wp-block-gallery:not(.has-nested-images).columns-1 .blocks-gallery-item{margin-right:0;width:100%}@media (min-width:600px){.blocks-gallery-grid:not(.has-nested-images).columns-3 .blocks-gallery-image,.blocks-gallery-grid:not(.has-nested-images).columns-3 .blocks-gallery-item,.wp-block-gallery:not(.has-nested-images).columns-3 .blocks-gallery-image,.wp-block-gallery:not(.has-nested-images).columns-3 .blocks-gallery-item{margin-right:1em;width:calc(33.33333% - .66667em)}.blocks-gallery-grid:not(.has-nested-images).columns-4 .blocks-gallery-image,.blocks-gallery-grid:not(.has-nested-images).columns-4 .blocks-gallery-item,.wp-block-gallery:not(.has-nested-images).columns-4 .blocks-gallery-image,.wp-block-gallery:not(.has-nested-images).columns-4 .blocks-gallery-item{margin-right:1em;width:calc(25% - .75em)}.blocks-gallery-grid:not(.has-nested-images).columns-5 .blocks-gallery-image,.blocks-gallery-grid:not(.has-nested-images).columns-5 .blocks-gallery-item,.wp-block-gallery:not(.has-nested-images).columns-5 .blocks-gallery-image,.wp-block-gallery:not(.has-nested-images).columns-5 .blocks-gallery-item{margin-right:1em;width:calc(20% - .8em)}.blocks-gallery-grid:not(.has-nested-images).columns-6 .blocks-gallery-image,.blocks-gallery-grid:not(.has-nested-images).columns-6 .blocks-gallery-item,.wp-block-gallery:not(.has-nested-images).columns-6 .blocks-gallery-image,.wp-block-gallery:not(.has-nested-images).columns-6 .blocks-gallery-item{margin-right:1em;width:calc(16.66667% - .83333em)}.blocks-gallery-grid:not(.has-nested-images).columns-7 .blocks-gallery-image,.blocks-gallery-grid:not(.has-nested-images).columns-7 .blocks-gallery-item,.wp-block-gallery:not(.has-nested-images).columns-7 .blocks-gallery-image,.wp-block-gallery:not(.has-nested-images).columns-7 .blocks-gallery-item{margin-right:1em;width:calc(14.28571% - .85714em)}.blocks-gallery-grid:not(.has-nested-images).columns-8 .blocks-gallery-image,.blocks-gallery-grid:not(.has-nested-images).columns-8 .blocks-gallery-item,.wp-block-gallery:not(.has-nested-images).columns-8 .blocks-gallery-image,.wp-block-gallery:not(.has-nested-images).columns-8 .blocks-gallery-item{margin-right:1em;width:calc(12.5% - .875em)}.blocks-gallery-grid:not(.has-nested-images).columns-1 .blocks-gallery-image:nth-of-type(1n),.blocks-gallery-grid:not(.has-nested-images).columns-1 .blocks-gallery-item:nth-of-type(1n),.blocks-gallery-grid:not(.has-nested-images).columns-2 .blocks-gallery-image:nth-of-type(2n),.blocks-gallery-grid:not(.has-nested-images).columns-2 .blocks-gallery-item:nth-of-type(2n),.blocks-gallery-grid:not(.has-nested-images).columns-3 .blocks-gallery-image:nth-of-type(3n),.blocks-gallery-grid:not(.has-nested-images).columns-3 .blocks-gallery-item:nth-of-type(3n),.blocks-gallery-grid:not(.has-nested-images).columns-4 .blocks-gallery-image:nth-of-type(4n),.blocks-gallery-grid:not(.has-nested-images).columns-4 .blocks-gallery-item:nth-of-type(4n),.blocks-gallery-grid:not(.has-nested-images).columns-5 .blocks-gallery-image:nth-of-type(5n),.blocks-gallery-grid:not(.has-nested-images).columns-5 .blocks-gallery-item:nth-of-type(5n),.blocks-gallery-grid:not(.has-nested-images).columns-6 .blocks-gallery-image:nth-of-type(6n),.blocks-gallery-grid:not(.has-nested-images).columns-6 .blocks-gallery-item:nth-of-type(6n),.blocks-gallery-grid:not(.has-nested-images).columns-7 .blocks-gallery-image:nth-of-type(7n),.blocks-gallery-grid:not(.has-nested-images).columns-7 .blocks-gallery-item:nth-of-type(7n),.blocks-gallery-grid:not(.has-nested-images).columns-8 .blocks-gallery-image:nth-of-type(8n),.blocks-gallery-grid:not(.has-nested-images).columns-8 .blocks-gallery-item:nth-of-type(8n),.wp-block-gallery:not(.has-nested-images).columns-1 .blocks-gallery-image:nth-of-type(1n),.wp-block-gallery:not(.has-nested-images).columns-1 .blocks-gallery-item:nth-of-type(1n),.wp-block-gallery:not(.has-nested-images).columns-2 .blocks-gallery-image:nth-of-type(2n),.wp-block-gallery:not(.has-nested-images).columns-2 .blocks-gallery-item:nth-of-type(2n),.wp-block-gallery:not(.has-nested-images).columns-3 .blocks-gallery-image:nth-of-type(3n),.wp-block-gallery:not(.has-nested-images).columns-3 .blocks-gallery-item:nth-of-type(3n),.wp-block-gallery:not(.has-nested-images).columns-4 .blocks-gallery-image:nth-of-type(4n),.wp-block-gallery:not(.has-nested-images).columns-4 .blocks-gallery-item:nth-of-type(4n),.wp-block-gallery:not(.has-nested-images).columns-5 .blocks-gallery-image:nth-of-type(5n),.wp-block-gallery:not(.has-nested-images).columns-5 .blocks-gallery-item:nth-of-type(5n),.wp-block-gallery:not(.has-nested-images).columns-6 .blocks-gallery-image:nth-of-type(6n),.wp-block-gallery:not(.has-nested-images).columns-6 .blocks-gallery-item:nth-of-type(6n),.wp-block-gallery:not(.has-nested-images).columns-7 .blocks-gallery-image:nth-of-type(7n),.wp-block-gallery:not(.has-nested-images).columns-7 .blocks-gallery-item:nth-of-type(7n),.wp-block-gallery:not(.has-nested-images).columns-8 .blocks-gallery-image:nth-of-type(8n),.wp-block-gallery:not(.has-nested-images).columns-8 .blocks-gallery-item:nth-of-type(8n){margin-right:0}}.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-image:last-child,.blocks-gallery-grid:not(.has-nested-images) .blocks-gallery-item:last-child,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-image:last-child,.wp-block-gallery:not(.has-nested-images) .blocks-gallery-item:last-child{margin-right:0}.blocks-gallery-grid:not(.has-nested-images).alignleft,.blocks-gallery-grid:not(.has-nested-images).alignright,.wp-block-gallery:not(.has-nested-images).alignleft,.wp-block-gallery:not(.has-nested-images).alignright{max-width:420px;width:100%}.blocks-gallery-grid:not(.has-nested-images).aligncenter .blocks-gallery-item figure,.wp-block-gallery:not(.has-nested-images).aligncenter .blocks-gallery-item figure{justify-content:center}.wp-block-gallery:not(.is-cropped) .blocks-gallery-item{align-self:flex-start}figure.wp-block-gallery.has-nested-images{align-items:normal}.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image){margin:0;width:calc(50% - var(--wp--style--unstable-gallery-gap, 16px)/2)}.wp-block-gallery.has-nested-images figure.wp-block-image{box-sizing:border-box;display:flex;flex-direction:column;flex-grow:1;justify-content:center;max-width:100%;position:relative}.wp-block-gallery.has-nested-images figure.wp-block-image>a,.wp-block-gallery.has-nested-images figure.wp-block-image>div{flex-direction:column;flex-grow:1;margin:0}.wp-block-gallery.has-nested-images figure.wp-block-image img{display:block;height:auto;max-width:100%!important;width:auto}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption,.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before{bottom:0;left:0;max-height:100%;position:absolute;right:0}.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before{backdrop-filter:blur(3px);content:"";height:100%;-webkit-mask-image:linear-gradient(0deg,#000 20%,transparent);mask-image:linear-gradient(0deg,#000 20%,transparent);max-height:3em;pointer-events:none}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption{box-sizing:border-box;color:#fff;font-size:13px;margin:0;overflow:auto;padding:1em;text-align:center;text-shadow:0 0 1.5px #000}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption::-webkit-scrollbar{height:12px;width:12px}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption::-webkit-scrollbar-track{background-color:transparent}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption::-webkit-scrollbar-thumb{background-clip:padding-box;background-color:transparent;border:3px solid transparent;border-radius:8px}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption:focus-within::-webkit-scrollbar-thumb,.wp-block-gallery.has-nested-images figure.wp-block-image figcaption:focus::-webkit-scrollbar-thumb,.wp-block-gallery.has-nested-images figure.wp-block-image figcaption:hover::-webkit-scrollbar-thumb{background-color:hsla(0,0%,100%,.8)}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption{scrollbar-color:transparent transparent;scrollbar-gutter:stable both-edges;scrollbar-width:thin}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption:focus,.wp-block-gallery.has-nested-images figure.wp-block-image figcaption:focus-within,.wp-block-gallery.has-nested-images figure.wp-block-image figcaption:hover{scrollbar-color:hsla(0,0%,100%,.8) transparent}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption{will-change:transform}@media (hover:none){.wp-block-gallery.has-nested-images figure.wp-block-image figcaption{scrollbar-color:hsla(0,0%,100%,.8) transparent}}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption{background:linear-gradient(0deg,rgba(0,0,0,.4),transparent)}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption img{display:inline}.wp-block-gallery.has-nested-images figure.wp-block-image figcaption a{color:inherit}.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border>a,.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border>div,.wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded>a,.wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded>div{flex:1 1 auto}.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border figcaption,.wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded figcaption{background:none;color:inherit;flex:initial;margin:0;padding:10px 10px 9px;position:relative;text-shadow:none}.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border:before,.wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded:before{content:none}.wp-block-gallery.has-nested-images figcaption{flex-basis:100%;flex-grow:1;text-align:center}.wp-block-gallery.has-nested-images:not(.is-cropped) figure.wp-block-image:not(#individual-image){margin-bottom:auto;margin-top:0}.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image){align-self:inherit}.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image)>a,.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image)>div:not(.components-drop-zone){display:flex}.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) a,.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img{flex:1 0 0%;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.wp-block-gallery.has-nested-images.columns-1 figure.wp-block-image:not(#individual-image){width:100%}@media (min-width:600px){.wp-block-gallery.has-nested-images.columns-3 figure.wp-block-image:not(#individual-image){width:calc(33.33333% - var(--wp--style--unstable-gallery-gap, 16px)*.66667)}.wp-block-gallery.has-nested-images.columns-4 figure.wp-block-image:not(#individual-image){width:calc(25% - var(--wp--style--unstable-gallery-gap, 16px)*.75)}.wp-block-gallery.has-nested-images.columns-5 figure.wp-block-image:not(#individual-image){width:calc(20% - var(--wp--style--unstable-gallery-gap, 16px)*.8)}.wp-block-gallery.has-nested-images.columns-6 figure.wp-block-image:not(#individual-image){width:calc(16.66667% - var(--wp--style--unstable-gallery-gap, 16px)*.83333)}.wp-block-gallery.has-nested-images.columns-7 figure.wp-block-image:not(#individual-image){width:calc(14.28571% - var(--wp--style--unstable-gallery-gap, 16px)*.85714)}.wp-block-gallery.has-nested-images.columns-8 figure.wp-block-image:not(#individual-image){width:calc(12.5% - var(--wp--style--unstable-gallery-gap, 16px)*.875)}.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image){width:calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px)*.66667)}.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2),.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:nth-last-child(2)~figure.wp-block-image:not(#individual-image){width:calc(50% - var(--wp--style--unstable-gallery-gap, 16px)*.5)}.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:last-child{width:100%}}.wp-block-gallery.has-nested-images.alignleft,.wp-block-gallery.has-nested-images.alignright{max-width:420px;width:100%}.wp-block-gallery.has-nested-images.aligncenter{justify-content:center}
+/*# sourceURL=../../wp-includes/blocks/gallery/style.min.css */
+</style>
+<style id="wp-block-gallery-theme-inline-css">
+.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}
+/*# sourceURL=../../wp-includes/blocks/gallery/theme.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=../../wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:rgba(90,90,90,.25);border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto rgba(90,90,90,.25);outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:rgba(90,90,90,.25);border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=../../wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-image-theme-inline-css">
+:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}
+/*# sourceURL=../../wp-includes/blocks/image/theme.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=../../wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=../../wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-spacer-inline-css">
+.wp-block-spacer{clear:both}
+/*# sourceURL=../../wp-includes/blocks/spacer/style.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #1a1a1a;--wp--preset--color--medium-gray: #686868;--wp--preset--color--light-gray: #e5e5e5;--wp--preset--color--blue-gray: #4d545c;--wp--preset--color--bright-blue: #007acc;--wp--preset--color--light-blue: #9adffd;--wp--preset--color--dark-brown: #402b30;--wp--preset--color--medium-brown: #774e24;--wp--preset--color--dark-red: #640c1f;--wp--preset--color--bright-red: #ff675f;--wp--preset--color--yellow: #ffef8e;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-color{color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-color{color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-color{color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-color{color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-color{color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-color{color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-color{color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-color{color: var(--wp--preset--color--bright-red) !important;}.has-yellow-color{color: var(--wp--preset--color--yellow) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-background-color{background-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-background-color{background-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-background-color{background-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-background-color{background-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-background-color{background-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-background-color{background-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-background-color{background-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-background-color{background-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-background-color{background-color: var(--wp--preset--color--yellow) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-border-color{border-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-border-color{border-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-border-color{border-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-border-color{border-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-border-color{border-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-border-color{border-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-border-color{border-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-border-color{border-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-border-color{border-color: var(--wp--preset--color--yellow) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-gallery.is-layout-flex){gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}:where(.wp-block-gallery.is-layout-grid){gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/fonts/merriweather-plus-montserrat-plus-inconsolata.css" id="twentysixteen-fonts-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen/genericons/genericons.css" id="genericons-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen-child/style.css" id="twentysixteen-style-css" media="all" rel="stylesheet"/>
+<style id="twentysixteen-style-inline-css">
+
+		/* Custom Link Color */
+		.menu-toggle:hover,
+		.menu-toggle:focus,
+		a,
+		.main-navigation a:hover,
+		.main-navigation a:focus,
+		.dropdown-toggle:hover,
+		.dropdown-toggle:focus,
+		.social-navigation a:hover:before,
+		.social-navigation a:focus:before,
+		.post-navigation a:hover .post-title,
+		.post-navigation a:focus .post-title,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.site-branding .site-title a:hover,
+		.site-branding .site-title a:focus,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.entry-footer a:hover,
+		.entry-footer a:focus,
+		.comment-metadata a:hover,
+		.comment-metadata a:focus,
+		.pingback .comment-edit-link:hover,
+		.pingback .comment-edit-link:focus,
+		.comment-reply-link,
+		.comment-reply-link:hover,
+		.comment-reply-link:focus,
+		.required,
+		.site-info a:hover,
+		.site-info a:focus {
+			color: #dd3333;
+		}
+
+		mark,
+		ins,
+		button:hover,
+		button:focus,
+		input[type="button"]:hover,
+		input[type="button"]:focus,
+		input[type="reset"]:hover,
+		input[type="reset"]:focus,
+		input[type="submit"]:hover,
+		input[type="submit"]:focus,
+		.pagination .prev:hover,
+		.pagination .prev:focus,
+		.pagination .next:hover,
+		.pagination .next:focus,
+		.widget_calendar tbody a,
+		.page-links a:hover,
+		.page-links a:focus {
+			background-color: #dd3333;
+		}
+
+		input[type="date"]:focus,
+		input[type="time"]:focus,
+		input[type="datetime-local"]:focus,
+		input[type="week"]:focus,
+		input[type="month"]:focus,
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="password"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="number"]:focus,
+		textarea:focus,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.menu-toggle:hover,
+		.menu-toggle:focus {
+			border-color: #dd3333;
+		}
+
+		@media screen and (min-width: 56.875em) {
+			.main-navigation li:hover > a,
+			.main-navigation li.focus > a {
+				color: #dd3333;
+			}
+		}
+	
+/*# sourceURL=twentysixteen-style-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/css/blocks.css" id="twentysixteen-block-style-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" src="../../wp-includes/js/jquery/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="../../wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script id="twentysixteen-script-js-extra">
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+//# sourceURL=twentysixteen-script-js-extra
+</script>
+<script data-wp-strategy="defer" defer="" id="twentysixteen-script-js" src="../../wp-content/themes/twentysixteen/js/functions.js"></script>
+
+
+<link href="../../wp-content/plugins/simple-pull-quote/css/simple-pull-quote.css" rel="stylesheet" type="text/css"/>
+<style id="twentysixteen-header-css">
+		.site-branding {
+			margin: 0 auto 0 0;
+		}
+
+		.site-branding .site-title,
+		.site-description {
+			clip-path: inset(50%);
+			position: absolute;
+		}
+		</style>
+<style id="custom-background-css">
+body.custom-background { background-color: #444444; }
+</style>
+<style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}</style><style id="uagb-style-frontend-2273">.uag-blocks-common-selector{z-index:var(--z-index-desktop) !important}@media(max-width: 976px){.uag-blocks-common-selector{z-index:var(--z-index-tablet) !important}}@media(max-width: 767px){.uag-blocks-common-selector{z-index:var(--z-index-mobile) !important}}</style><link href="../../wp-content/uploads/2015/12/torbox-icon-150x150.jpg" rel="icon" sizes="32x32"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="icon" sizes="192x192"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="apple-touch-icon"/>
+<meta content="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" name="msapplication-TileImage"/>
+<style id="wp-custom-css">
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+html {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.header-image a:hover img,
+.header-image a:focus img {
+}
+
+.site-header {
+	padding: 2.5em 7.6923%;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.site-content {
+	padding: 0 7.6923%;
+}
+
+.entry-title {
+	font-size: 1.5rem;
+}
+
+ul,
+ol {
+  margin: -36px 0 0 15px; 
+  padding: 18px; 
+}
+
+ul {
+  list-style-type: disc; 
+  list-style-position: outside; 
+}
+
+ol {
+	list-style: decimal;
+	margin-left: 1.5em;
+}
+
+.widget {
+	border-top: 4px solid #1a1a1a;
+	margin-bottom: 1.75em;
+	padding-top: 1.75em;
+}
+
+.widget-area > :last-child,
+.widget > :last-child {
+	margin-bottom: 0;
+}
+
+.widget .widget-title {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.046875em;
+	line-height: 1.3125;
+	margin: 0 0 0em;
+	text-transform: none;
+}
+
+.widget .widget-title:empty {
+	margin-bottom: 0;
+}
+
+.widget-title a {
+	color: #1a1a1a;
+}
+
+.widget ul {
+	margin: 0 0 0 15px; 
+  padding: 0px; 
+}
+</style>
+<style id="core-block-supports-inline-css">
+.wp-block-gallery.wp-block-gallery-1{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+<link href="../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css" rel="stylesheet"/><link href="../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css" rel="stylesheet"/><link href="@@SITE_BASE_URL@@2021/06/" rel="canonical"/><link href="../../assets/torbox-static.css" rel="stylesheet"/><link href="../../pagefind/pagefind-ui.css" rel="stylesheet"/></head>
+<body class="archive date custom-background wp-embed-responsive wp-theme-twentysixteen wp-child-theme-twentysixteen-child group-blog hfeed">
+<div class="site" id="page">
+<div class="site-inner">
+<a class="skip-link screen-reader-text" href="#content">
+			Skip to content		</a>
+<header class="site-header" id="masthead">
+<div class="site-header-main">
+<div class="site-branding">
+<p class="site-title"><a href="../../" rel="home">TorBox</a></p>
+<p class="site-description">TorBox is an easy-to-use, anonymising router based on Raspberry Pi, which also runs on Debian and Ubuntu-based systems.</p>
+</div>
+<button class="menu-toggle" id="menu-toggle">Menu</button>
+<div class="site-header-menu" id="site-header-menu">
+<nav aria-label="Primary Menu" class="main-navigation" id="site-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8" id="menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647" id="menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178" id="menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695" id="menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649" id="menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919" id="menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001" id="menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892" id="menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003" id="menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161" id="menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055" id="menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683" id="menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934" id="menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640" id="menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935" id="menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943" id="menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947" id="menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701" id="menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721" id="menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455" id="menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431" id="menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265" id="menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124" id="menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802" id="menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148" id="menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419" id="menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29" id="menu-item-29"><a href="../../category/blog/">Blog</a></li>
+</ul></div> </nav>
+</div>
+<a class="search-jump" href="../../search/">Search</a></div>
+<div class="header-image">
+<a href="../../" rel="home">
+<img alt="TorBox" decoding="async" fetchpriority="high" height="420" sizes="(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px" src="../../wp-content/uploads/2015/12/torbox-banner.jpg" srcset="../../wp-content/uploads/2015/12/torbox-banner.jpg 1200w, ../../wp-content/uploads/2015/12/torbox-banner-300x105.jpg 300w, ../../wp-content/uploads/2015/12/torbox-banner-768x269.jpg 768w, ../../wp-content/uploads/2015/12/torbox-banner-1024x358.jpg 1024w" width="1200"/> </a>
+</div>
+</header>
+<div class="site-content" id="content">
+<div class="content-area" id="primary">
+<main class="site-main" data-pagefind-ignore="" id="main">
+<header class="page-header">
+<h1 class="page-title">Month: <span>June 2021</span></h1> </header>
+<article class="post-2273 post type-post status-publish format-standard hentry category-blog" id="post-2273">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../torbox-v-0-4-1-released-easier-than-ever/" rel="bookmark">TorBox v.0.4.1 released — easier than ever</a></h2> </header>
+<div class="entry-content">
+<p class="wp-block-paragraph">We are very dependent on your feedback! In this release, we have made an effort to implement more of your requests and, again, to improve the usability of TorBox based on your feedback. In this journey to the TorBox v.0.4.1, <a href="https://github.com/nyxnor">nyxnor</a> has been a huge support, rewriting the <a href="https://2019.www.torproject.org/docs/pluggable-transports.html">OBFS4 bridge</a> support of TorBox, which is now easier than ever to use. We also implemented experimentally “<a href="https://github.com/shellinabox/shellinabox">Shellinabox</a>“, which gives clients to access the TorBox menu through a web browser so that the installation of a <a href="../../faq/#which-ssh-client-do-you-prefer">SSH client</a> would not anymore be necessary. You can try it out by using <a href="https://192.168.42.1:9000">https://192.168.42.1:9000</a> on a WiFi client and <a href="https://192.168.43.1:9000">https://192.168.43.1:9000</a> on a cable client. Unfortunately, with the self-signed certificate for its secure connections, browsers will show a warning message during the first connection, which has to be ignored. We are eager to hear your feedback on “Shellinabox”. Do you know better alternatives? <a href="mailto:anonym@torbox.ch">Let us know!</a></p>
+<figure class="wp-block-gallery columns-3 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><a href="../../wp-content/uploads/2021/06/IMG_0021-e1623255459873.png"><img alt="" class="wp-image-2264" data-full-url="../../wp-content/uploads/2021/06/IMG_0021-e1623255459873.png" data-id="2264" data-link="../../wp-content/uploads/2021/06/IMG_0021-e1623255459873.png" decoding="async" height="768" src="../../wp-content/uploads/2021/06/IMG_0021-1024x768.png" width="1024"/></a><figcaption class="blocks-gallery-item__caption">Because of the self-signed certificate browsers will show a warning message.</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="../../wp-content/uploads/2021/06/IMG_0022-e1623255474300.png"><img alt="" class="wp-image-2266" data-full-url="../../wp-content/uploads/2021/06/IMG_0022-e1623255474300.png" data-id="2266" data-link="../../wp-content/uploads/2021/06/IMG_0022-e1623255474300.png" decoding="async" height="768" src="../../wp-content/uploads/2021/06/IMG_0022-1024x768.png" width="1024"/></a><figcaption class="blocks-gallery-item__caption">The  user has to accept this certificate.</figcaption></figure></li><li class="blocks-gallery-item"><figure><a href="../../wp-content/uploads/2021/06/IMG_0023-e1623255487568.png"><img alt="" class="wp-image-2267" data-full-url="../../wp-content/uploads/2021/06/IMG_0023-e1623255487568.png" data-id="2267" data-link="../../wp-content/uploads/2021/06/IMG_0023-e1623255487568.png" decoding="async" height="768" loading="lazy" src="../../wp-content/uploads/2021/06/IMG_0023-1024x768.png" width="1024"/></a><figcaption class="blocks-gallery-item__caption">Finally, the TorBox main menu will show up in the browser.</figcaption></figure></li></ul></figure>
+<p class="wp-block-paragraph">With the <a href="https://github.com/radio24/TorBox">TorBox GitHub repository</a>, it is straightforward for everyone to <a href="https://github.com/radio24/TorBox/issues">report issues</a> or to change the code and to propose it in a <a href="https://github.com/radio24/TorBox/pulls">pull request</a>. Because we continue to travel around, it sometimes needs a little more time to address the issues and proposals. This is especially true for the TorBox website:</p>
+<p class="wp-block-paragraph"><strong><strong>Over the following weeks, we will update the TorBox website to reflect all the changes introduced with TorBox v.0.4.1.</strong> Until then, some information could be outdated and refer to the older version.</strong></p>
+<p class="wp-block-paragraph"><strong>TorBox Image (about 940 MB):</strong> v.0.4.1 (13.06.2021) – <a href="../../sha-256-hashes-of-all-files/">SHA-256 values</a><br/><strong>TorBox Menu only:</strong> <a href="https://github.com/radio24/TorBox/tags">v.0.4.1 (13.06.2021)</a> – <a href="../../sha-256-hashes-of-all-files/">SHA-256 values</a></p>
+<p class="wp-block-paragraph">Since we had to install additional software packages and update the configuration files, <strong>we recommend using the new image</strong> rather than updating an existing system. However, we have added a short guide at the end of this post for those who absolutely must update from the previous version (<strong>not older!</strong>).</p>
+<h5 class="wp-block-heading"><strong>Changelog: <strong>v.0.4.0 (10.04.2021)</strong></strong> <strong>–&gt; v.0.4.1 (13.06.2021)</strong></h5>
+<ul class="wp-block-list"><li><strong>Update:</strong> The system is based on <a href="https://www.raspberrypi.org/software/operating-systems/">Raspberry Pi OS “Buster” Lite</a> with a <a href="https://kernelnewbies.org/Linux_5.10">Linux Kernel 5.10.17</a> and <a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.4.5.7" rel="noreferrer noopener" target="_blank">Tor version</a></li><li><a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.4.5.7" rel="noreferrer noopener" target="_blank"> 0.4.5.8</a>.</li><li><strong>Update</strong>: Internal list of bridges updated.</li><li><strong>New</strong>: Installed with one of the installation scripts and using the option “–select-tor” makes it possible to chose the to be installed tor version.</li><li><strong>New:</strong> The installed tor version can be updated or changed with entry 4 in the <a href="../../sub-menu-update-and-reset/">Update and Reset sub-menu</a>, where “DEFAULT” installs the latest stable version and “EXPERT” gives access to a variety of TorBox versions, including the -rc and -alpha versions.</li><li><strong>New:</strong> A new script was added to the torbox folder but not yet included in the TorBox menu, which should automatically react to log-related events. The idea behind it is that, with the next version, TorBox can automatically handle a disconnection from a WiFi network or the tor network. For example, if the tor log file indicates that the entry guard is failing, TorBox should choose a new entry guard in the background. If successfully tested, the necessary rules will follow later and are expected to be integrated into the <a href="../../submenu-countermeasures-troubleshooting/">Countermeasure sub-menu</a>.</li></ul>
+<div class="wp-block-image"><figure class="aligncenter size-full"><a href="../../wp-content/uploads/2021/06/select-tor-002-e1623644076230.png"><img alt='The "EXPERT" button showing up with choosing entry 4 in the Update and Reset sub-menu gives a list of possible tor versions.' class="wp-image-2299" decoding="async" height="452" loading="lazy" src="../../wp-content/uploads/2021/06/select-tor-002-e1623644076230.png" width="720"/></a><figcaption>The “EXPERT” button showing up with choosing entry 4 in the Update and Reset sub-menu gives a list of possible tor versions.</figcaption></figure></div>
+<ul class="wp-block-list" id="block-0783597a-68fa-43ad-91e1-f38c3c00818a"><li><strong>Fixed:</strong> Using entry 10 in the <a href="../../submenu-configuration-update/">Configuration sub-menu</a> to enable the SSH access to TorBox from the Internet was not permanent when chosen so, but was permanent when chosen temporary (mentioned by <a href="https://github.com/bhafer">bhafer</a>, see details in <a href="https://github.com/radio24/TorBox/issues/46">issue #46</a>).</li><li><strong>Fixed:</strong> <a href="https://en.wikipedia.org/wiki/SOCKS">SOCKS v5</a> port for <a href="https://tails.boum.org/contribute/design/stream_isolation/">destination address stream isolation</a> was falsely set on port 9051 used for the <a href="https://gitweb.torproject.org/torspec.git/tree/control-spec.txt">Tor Control Port</a>. The port is now changed to 9052.</li><li><strong>Fixed:</strong> The <a href="https://gitweb.torproject.org/torspec.git/tree/control-spec.txt">Tor Control Port</a> (9051) is now accessible from clients (mentioned by <a href="https://github.com/bhafer">bhafer</a>, see details in <a href="https://github.com/radio24/TorBox/issues/46">issue #46</a>).</li><li><strong>Fixed:</strong> OBFS4 bridges with IPv6 addresses are now handled correctly (see details in<a href="https://github.com/radio24/TorBox/issues/55"> issue #55</a>).</li><li><strong>Fixed:</strong> After the installation, the go source package wasn’t removed from the home directory.</li><li><strong>Fixed:</strong> All known problems and bugs listed in the <a href="../../torbox-v-0-4-0-released-welcome-torbox-wireless-manager/">Blog entry to TorBox v.0.4.0</a>.</li><li><strong>Improved:</strong> The use and handling of <a href="https://2019.www.torproject.org/docs/pluggable-transports.html">OBFS4 bridges</a> are now more intuitive and in line with the use of the <a href="https://tb-manual.torproject.org/circumvention/">Meek-Azure and Snowflake</a> bridges. There is no need anymore to activate OBFS4 bridge functionality in two steps. Also, the explanation about the functionality of bridges, <a href="https://2019.www.torproject.org/docs/pluggable-transports.html">pluggable transports</a> and their use was completely rewritten. This amazing work was done by <a href="https://github.com/nyxnor">nyxnor</a> – thank you very much!</li></ul>
+<div class="wp-block-image"><figure class="aligncenter size-full"><a href="../../wp-content/uploads/2021/06/countermeasure-menu-v041-e1623644437509.png"><img alt="The cleaned-up Countermeasure sub-menu of TorBox v.0.4.1." class="wp-image-2301" decoding="async" height="452" loading="lazy" src="../../wp-content/uploads/2021/06/countermeasure-menu-v041-e1623644437509.png" width="720"/></a><figcaption>The cleaned-up Countermeasure sub-menu of TorBox v.0.4.1.</figcaption></figure></div>
+<ul class="wp-block-list"><li><strong>Improved:</strong> If one of the pluggable transports (OBFS4, MEEK, SNOWFLAKE) will be activated, another already running pluggable transport will be automatically deactivated.</li><li><strong>Improved:</strong> When installed from the image file, with the first start of the TorBox menu, the SSH server keys will be replaced by new ones. (mentioned by <a href="https://github.com/rsaxvc">rsaxvc</a>, see details in <a href="https://github.com/radio24/TorBox/issues/40">issue #40</a>).</li><li><strong>Improved:</strong> All installation script can be run several times, for example, if the first installation attempt was not successful or when the system has to be reinstalled.</li><li><strong>Improved:</strong> The <a href="../../installation/#others">support for Ubuntu 20.04 /  21.04 and Debian 10/11</a> systems.</li><li><strong>Improved:</strong> Clean up the code of the TorBox Wireless Manager.</li><li><strong>Improved:</strong> We removed the first blank line to use the maximum available space for the entries in all menus. Also, the sub-menu to set up an OBFS4 relay server on the TorBox looks now more similar than the <a href="../../submenu-countermeasures-troubleshooting/">Countermeasure sub-menu</a>.</li><li><strong>Improved:</strong> Restarting tor is now accessible from the <a href="../../main-menu/">Main menu</a>.</li><li><strong>Improved:</strong> The slack space of the TorBox image is now overwritten by zeros (with the program <a href="https://www.systutorials.com/docs/linux/man/8-zerofree/">zerorfree</a>). This probably is why the compressed image of TorBox v.0.4.1 is almost 220 MB smaller than the image of TorBox v.0.4.0 (thanks goes to <a href="https://github.com/rsaxvc">rsaxvc</a> for the suggestion, see details in <a href="https://github.com/radio24/TorBox/issues/39">issue #39</a>).</li><li><strong>Experimental:</strong> “<a href="https://github.com/shellinabox/shellinabox">Shellinabox</a>” added to the TorBox and setup on port 9000. With “Shellinabox”, users can access the TorBox main menu through a web browser using <a href="https://192.168.42.1:9000">https://192.168.42.1:9000</a> on a WiFi client and <a href="https://192.168.43.1:9000">https://192.168.43.1:9000</a> on a cable client. Unfortunately, with the self-signed certificate for its secure connections, browsers will show a warning message during the first connection, which has to be ignored. To use a secure connection between the web browser and Shellinabox, the user must accept this certificate. We are eager to hear your feedback on “Shellinabox”. Do you know better alternatives? <a href="mailto:anonym@torbox.ch">Let us know!</a></li></ul>
+<h5 class="wp-block-heading"><strong>How to update from TorBox v.0.4.0 (10.04.2021)</strong>?</h5>
+<p class="wp-block-paragraph">To update a TorBox v.0.4.0 (10.04.2021) installation, you can perform the following tasks. <strong>This deletes all your custom made configuration</strong> but not alter your bridge relay keys. Nevertheless, we recommend, if possible, <strong>using the new image</strong>.</p>
+<ol class="wp-block-list"><li>Please, make sure that TorBox has Internet connectivity.</li><li>Update the system: Go to the<a href="../../sub-menu-update-and-reset/"> Update and Reset sub-menu</a>, update the base system, the TorBox menu (entry 1 and 5) and after that, update to the newest version of tor (entry 4).</li><li>To ensure that all necessary packages are installed, execute the following commands (<strong>please, make sure that you copy the entire line!</strong>):</li></ol>
+<div class="wp-block-syntaxhighlighter-code"><pre class="brush: bash; title: ; notranslate" title="">
+sudo apt-get -y install hostapd isc-dhcp-server obfs4proxy usbmuxd dnsmasq dnsutils tcpdump iftop vnstat links2 debian-goodies apt-transport-https dirmngr python3-pip python3-pil imagemagick tesseract-ocr ntpdate screen nyx git openvpn ppp tor-geoipdb build-essential shellinabox
+</pre></div>
+<div aria-hidden="true" class="wp-block-spacer" style="height:60px"></div>
+<ol class="wp-block-list" start="4"><li>Replace the changed configuration files:</li></ol>
+<div class="wp-block-syntaxhighlighter-code"><pre class="brush: bash; title: ; notranslate" title="">
+# Backup in case
+sudo cp /etc/tor/torrc /etc/tor/torrc.bak
+# ATTENTION: This will overwrite your modifications as well as the configuration for the OBFS4 bridge relay
+# If you run a bridge relay use "backup/restore the Bridge Relay configuration"
+sudo cp etc/tor/torrc /etc/tor/
+sudo cp etc/motd /etc/
+sudo cp etc/hostapd/hostapd.conf /etc/hostapd/
+sudo cp etc/default/shellinabox /etc/default/shellinabox
+sudo mv /etc/shellinabox/options-enabled/00+Black\ on\ White.css /etc/shellinabox/options-enabled/00_Black\ on\ White.css
+sudo mv /etc/shellinabox/options-enabled/00_White\ On\ Black.css /etc/shellinabox/options-enabled/00+White\ On\ Black.css
+sudo systemctl restart shellinabox.service
+sudo cp torbox/etc/hostname /etc/
+sudo cp torbox/etc/hosts /etc/
+</pre></div>
+<p class="wp-block-paragraph">The commands above should work. Alternatively, you could also go to the Update and Reset sub-menu and reset the entire TorBox configuration from there (entry 8).</p>
+<div aria-hidden="true" class="wp-block-spacer" style="height:60px"></div>
+<ol class="wp-block-list" start="5"><li>Reboot TorBox.</li></ol>
+<h5 class="wp-block-heading">Known problems and bugs</h5>
+<ul class="wp-block-list"><li><strong>BUG</strong>: Using the installation scripts with the option <code>–select-torbox</code> or using the EXPERT option in changing/updating tor with the <a href="../../">Update and Reset sub-menu</a> doesn’t show all relevant recent tor versions. You can fix these bug by updating the TorBox menu (<a href="../../sub-menu-update-and-reset/" rel="noreferrer noopener" target="_blank">update and reset sub-menu entry 5</a>). <strong>BUG FIXED</strong>✔︎<br/><span class="has-inline-color has-white-color">.</span></li></ul>
+<ul class="wp-block-list"><li><strong>LOOK&amp;FEEL</strong>: Tor displays the following warning: “<em>You have a ControlPort set to accept connections from a non-local address. This means that programs not running on your computer can reconfigure your Tor. That’s pretty bad, since the controller protocol isn’t encrypted! Maybe you should just listen on 127.0.0.1 and use a tool like stunnel or ssh to encrypt remote connections to your control port.</em>” This warning is generated because the <a href="https://gitweb.torproject.org/torspec.git/tree/control-spec.txt">Tor Control Port</a> (9051) is now accessible from clients (see details in <a href="https://github.com/radio24/TorBox/issues/46">issue #46</a>). However, if you control the clients and/or if you change the password of the Tor Control Port (<a href="../../submenu-configuration-update/">entry 3 in the Configuration sub-menu</a>), it doesn’t constitute a security risk. If this is not acceptable, the following entries can be removed from /etc/tor/torrc:<br/><code>ControlPort 192.168.42.1:9051<br/>ControlPort 192.168.43.1:9051</code><br/>Don’t remove <code>ControlPort 9051</code>!! Our plan for TorBox v.0.4.2 is to disable the accessibility of the Tor Control Port from clients again as default but to integrate into the Configuration sub-menu an option to enable/disable the accessibility.</li></ul>
+<h5 class="wp-block-heading">Your feedback is welcome!!</h5>
+<p class="wp-block-paragraph">We hope this version pleases you. However, we are dependent on feedback. It is not just about fixing bugs and improving usability, but also about supporting additional interfaces and hardware in future releases:</p>
+<ul class="wp-block-list"><li>What do you like?</li><li>What should be improved (why and how)?</li><li>What would you like to see next? Which features do you request?</li></ul>
+<p class="wp-block-paragraph"></p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../torbox-v-0-4-1-released-easier-than-ever/" rel="bookmark"><time class="entry-date published" datetime="2021-06-13T20:23:59+01:00">June 13, 2021</time><time class="updated" datetime="2023-10-05T03:34:11+01:00">October 5, 2023</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../../category/blog/" rel="category tag">Blog</a></span><span class="comments-link"><a href="../../torbox-v-0-4-1-released-easier-than-ever/#comments">13 Comments<span class="screen-reader-text"> on TorBox v.0.4.1 released — easier than ever</span></a></span> </footer>
+</article>
+</main>
+</div>
+<aside class="sidebar widget-area" id="secondary">
+<section class="widget widget_recent_entries" id="recent-posts-2">
+<h2 class="widget-title">Recent Posts</h2><nav aria-label="Recent Posts">
+<ul>
+<li>
+<a href="../../torbox-project-discontinued/">⚠️ TorBox Project Discontinued</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-openvpn-update-22-march-2026/">TorBox v.0.5.5 – OpenVPN Update, 22 March 2026</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-debian-13-trixie-update-01-december-2025/">TorBox v.0.5.5 – Debian 13 (Trixie) Update, 01 December 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-and-maintenance-update-20-july-2025/">TorBox v.0.5.4 – Security and Maintenance Update 20 July 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-update-17-april-2025/">TorBox v.0.5.4 – Security Update 17 April 2025</a>
+</li>
+</ul>
+</nav></section><section class="widget widget_search" id="search-widget"><h2 class="widget-title">Search</h2><div class="pagefind-host" id="search"></div><p class="search-hint"><a href="../../search/">Full-page search</a></p></section><section class="widget widget_archive" id="archives-2"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
+<ul>
+<li><a href="../../2026/09/">September 2026</a></li>
+<li><a href="../../2026/04/">April 2026</a></li>
+<li><a href="../../2025/12/">December 2025</a></li>
+<li><a href="../../2025/07/">July 2025</a></li>
+<li><a href="../../2025/04/">April 2025</a></li>
+<li><a href="../../2024/12/">December 2024</a></li>
+<li><a href="../../2024/10/">October 2024</a></li>
+<li><a href="../../2023/12/">December 2023</a></li>
+<li><a href="../../2023/07/">July 2023</a></li>
+<li><a href="../../2023/04/">April 2023</a></li>
+<li><a href="../../2023/03/">March 2023</a></li>
+<li><a href="../../2023/01/">January 2023</a></li>
+<li><a href="../../2022/10/">October 2022</a></li>
+<li><a href="../../2022/07/">July 2022</a></li>
+<li><a href="../../2022/04/">April 2022</a></li>
+<li><a href="../../2022/01/">January 2022</a></li>
+<li><a href="../11/">November 2021</a></li>
+<li><a href="../08/">August 2021</a></li>
+<li><a aria-current="page" href="./">June 2021</a></li>
+<li><a href="../04/">April 2021</a></li>
+<li><a href="../01/">January 2021</a></li>
+<li><a href="../../2020/08/">August 2020</a></li>
+<li><a href="../../2020/06/">June 2020</a></li>
+<li><a href="../../2020/05/">May 2020</a></li>
+<li><a href="../../2020/04/">April 2020</a></li>
+<li><a href="../../2020/01/">January 2020</a></li>
+<li><a href="../../2019/09/">September 2019</a></li>
+<li><a href="../../2019/08/">August 2019</a></li>
+<li><a href="../../2019/06/">June 2019</a></li>
+<li><a href="../../2019/05/">May 2019</a></li>
+<li><a href="../../2019/02/">February 2019</a></li>
+<li><a href="../../2019/01/">January 2019</a></li>
+<li><a href="../../2018/12/">December 2018</a></li>
+<li><a href="../../2018/08/">August 2018</a></li>
+<li><a href="../../2018/07/">July 2018</a></li>
+<li><a href="../../2018/02/">February 2018</a></li>
+<li><a href="../../2018/01/">January 2018</a></li>
+</ul>
+</nav></section><section class="widget widget_categories" id="categories-2"><h2 class="widget-title">Categories</h2><nav aria-label="Categories">
+<ul>
+<li class="cat-item cat-item-16"><a href="../../category/anonymity/">Anonymity</a>
+</li>
+<li class="cat-item cat-item-3"><a href="../../category/blog/">Blog</a>
+</li>
+<li class="cat-item cat-item-8"><a href="../../category/censorship/">Censorship</a>
+</li>
+<li class="cat-item cat-item-13"><a href="../../category/states/china/">China</a>
+</li>
+<li class="cat-item cat-item-10"><a href="../../category/states/egypt/">Egypt</a>
+</li>
+<li class="cat-item cat-item-14"><a href="../../category/github/">GitHub</a>
+</li>
+<li class="cat-item cat-item-4"><a href="../../category/on-our-own-behalf/">On our own behalf</a>
+</li>
+<li class="cat-item cat-item-6"><a href="../../category/security/">Security</a>
+</li>
+<li class="cat-item cat-item-11"><a href="../../category/states/south-sudan/">South Sudan</a>
+</li>
+<li class="cat-item cat-item-9"><a href="../../category/states/">States</a>
+</li>
+<li class="cat-item cat-item-5"><a href="../../category/surveillance/">Surveillance</a>
+</li>
+<li class="cat-item cat-item-7"><a href="../../category/tor-community/">Tor community</a>
+</li>
+<li class="cat-item cat-item-15"><a href="../../category/states/turkey/">Turkey</a>
+</li>
+<li class="cat-item cat-item-12"><a href="../../category/states/venezuela/">Venezuela</a>
+</li>
+</ul>
+</nav></section><section class="widget_text widget widget_custom_html" id="custom_html-3"><h2 class="widget-title">Blogroll</h2><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://www.torproject.org">Tor Project</a> (<a href="http://expyuzz4wqqyqhjn.onion/">onion</a>)</li>
+</ul></div></section> </aside>
+</div>
+<footer class="site-footer" id="colophon">
+<nav aria-label="Footer Primary Menu" class="main-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="../../category/blog/">Blog</a></li>
+</ul></div> </nav>
+<div class="site-info">
+<span class="site-title"><a href="../../" rel="home">TorBox</a></span>
+
+</div>
+</footer>
+</div>
+</div>
+
+<script id="syntaxhighlighter-core-js" src="../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js"></script>
+<script id="syntaxhighlighter-brush-bash-js" src="../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js"></script>
+<script type="text/javascript">SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+
+	// Infinite scroll support
+	if ( typeof( jQuery ) !== 'undefined' ) {
+		jQuery( function( $ ) {
+			$( document.body ).on( 'post-load', function() {
+				SyntaxHighlighter.highlight();
+			} );
+		} );
+	}
+</script>
+
+
+<script src="../../pagefind/pagefind-ui.js"></script><script src="../../assets/torbox-search.js"></script></body>
+</html>

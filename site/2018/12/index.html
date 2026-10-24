@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; form-action 'self'; base-uri 'self'" http-equiv="Content-Security-Policy"/><meta content="no-referrer" name="referrer"/><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<script>
+(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+//# sourceURL=twentysixteen_javascript_detection
+</script>
+<title>December 2018 – TorBox</title>
+
+
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #1a1a1a;--wp--preset--color--medium-gray: #686868;--wp--preset--color--light-gray: #e5e5e5;--wp--preset--color--blue-gray: #4d545c;--wp--preset--color--bright-blue: #007acc;--wp--preset--color--light-blue: #9adffd;--wp--preset--color--dark-brown: #402b30;--wp--preset--color--medium-brown: #774e24;--wp--preset--color--dark-red: #640c1f;--wp--preset--color--bright-red: #ff675f;--wp--preset--color--yellow: #ffef8e;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-color{color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-color{color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-color{color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-color{color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-color{color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-color{color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-color{color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-color{color: var(--wp--preset--color--bright-red) !important;}.has-yellow-color{color: var(--wp--preset--color--yellow) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-background-color{background-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-background-color{background-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-background-color{background-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-background-color{background-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-background-color{background-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-background-color{background-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-background-color{background-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-background-color{background-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-background-color{background-color: var(--wp--preset--color--yellow) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-border-color{border-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-border-color{border-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-border-color{border-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-border-color{border-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-border-color{border-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-border-color{border-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-border-color{border-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-border-color{border-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-border-color{border-color: var(--wp--preset--color--yellow) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/fonts/merriweather-plus-montserrat-plus-inconsolata.css" id="twentysixteen-fonts-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen/genericons/genericons.css" id="genericons-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen-child/style.css" id="twentysixteen-style-css" media="all" rel="stylesheet"/>
+<style id="twentysixteen-style-inline-css">
+
+		/* Custom Link Color */
+		.menu-toggle:hover,
+		.menu-toggle:focus,
+		a,
+		.main-navigation a:hover,
+		.main-navigation a:focus,
+		.dropdown-toggle:hover,
+		.dropdown-toggle:focus,
+		.social-navigation a:hover:before,
+		.social-navigation a:focus:before,
+		.post-navigation a:hover .post-title,
+		.post-navigation a:focus .post-title,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.site-branding .site-title a:hover,
+		.site-branding .site-title a:focus,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.entry-footer a:hover,
+		.entry-footer a:focus,
+		.comment-metadata a:hover,
+		.comment-metadata a:focus,
+		.pingback .comment-edit-link:hover,
+		.pingback .comment-edit-link:focus,
+		.comment-reply-link,
+		.comment-reply-link:hover,
+		.comment-reply-link:focus,
+		.required,
+		.site-info a:hover,
+		.site-info a:focus {
+			color: #dd3333;
+		}
+
+		mark,
+		ins,
+		button:hover,
+		button:focus,
+		input[type="button"]:hover,
+		input[type="button"]:focus,
+		input[type="reset"]:hover,
+		input[type="reset"]:focus,
+		input[type="submit"]:hover,
+		input[type="submit"]:focus,
+		.pagination .prev:hover,
+		.pagination .prev:focus,
+		.pagination .next:hover,
+		.pagination .next:focus,
+		.widget_calendar tbody a,
+		.page-links a:hover,
+		.page-links a:focus {
+			background-color: #dd3333;
+		}
+
+		input[type="date"]:focus,
+		input[type="time"]:focus,
+		input[type="datetime-local"]:focus,
+		input[type="week"]:focus,
+		input[type="month"]:focus,
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="password"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="number"]:focus,
+		textarea:focus,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.menu-toggle:hover,
+		.menu-toggle:focus {
+			border-color: #dd3333;
+		}
+
+		@media screen and (min-width: 56.875em) {
+			.main-navigation li:hover > a,
+			.main-navigation li.focus > a {
+				color: #dd3333;
+			}
+		}
+	
+/*# sourceURL=twentysixteen-style-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/css/blocks.css" id="twentysixteen-block-style-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" src="../../wp-includes/js/jquery/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="../../wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script id="twentysixteen-script-js-extra">
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+//# sourceURL=twentysixteen-script-js-extra
+</script>
+<script data-wp-strategy="defer" defer="" id="twentysixteen-script-js" src="../../wp-content/themes/twentysixteen/js/functions.js"></script>
+
+
+<link href="../../wp-content/plugins/simple-pull-quote/css/simple-pull-quote.css" rel="stylesheet" type="text/css"/>
+<style id="twentysixteen-header-css">
+		.site-branding {
+			margin: 0 auto 0 0;
+		}
+
+		.site-branding .site-title,
+		.site-description {
+			clip-path: inset(50%);
+			position: absolute;
+		}
+		</style>
+<style id="custom-background-css">
+body.custom-background { background-color: #444444; }
+</style>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-150x150.jpg" rel="icon" sizes="32x32"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="icon" sizes="192x192"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="apple-touch-icon"/>
+<meta content="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" name="msapplication-TileImage"/>
+<style id="wp-custom-css">
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+html {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.header-image a:hover img,
+.header-image a:focus img {
+}
+
+.site-header {
+	padding: 2.5em 7.6923%;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.site-content {
+	padding: 0 7.6923%;
+}
+
+.entry-title {
+	font-size: 1.5rem;
+}
+
+ul,
+ol {
+  margin: -36px 0 0 15px; 
+  padding: 18px; 
+}
+
+ul {
+  list-style-type: disc; 
+  list-style-position: outside; 
+}
+
+ol {
+	list-style: decimal;
+	margin-left: 1.5em;
+}
+
+.widget {
+	border-top: 4px solid #1a1a1a;
+	margin-bottom: 1.75em;
+	padding-top: 1.75em;
+}
+
+.widget-area > :last-child,
+.widget > :last-child {
+	margin-bottom: 0;
+}
+
+.widget .widget-title {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.046875em;
+	line-height: 1.3125;
+	margin: 0 0 0em;
+	text-transform: none;
+}
+
+.widget .widget-title:empty {
+	margin-bottom: 0;
+}
+
+.widget-title a {
+	color: #1a1a1a;
+}
+
+.widget ul {
+	margin: 0 0 0 15px; 
+  padding: 0px; 
+}
+</style>
+<link href="@@SITE_BASE_URL@@2018/12/" rel="canonical"/><link href="../../assets/torbox-static.css" rel="stylesheet"/><link href="../../pagefind/pagefind-ui.css" rel="stylesheet"/></head>
+<body class="archive date custom-background wp-embed-responsive wp-theme-twentysixteen wp-child-theme-twentysixteen-child group-blog hfeed">
+<div class="site" id="page">
+<div class="site-inner">
+<a class="skip-link screen-reader-text" href="#content">
+			Skip to content		</a>
+<header class="site-header" id="masthead">
+<div class="site-header-main">
+<div class="site-branding">
+<p class="site-title"><a href="../../" rel="home">TorBox</a></p>
+<p class="site-description">TorBox is an easy-to-use, anonymising router based on Raspberry Pi, which also runs on Debian and Ubuntu-based systems.</p>
+</div>
+<button class="menu-toggle" id="menu-toggle">Menu</button>
+<div class="site-header-menu" id="site-header-menu">
+<nav aria-label="Primary Menu" class="main-navigation" id="site-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8" id="menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647" id="menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178" id="menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695" id="menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649" id="menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919" id="menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001" id="menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892" id="menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003" id="menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161" id="menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055" id="menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683" id="menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934" id="menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640" id="menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935" id="menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943" id="menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947" id="menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701" id="menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721" id="menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455" id="menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431" id="menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265" id="menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124" id="menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802" id="menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148" id="menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419" id="menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29" id="menu-item-29"><a href="../../category/blog/">Blog</a></li>
+</ul></div> </nav>
+</div>
+<a class="search-jump" href="../../search/">Search</a></div>
+<div class="header-image">
+<a href="../../" rel="home">
+<img alt="TorBox" decoding="async" fetchpriority="high" height="420" sizes="(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px" src="../../wp-content/uploads/2015/12/torbox-banner.jpg" srcset="../../wp-content/uploads/2015/12/torbox-banner.jpg 1200w, ../../wp-content/uploads/2015/12/torbox-banner-300x105.jpg 300w, ../../wp-content/uploads/2015/12/torbox-banner-768x269.jpg 768w, ../../wp-content/uploads/2015/12/torbox-banner-1024x358.jpg 1024w" width="1200"/> </a>
+</div>
+</header>
+<div class="site-content" id="content">
+<div class="content-area" id="primary">
+<main class="site-main" data-pagefind-ignore="" id="main">
+<header class="page-header">
+<h1 class="page-title">Month: <span>December 2018</span></h1> </header>
+<article class="post-300 post type-post status-publish format-standard hentry category-blog category-censorship category-venezuela" id="post-300">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../the-state-of-internet-censorship-in-venezuela/" rel="bookmark">The State of Internet Censorship in Venezuela</a></h2> </header>
+<div class="entry-content">
+<p>This post <a href="https://ooni.torproject.org/post/venezuela-internet-censorship/" rel="noopener noreferrer" target="_blank">has been published</a> by <a href="https://ooni.torproject.org/" rel="noopener noreferrer" target="_blank">OONI</a>, a censorship measurement project under the <a href="https://www.torproject.org/" rel="noopener noreferrer" target="_blank">Tor Project</a>, <a href="" rel="noopener noreferrer" target="_blank">IPYS Venezuela</a>, and <a href="http://veinteligente.org" rel="noopener noreferrer" target="_blank">Venezuela Inteligente</a>.</p>
+<p><img alt="" class="aligncenter size-full wp-image-313" decoding="async" height="427" src="../../wp-content/uploads/2018/12/1599px-Flag_of_Venezuela.svg_-e1545990100827.png" width="640"/></p>
+<h3>Background</h3>
+<p><strong>Political environment</strong><br/>
+Democratic freedoms have <a href="https://freedomhouse.org/report/freedom-world/2018/venezuela" rel="noopener noreferrer" target="_blank">deteriorated</a> in Venezuela. The government has been characterized as an authoritarian regime, closing spaces for public discussions and free expression, while systematic violations of human rights have intensified. According to IPYS Venezuela, <a href="https://en.wikipedia.org/wiki/Elections_in_Venezuela" rel="noopener noreferrer" target="_blank">the elections held in Venezuela in recent years</a> have suffered from a lack of fair conditions. The institutionality and the State of Rights have been broken, given the lack of autonomy and independence of the public powers, all dominated by the strength of the <a href="https://en.wikipedia.org/wiki/United_Socialist_Party_of_Venezuela" rel="noopener noreferrer" target="_blank">United Socialist Party of Venezuela</a>, which has accompanied <a href="https://en.wikipedia.org/wiki/Hugo_Chávez" rel="noopener noreferrer" target="_blank">Hugo Chávez</a> and currently maintains <a href="https://en.wikipedia.org/wiki/Nicolás_Maduro" rel="noopener noreferrer" target="_blank">Nicolás Maduro</a>.</p>
+<p>Venezuela is experiencing a complex humanitarian emergency, intensified by <a href="https://www.washingtonpost.com/world/venezuelas-inflation-rate-may-hit-1000000-percent-yes-1-million/2018/07/24/90d59086-8f4a-11e8-ae59-01880eac5f1d_story.html?noredirect=on&amp;utm_term=.a11d5a74114e" rel="noopener noreferrer" target="_blank">hyperinflation</a>, the absence of transparency in public management, and the weakness of democratic institutions. These conditions have negatively impacted the quality of life of citizens, as well as the conditions for the protection of human rights. Within this context, Venezuelans have been deprived of the right to decent housing and have very limited access to public services.</p>
+<p>Between January to July 2018, reporting on the <a href="https://www.reuters.com/article/us-venezuela-transportation/weary-venezuelans-rely-on-dog-cart-transports-as-buses-succumb-to-crisis-idUSKBN1K72BJ" rel="noopener noreferrer" target="_blank">transportation crisis</a>, <a href="https://www.reuters.com/article/us-venezuela-blackouts/venezuela-begins-power-rationing-as-drought-causes-severe-outages-idUSKCN1GS2M5" rel="noopener noreferrer" target="_blank">power outages</a>, <a href="../../wp-content/uploads/2018/12/economist.com-Unfed-and-unwashedHow-chavismo-makes-the-taps-run-dry-in-Venezuela.pdf">water</a> and <a href="https://www.reuters.com/article/us-venezuela-gas/cooking-gas-shortages-force-venezuelans-to-turn-to-firewood-idUSKBN1AQ23Q" rel="noopener noreferrer" target="_blank">gas shortages</a> has increased. According to data provided by the <a href="https://www.observatoriodeconflictos.org.ve" rel="noopener noreferrer" target="_blank">Venezuelan Observatory of Social Conflict</a> (OVCS) and the <a href="https://www.derechos.org.ve" rel="noopener noreferrer" target="_blank">Venezuelan Program of Education-Action in Human Rights</a> (Provea), these issues affect the quality of life of Venezuelans and their ability to exercise their basic rights.</p>
+<figure aria-describedby="caption-attachment-314" class="wp-caption aligncenter" id="attachment_314" style="width: 640px"><img alt="A manager weighs banknotes on a scale at a bakery in Venezuela." class="size-full wp-image-314" decoding="async" height="427" src="../../wp-content/uploads/2018/12/gettyimages-863910300-1024x1024.jpg" width="640"/><figcaption class="wp-caption-text" id="caption-attachment-314">A manager weighs banknotes on a scale at a bakery in Venezuela.</figcaption></figure>
+<p>Internet blackouts in Venezuela have been documented by IPYS Venezuela, which have left citizens in rural, suburban and urban areas of the country without internet connectivity. According to IPYS Venezuela, these internet blackouts have harmed citizens’ rights to access information and freedom of expression. <a href="https://en.wikipedia.org/wiki/Freedom_House" rel="noopener noreferrer" target="_blank">Freedom House</a> scores Venezuela 20⁄25 in obstacles to access the internet (where a larger ranking is worse).</p>
+<p>Research conducted by <a href="https://twitter.com/Mariengracia" rel="noopener noreferrer" target="_blank">Mariengracia Chirinos</a> in terms of public policies on internet access reveals that, between 2007 to 2017, a vision of political and social control prevailed in Venezuela, in favor of the defense of national sovereignty and the “defense of the country”. This however, she notes, contradicts the principles of inclusion, diversity, openness, competitiveness and freedom that should guide the process of formulating internet access policies.</p>
+<p>Public policies around internet access have been limited by regulatory processes (which follow the model of a closed society), affecting market competitiveness and incentives for investment. This has had a negative impact on technological advancements in the telecommunications sector, which are far from <a href="https://www.cepal.org/en/publications/40736-society-rights-and-environment-international-human-rights-standards-applicable" rel="noopener noreferrer" target="_blank">the standards of ECLAC (2016)</a> and <a href="https://www.oecd.org/education/skills-beyond-school/education-at-a-glance-2016-indicators.htm" rel="noopener noreferrer" target="_blank">the OECD (2016)</a>. Between 2017 to 2018, this contributed towards<a href="https://ipysvenezuela.org/2018/05/08/internet-surfing-at-its-minimum-situation-of-internet-in-venezuela/" rel="noopener noreferrer" target="_blank"> connectivity issues across Venezuela</a>.</p>
+<p>IPYS Venezuela reports that digital rights were at risk throughout 2017 in light of several restrictive regulations. Police persecution manifested through arbitrary arrests of citizens based on their opinions expressed online through social networks, various portals of digital media and civil society organizations were attacked, and web portals were selectively blocked. Threats have been made against journalists, while <a href="https://ipysvenezuela.org/alerta/gobierno-incentiva-la-vigilancia-redes-sociales-la-difusion-noticias-falsas/" rel="noopener noreferrer" target="_blank">official structures</a> for online surveillance and police monitoring have been proposed.</p>
+<p><a href="https://freedomhouse.org/report/freedom-net/2018/venezuela"><img alt="" class="aligncenter size-full wp-image-315" decoding="async" height="450" loading="lazy" src="../../wp-content/uploads/2018/12/Bildschirmfoto-2018-12-28-um-10.59.34-e1545991317788.png" width="640"/></a></p>
+<p><strong>Legal environment</strong><br/>
+A restrictive framework for expression on the internet was consolidated in 2017 and internet censorship was legalized. Following a wave of street protests, Maduro <a href="https://ipysvenezuela.org/2018/05/08/internet-surfing-at-its-minimum-situation-of-internet-in-venezuela/" rel="noopener noreferrer" target="_blank">signed a decree to extend the State of Emergency Exception and Economic Emergency</a>, which further expands internet censorship powers to avoid “destabilization campaigns”.</p>
+<p>The turning point came with the <a href="http://www.ipsnews.net/2017/12/new-anti-hate-law-threatens-freedoms-venezuela/" rel="noopener noreferrer" target="_blank">approval of the Anti-Hate law</a>. Last November, the <a href="https://en.wikipedia.org/wiki/2017_Constituent_National_Assembly" rel="noopener noreferrer" target="_blank">National Constituent Assembly</a> (ANC) – a body created outside of the national constitution and which functions as a “superpower” with all of the ruling parliamentarians – approved the “Law against Hatred, for Peaceful Co-existence and Tolerance”. This regulation <a href="https://cpj.org/blog/2018/02/venezuelas-anti-hate-law-provides-maduro-with-anot.php" rel="noopener noreferrer" target="_blank">empowers authorities to block websites</a> that are deemed to spread hate or incite violence. If messages that are considered to “incite hatred” are not removed by website owners within 6 hours, they may be subjected to a fine. The law also includes prison sentences, ranging from 10 to 20 years, for those who do not comply with censorship requests by authorities. Similarly, Article 27 of the <a href="https://web.archive.org/web/20070528181559/http://www.leyresorte.gob.ve/index.asp" rel="noopener noreferrer" target="_blank">Law on Social Responsibility in Radio, Television and Electronic Media</a> sets conditions for the prohibition of content that does not acknowledge the legitimacy of authorities or which fosters citizen anxiety.</p>
+<p><strong>Reported cases of internet censorship</strong><br/>
+Pervasive levels of internet censorship have been carried out in Venezuela since 2014, largely monitored and documented by local civil society groups IPYS Venezuela and Venezuela Inteligente. Their <a href="https://ipysvenezuela.org/navegarconlibertad/tag/ipys-venezuela/" rel="noopener noreferrer" target="_blank">study</a> (between 2015 and 2016) showed that 43 websites were systematically blocked by one or more Venezuelan ISPs. The types of websites that appeared to be blocked the most include: sites related to the parallel market of the dollar (44%), media (19%), blogs criticizing Chavez (12%), games of chance and online bets (9%), collaboration tools or shorteners (5%), personal communication tools (5%), gore (2%), anonymization and circumvention sites (2%), and hosting services (2%). <a href="https://en.wikipedia.org/wiki/Movistar" rel="noopener noreferrer" target="_blank">Movistar</a> was found to block sites the most, with 41 blocked domains, corresponding to 35 different websites. The types of sites blocked by Movistar – but which weren’t blocked by <a href="https://en.wikipedia.org/wiki/CANTV" rel="noopener noreferrer" target="_blank">CANTV</a> – include: parallel dollar market, chavismo criticism blogs, hosting services, collaboration tools or shorteners, and digital media.</p>
+<p>Data <a href="https://twitter.com/vesinfiltro/status/893197963337625602" rel="noopener noreferrer" target="_blank">presented in August 2017 by Venezuela Inteligente</a>, as follow-up to their previous study with IPYS Venezuela, <a href="https://twitter.com/andresAzp/status/897250588563472384" rel="noopener noreferrer" target="_blank">shows</a> that of the blocked sites, 36% of them were related to currency exchange rates, 32% were media, 16% games of chance and online bets, 12% social networking or communications tools, and 4% of them were blogs critical of the government. 24% of all blocked sites were international with international audiences, while 76% of them had (mostly) local audiences.</p>
+<blockquote class="twitter-tweet static-tweet" data-lang="de">
+<p dir="ltr" lang="es">El 76% de los sitios bloqueados en <a href="https://twitter.com/hashtag/internetVE?src=hash&amp;ref_src=twsrc%5Etfw">#internetVE</a> son de origen local, 24% internacional – <a href="https://twitter.com/vesinfiltro?ref_src=twsrc%5Etfw">@vesinfiltro</a> <a href="https://twitter.com/VeInteligente?ref_src=twsrc%5Etfw">@VeInteligente</a> <a href="https://t.co/eEiPkD7lPQ">pic.twitter.com/eEiPkD7lPQ</a></p>
+<p>— Andres Azpurua (@andresAzp) <a href="https://twitter.com/andresAzp/status/897248479893958656?ref_src=twsrc%5Etfw">15. August 2017</a></p></blockquote>
+<p></p>
+<p>Between 2017 to 2018, IPYS Venezuela documented seven cases of internet censorship, involving news websites, currency exchange websites and other sites discussing corruption and economic information. Today, these seven news portals remain blocked by CANTV, Movistar and Digitel, according to OONI Probe network measurement data collected by IPYS Venezuela and Venezuela Inteligente.</p>
+<p>Last year, Venezuela Inteligente <a href="https://vesinfiltro.com/noticias/bloqueos_abril_2017/" rel="noopener noreferrer" target="_blank">reported</a>, through the <a href="https://vesinfiltro.com" rel="noopener noreferrer" target="_blank">VEsinFiltro project</a>, how three private online streaming broadcasters – <a href="https://vivoplay.net" rel="noopener noreferrer" target="_blank">Vivoplay</a>, <a href="https://www.vpitv.com" rel="noopener noreferrer" target="_blank">VPI</a>, and Capitolio TV (site now defunct) – were blocked simultaneously by all major ISPs (primarily by means of DNS) as a result of broadcasting live street protests. VPI and Capitolio TV resorted to livestreaming on YouTube, instead of on their own sites, to circumvent the block. The Maduradas portal <a href="https://ipysvenezuela.org/alerta/balance-semanal-periodicos-y-radioemisoras-fueron-objeto-de-censura-y-abuso-de-poder/" rel="noopener noreferrer" target="_blank">was also blocked</a> by means of DNS.</p>
+<p>Media websites blocked in 2018 include <a href="https://ipysvenezuela.org/alerta/dos-medidas-de-censura-han-afectado-a-el-pitazo/" rel="noopener noreferrer" target="_blank">El Pitazo</a>, <a href="https://www.lapatilla.com/2018/06/12/los-bloqueos-de-la-patilla-y-el-nacional-revelaron-una-nueva-forma-de-censura-en-internet/" rel="noopener noreferrer" target="_blank">La Patilla and El Nacional</a>. These censorship events were (temporarily) implemented by both private and state providers, who blocked the sites at their own discretion without a court order, violating due process. These media outlets were blocked by means of DNS tampering and HTTP blocking, primarily by CANTV, Movistar, Movilnet, and <a href="https://en.wikipedia.org/wiki/Digitel_GSM" rel="noopener noreferrer" target="_blank">Digitel</a>.</p>
+<p>Authorities of the National Telecommunications Commission have previously ordered the blocking of websites that disseminate “destabilizing” information or form a “media war” against the government. However, no court order or other legal justification was provided for the censorship events that occurred over the last year. Furthermore, <a href="https://medium.com/@andresAzp/solicitamos-transparencia-en-los-bloqueos-en-internetve-cb622bac87fd" rel="noopener noreferrer" target="_blank">the National Telecommunications Commission has repeatedly ignored public information requests</a> regarding recent internet censorship events.</p>
+<figure aria-describedby="caption-attachment-316" class="wp-caption aligncenter" id="attachment_316" style="width: 640px"><img alt="Demonstrators protest outside the National Telecommunications Commission after the government took the channel CNN en Espanol off the air in Caracas, Venezuela, 16 February 2017." class="size-full wp-image-316" decoding="async" height="426" loading="lazy" src="../../wp-content/uploads/2018/12/Venezuela-Maduro-CNN-en-Espanol-censorship-17022017-web.jpg" width="640"/><figcaption class="wp-caption-text" id="caption-attachment-316">Demonstrators protest outside the National Telecommunications Commission after the government took the channel CNN en Espanol off the air in Caracas, Venezuela, 16 February 2017.</figcaption></figure>
+<h3>Measuring internet censorship</h3>
+<p>To measure internet censorship in Venezuela, the researchers ran OONI’s network measurement software (<a href="https://ooni.torproject.org/install/" rel="noopener noreferrer" target="_blank">OONI Probe</a>) on a daily basis across multiple local vantage points. OONI Probe is <a href="https://github.com/TheTorProject/ooni-probe" rel="noopener noreferrer" target="_blank">free and open source software</a> designed to measure various forms of network interference.</p>
+<p>The main OONI Probe tests that were ran as part of this study include:</p>
+<ul>
+<li><a href="https://ooni.torproject.org/nettest/web-connectivity/" rel="noopener noreferrer" target="_blank">Web Connectivity</a></li>
+<li><a href="https://ooni.torproject.org/nettest/http-invalid-request-line/" rel="noopener noreferrer" target="_blank">HTTP Invalid Request Line</a></li>
+<li><a href="https://ooni.torproject.org/nettest/http-header-field-manipulation/" rel="noopener noreferrer" target="_blank">HTTP Header Field Manipulation</a></li>
+<li><a href="https://ooni.torproject.org/nettest/vanilla-tor/" rel="noopener noreferrer" target="_blank">Vanilla Tor</a></li>
+<li><a href="https://ooni.torproject.org/nettest/tor-bridge-reachability/" rel="noopener noreferrer" target="_blank">Tor Bridge Reachability</a></li>
+<li><a href="https://ooni.torproject.org/nettest/whatsapp/" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
+<li><a href="https://ooni.torproject.org/nettest/facebook-messenger/" rel="noopener noreferrer" target="_blank">Facebook Messenger</a></li>
+<li><a href="https://ooni.torproject.org/nettest/telegram/" rel="noopener noreferrer" target="_blank">Telegram</a></li>
+</ul>
+<p>OONI’s Web Connectivity test is designed to measure whether websites are blocked by means of DNS tampering, TCP/IP blocking, or by an HTTP transparent proxy. This test is automatically performed both over the vantage point of the user and from a non-censored control vantage point. If the results from both vantage points match, then the tested website is most likely accessible. If the results however differ, then the measurement is flagged as anomalous. OONI’s current methodology only confirms the blocking of a website if a blockpage is served. In cases where ISPs do not serve blockpages, the relevant network measurements are analyzed over time, examining whether the specific types of failures persist and what causes these failures (i.e. ruling out false positives).</p>
+<p>The testing was mostly limited to the URLs included in the <a href="https://en.wikipedia.org/wiki/Citizen_Lab" rel="noopener noreferrer" target="_blank">Citizen Lab’s</a> <a href="https://github.com/citizenlab/test-lists/blob/master/lists/global.csv" rel="noopener noreferrer" target="_blank">global</a> and <a href="https://github.com/citizenlab/test-lists/blob/master/lists/ve.csv" rel="noopener noreferrer" target="_blank">Venezuelan</a> test lists. These lists consist of a variety of different types of URLs that fall under <a href="https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv" rel="noopener noreferrer" target="_blank">30 categories</a> and that are tested for censorship by network measurement projects like OONI. Throughout the course of this research, the researchers updated the Venezuelan test list to ensure that reportedly blocked sites were being tested. Overall, around 1,410 URLs, included in both the Citizen Lab’s global and Venezuelan test lists, were measured as part of this study.</p>
+<p><img alt="" class="aligncenter size-full wp-image-317" decoding="async" height="432" loading="lazy" src="../../wp-content/uploads/2018/12/error-e1545992704733.jpg" width="640"/></p>
+<p>In an attempt to identify which equipment was used to implement internet censorship in Venezuela, the researchers ran OONI’s HTTP Invalid Request Line and HTTP Header Field Manipulation tests. Both tests are designed to measure networks with the aim of identifying the presence of middleboxes. OONI’s HTTP Invalid Request Line test does this by sending an invalid HTTP request line to an echo server listening on the standard HTTP port. If a middlebox is present, the invalid HTTP request line will be intercepted by the middlebox, potentially triggering an error that will be sent back to OONI servers. In the past, this has enabled the identification of censorship equipment in various countries around the world. OONI’s HTTP Header Field Manipulation test, on the other hand, attempts to identify middleboxes by sending HTTP requests with non-canonical HTTP headers. If a middlebox is present, it will likely normalize the headers or add extra headers, enabling the identification of its presence in the network. In addition to OONI Probe tests, the researchers also performed additional network measurement tests via <a href="https://en.wikipedia.org/wiki/Raspberry_Pi" rel="noopener noreferrer" target="_blank">Raspberry Pi</a> deployments in Venezuela.</p>
+<p>To monitor the accessibility of popular instant messaging platforms over time, the researchers ran OONI’s WhatsApp, Facebook Messenger, and Telegram tests. These tests are designed to measure the reachability of the WhatsApp, Facebook Messenger, and Telegram apps and web interfaces through DNS lookups and by attempting to establish TCP connections to their endpoints.</p>
+<p>In light of increased censorship events over the last years, the researchers decided to monitor the accessibility of censorship circumvention tools as well. Many circumvention tool sites were included in the Citizen Lab’s global test list, which the researchers measured via OONI’s Web Connectivity test. But we also ran OONI’s Vanilla Tor and Tor Bridge Reachability tests, which are designed to measure the blocking of the <a href="https://www.torproject.org/" rel="noopener noreferrer" target="_blank">Tor network</a> and <a href="https://bridges.torproject.org/" rel="noopener noreferrer" target="_blank">Tor bridges</a>.</p>
+<p>Once network measurement data was collected from all of these tests, OONI data was subsequently processed and analyzed based on a standardized set of heuristics for detecting internet censorship and traffic manipulation. The researchers analyzed all OONI Probe network measurements collected from Venezuela between 20th February 2014 to 10th August 2018.</p>
+<p>The main findings though that the researchers present in this study are based on:</p>
+<ul>
+<li>Networks from which most of the recent measurements were collected from, namely: Digitel (AS264731), CANTV (AS8048), Movistar (AS6306) and Movilnet (AS27889).</li>
+<li>Recent censorship findings that are currently more relevant.</li>
+<li>Censorship findings that have been persistent over time (i.e. sites that remained blocked over time and which presented the highest ratio of anomalies).</li>
+</ul>
+<p><img alt="" class="aligncenter size-full wp-image-318" decoding="async" height="294" loading="lazy" src="../../wp-content/uploads/2018/12/venezuela-e1545993262849.png" width="640"/></p>
+<p><strong>Acknowledgement of limitations</strong><br/>
+The first limitation of this study is associated with the testing period. This study includes an analysis of thousands of network measurements collected from Venezuela over the last four years, between 20th February 2014 to 10th August 2018. Censorship events that may have occurred before and/or after the analysis period are not examined as part of this study.</p>
+<p>Another limitation to this study is associated to the amount and types of URLs that were tested for censorship. OONI’s Web Connectivity test was run to measure the accessibility of 287 URLs that are more relevant to the Venezuelan context and 1,123 internationally relevant sites. All of these URLs were selected in collaboration with community members over the last years. The researchers acknowledge the URL selection bias and that the testing sample of URLs might exclude many other sites that are blocked in Venezuela. The researchers therefore encourage researchers and community members to continue reviewing and <a href="https://ooni.torproject.org/get-involved/contribute-test-lists/" rel="noopener noreferrer" target="_blank">contributing to these test lists</a> to help improve future research and analysis.</p>
+<p>Since block pages weren’t detected in Venezuela (at least for none of the tested URLs), censorship findings are presented with caution, acknowledging that false positives may be present. This is the primary reason why the researchers mainly present findings that (a) presented consistent anomalies over time (suggesting blocking) and (b) IPYS Venezuela and Venezuela Inteligente were able to verify locally in terms of (in)accessibility.</p>
+<p>Finally, while network measurements were collected from multiple ASNs in Venezuela, <a href="https://github.com/TheTorProject/ooni-probe" rel="noopener noreferrer" target="_blank">OONI’s software tests</a> were not run consistently across all networks. To share more recent and relevant findings, the researchers mainly focus on ASNs from which measurements were collected the most over the last months: Digitel (AS264731), CANTV (AS8048), Movistar (AS6306) and Movilnet (AS27889).</p>
+<h3>Findings</h3>
+<p>Following <a href="https://en.wikipedia.org/wiki/2015_Venezuelan_parliamentary_election" rel="noopener noreferrer" target="_blank">Venezuela’s 2015 elections</a>, civil society groups IPYS Venezuela and Venezuela Inteligente reported (through the use of <a href="https://ooni.torproject.org/install/" rel="noopener noreferrer" target="_blank">OONI Probe</a>) on the blocking of a number of websites, including currency exchange websites, blogs expressing political criticism and media-related sites.</p>
+<p>The researcher’s latest OONI findings show that such websites are currently blocked by multiple Venezuelan ISPs and have remained blocked all along. Measurements collected from Venezuela also suggest that a number of other sites (such as <a href="http://www.el-nacional.com" rel="noopener noreferrer" target="_blank">el-nacional.com</a>, <a href="https://www.lapatilla.com" rel="noopener noreferrer" target="_blank">lapatilla.com</a>, <a href="https://elpitazo.com" rel="noopener noreferrer" target="_blank">elpitazo.com</a> and <a href="https://armando.info" rel="noopener noreferrer" target="_blank">armando.info</a>) have more recently been blocked as well.</p>
+<p>As part of the following sections, the researchers share OONI data pertaining to the blocking of news outlets, sites expressing political criticism, currency exchange sites and <a href="https://en.wikipedia.org/wiki/Zello" rel="noopener noreferrer" target="_blank">zello.com</a>. The following data is based on recent measurements collected from four Venezuelan networks: Digitel (AS264731), CANTV (AS8048), Movistar (AS6306) and Movilnet (AS27889). The researchers also confirm the blocking of the <a href="https://en.wikipedia.org/wiki/Tor_(anonymity_network)" rel="noopener noreferrer" target="_blank">Tor network</a> by state-owned CANTV.</p>
+<p><strong>Media</strong><br/>
+Independent media websites are blocked in Venezuela (primarily by means of DNS tampering), as illustrated in the following table (based on recent OONI measurements).</p>
+<p><a href="../../wp-content/uploads/2018/12/Bildschirmfoto-2018-12-26-um-20.47.24-e1545993519554.png" rel="attachment wp-att-319"><img alt="" class="aligncenter size-full wp-image-319" decoding="async" height="550" loading="lazy" src="../../wp-content/uploads/2018/12/Bildschirmfoto-2018-12-26-um-20.47.24-e1545993519554.png" width="640"/></a></p>
+<p>El Pitazo is an independent news outlet run by Venezuelans that started off as a YouTube channel in 2014, expanded to a radio program, and eventually created a media website. They aim to share information with the most economically disadvantaged populations of Venezuela and to shed light on issues that are otherwise censored by state-owned media. El Pitazo is one of the few media outlets that has a presence in all states in Venezuela, and whose news agenda is focused on issues of community complaints, conflicts, and acts of corruption that affect citizens and are of public interest.</p>
+<p>A few months ago (in April 2018), Venezuela Inteligente and IPYS Venezuela reported that two of El Pitazo’s domains (<a href="https://elpitazo.com" rel="noopener noreferrer" target="_blank">elpitazo.com</a> and <a href="http://elpitazo.info" rel="noopener noreferrer" target="_blank">elpitazo.info</a>) were blocked by CANTV, Digitel, Movistar, Movilnet and <a href="https://en.wikipedia.org/wiki/Inter_(Venezuelan_broadcaster)" rel="noopener noreferrer" target="_blank">Intercable</a> by means of DNS. Recent OONI data not only shows that these domains remain blocked across ISPs, but that a third domain of El Pitazo (<a href="https://elpitazo.com" rel="noopener noreferrer" target="_blank">elpitazo.ml</a>) has been blocked as well.</p>
+<p>CANTV, Digitel and Movistar primarily appeared to block El Pitazo domains by means of DNS, while most measurements collected from Movilnet presented HTTP failures, suggesting potential HTTP blocking. The presence of both DNS lookup errors and HTTP failures may suggest that ISPs employ both DNS and HTTP blocking techniques, or that HTTP failures are caused as a result of DNS blocking techniques not being implemented properly. Alternatively, they could be caused by a congested network, server-side blocking, or if the site in question went down during testing due to a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack" rel="noopener noreferrer" target="_blank">DDoS attack</a>. But these possibilities is ƒrather unlikely, as El Pitazo domains run behind <a href="https://en.wikipedia.org/wiki/Cloudflare" rel="noopener noreferrer" target="_blank">Cloudflare</a>, so they should be quite resistant to failures.</p>
+<p>Two months after El Pitazo domains were blocked, IPYS Venezuela <a href="https://ipysvenezuela.org/alerta/nueva-forma-de-censura-en-internet-aparece-en-venezuela-balance-ipysve/" rel="noopener noreferrer" target="_blank">reported</a> that independent news outlets <a href="https://en.wikipedia.org/wiki/La_Patilla" rel="noopener noreferrer" target="_blank">La Patilla</a> and <a href="https://en.wikipedia.org/wiki/El_Nacional_(Caracas)" rel="noopener noreferrer" target="_blank">El Nacional</a> were blocked as well.</p>
+<p>La Patilla was founded in 2010 by the former CEO of <a href="https://en.wikipedia.org/wiki/Globovisión" rel="noopener noreferrer" target="_blank">Globovision</a> (private Venezuelan TV channel) and <a href="https://www.alexa.com/topsites/countries;0/VE" rel="noopener noreferrer" target="_blank">is ranked as one of the most visited websites in Venezuela</a> (ahead of other major news websites). Currently, <a href="https://www.lapatilla.com" rel="noopener noreferrer" target="_blank">lapatilla.com</a> is accessible, but was temporarily blocked between 6th to 10th June 2018. OONI data collected on 6th June 2018 shows that the site was accessible on Movistar (AS6306), but blocked by state-owned CANTV (AS8048). Lapatilla.com was tested multiple times on CANTV and all measurements presented the same HTTP failures and “generic timeout errors”, suggesting HTTP blocking. CANTV though appears to have unblocked the site by 11th June 2018, as corroborated by all subsequent measurements.</p>
+<figure aria-describedby="caption-attachment-320" class="wp-caption aligncenter" id="attachment_320" style="width: 640px"><a href="https://www.washingtonpost.com/world/the_americas/as-it-slides-toward-authoritarianism-venezuela-targets-one-of-its-last-independent-newspapers/2018/07/03/9cb5fe22-7a2d-11e8-ac4e-421ef7165923_story.html?noredirect=on&amp;utm_term=.1219249948b9"><img alt="Diosdado Cabello, a senior government official, has filed a defamation lawsuit against the newspaper El Nacional." class="size-full wp-image-320" decoding="async" height="427" loading="lazy" src="../../wp-content/uploads/2018/12/AZPAQID5QQI6RMHP776KX37ZIY-e1545994252758.jpg" width="640"/></a><figcaption class="wp-caption-text" id="caption-attachment-320">Diosdado Cabello, a senior government official, has filed a defamation lawsuit against the newspaper El Nacional.</figcaption></figure>
+<p>El Nacional is Venezuela’s largest independent newspaper. Having <a href="https://www.washingtonpost.com/world/the_americas/as-it-slides-toward-authoritarianism-venezuela-targets-one-of-its-last-independent-newspapers/2018/07/03/9cb5fe22-7a2d-11e8-ac4e-421ef7165923_story.html?noredirect=on&amp;utm_term=.3b863147d11d" rel="noopener noreferrer" target="_blank">run stories</a> on corruption, official brutality, electoral fraud, protests and other stories critical of the government, the newspaper has received significant government pressure over the last months. Similarly to La Patilla, el-nacional.com primarily appears to be censored by means of HTTP blocking, as suggested by HTTP failures (and “generic timeout errors”) presented in recent OONI measurements. OONI data suggests that the site’s blocked by CANTV and Movilnet, but accessible on Digitel and Movistar.</p>
+<p>HTTP failures indicative of blocking have been inconsistent or even intermittent at times. This may suggest that internet censorship is not implemented in a centralized way (i.e. by the same people) or in a way that doesn’t affect all traffic. Venezuela Inteligente and IPYS Venezuela reported that investigative journalism site <a href="https://armando.info" rel="noopener noreferrer" target="_blank">armando.info</a> was inaccessible as well. This site is known for its critical and extensive reporting on corruption and has been tested fairly regularly across ISPs over the last two years. Most OONI measurements collected up until 12th August 2018 suggested that the site was accessible. But on 13th August 2018, OONI Probe testing revealed that the site was suddenly inaccessible on CANTV, presenting HTTP failures.</p>
+<p><a href="../../wp-content/uploads/2018/12/Bildschirmfoto-2018-12-26-um-21.29.28-e1545994502360.png" rel="attachment wp-att-321"><img alt="" class="alignright size-full wp-image-321" decoding="async" src="../../wp-content/uploads/2018/12/Bildschirmfoto-2018-12-26-um-21.29.28-e1545994502360.png" width="300"/></a>To investigate further, IPYS Venezuela and Venezuela Inteligente coordinated a measurement campaign, engaging locals across Venezuela to test armando.info with OONI Probe in various networks and regions of the country. In the evening of 13th August 2018, armando.info was tested on CANTV, Movistar, CIX and Intercable in the following regions: <a href="https://en.wikipedia.org/wiki/Caracas" rel="noopener noreferrer" target="_blank">Caracas</a>, <a href="https://en.wikipedia.org/wiki/Carabobo" rel="noopener noreferrer" target="_blank">Carabobo</a>, <a href="https://en.wikipedia.org/wiki/Táchira" rel="noopener noreferrer" target="_blank">Táchira</a>, <a href="https://en.wikipedia.org/wiki/Aragua" rel="noopener noreferrer" target="_blank">Aragua</a>, <a href="https://en.wikipedia.org/wiki/Bol%C3%ADvar_(state)" rel="noopener noreferrer" target="_blank">Bolívar</a>, <a href="https://en.wikipedia.org/wiki/Lara_(state)" rel="noopener noreferrer" target="_blank">Lara</a>, <a href="https://en.wikipedia.org/wiki/Portuguesa_(state)" rel="noopener noreferrer" target="_blank">Portuguesa</a> and <a href="https://en.wikipedia.org/wiki/Monagas" rel="noopener noreferrer" target="_blank">Monagas</a> (the table on the right summarizes the results of their testing).</p>
+<p>What’s clear from recent OONI Probe measurements (collected on 13th August 2018) is that the potential blocking of armando.info is certainly inconsistent. We can see from the table, for example, that measurements collected from CANTV alternated between being accessible and presenting HTTP failures. And these failures weren’t triggered consistently over time and across regions.</p>
+<p>The first CANTV measurements (presenting HTTP failures) in the early evening of 13th August 2018 were collected from Caracas, while the last CANTV measurements presented in the table (showing accessibility) were collected from Táchira. The other accessible CANTV measurement at 6:16 pm was collected from Carabobo. This is particularly interesting, as it may suggest that CANTV doesn’t roll out the same censorship across its network, or that network or configuration issues impacted the accessibility of armando.info.</p>
+<p>Venezuela Inteligente and IPYS Venezuela (who are based in Caracas) report that their experience in attempting to access armando.info (on CANTV, Movistar and Digitel) is also inconsistent. As of 13th August 2018, there are moments when they can access the site and there are moments when they can’t. While the armando.info site was inaccessible, as documented by OONI Web Connectivity tests, the server was reachable and accepted TCP connections even as the HTTP exchange failed.</p>
+<p>It therefore remains unclear whether armando.info is (or was) intentionally blocked. However, it’s worth highlighting that armando.info uses Google’s “<a href="https://en.wikipedia.org/wiki/Project_Shield" rel="noopener noreferrer" target="_blank">Project Shield</a>“, so server-side issues are unlikely a reason for the observed network anomalies. Further monitoring and testing is required.</p>
+<p><strong>Political criticism</strong><br/>
+Back in 2016, IPYS Venezuela and Venezuela Inteligente reported that a number of blogs critical of the government were blocked. Recent testing shows that the following two sites are currently blocked across ISPs, primarily by means of DNS tampering:</p>
+<ul>
+<li>vdebate.blogpost.com (site now defunct) is the blog of an organization whose mission is to “work for the recovery of democracy in Venezuela”. In collaboration with other organizations and volunteers, they defend the human, political and civil rights of Venezuelans. </li>
+<li><a href="https://ovario2.com" rel="noopener noreferrer" target="_blank">ovario2.com</a> is a blog that covers Venezuelan issues, expressing political criticism.</li>
+</ul>
+<p>Previous measurements collected from CANTV show that <a href="http://alekboyd.blogspot.com" rel="noopener noreferrer" target="_blank">alekboyd.blogspot.co.uk</a> (a blog covering corruption and other political issues) was blocked by CANTV by means of DNS tampering, up until (at least) 5th April 2018. The blog though has since been unblocked and is currently accessible.</p>
+<figure aria-describedby="caption-attachment-322" class="wp-caption aligncenter" id="attachment_322" style="width: 640px"><a href="../../wp-content/uploads/2018/12/Maduro_advertising_1.jpg"><img alt='Propaganda in Venezuela: A political painting saying, "For the love of Chávez. President Maduro." with the popular "Chávez eyes" visible.' class="size-full wp-image-322" decoding="async" height="231" loading="lazy" src="../../wp-content/uploads/2018/12/Maduro_advertising_1-e1545995294151.jpg" width="640"/></a><figcaption class="wp-caption-text" id="caption-attachment-322">Propaganda in Venezuela: A political painting saying, “For the love of Chávez. President Maduro.” with the popular “Chávez eyes” visible.</figcaption></figure>
+<p><strong>Currency exchange</strong><br/>
+Venezuela is experiencing the <a href="https://www.aljazeera.com/indepth/features/2017/05/venezuela-worst-economic-crisis-wrong-170501063130120.html" rel="noopener noreferrer" target="_blank">worst economic crisis in its history</a>. The country heavily depends on its oil (it has the largest oil reserves in the world), the revenue of which supported its social programmes and food subsidies. But when the price of oil fell, these programmes became unsustainable and the country plummeted into a food crisis.</p>
+<p>Venezuela has established different exchange rate systems for its national currency (the bolivar), with government control on the price of basic goods, which is very high. In light of hyperinflation, coupled with the devaluation of the bolivar in the black market, many Venezuelans are opting for dollars rather than bolivares. But according to the Venezuelan government, <a href="https://cpj.org/blog/2013/12/venezuela-forces-isps-to-police-internet.php" rel="noopener noreferrer" target="_blank">this deepens the country’s economic crisis</a>.</p>
+<p>To limit currency exchange, the Venezuelan government restricted access to dollars and <a href="https://cpj.org/blog/2013/12/venezuela-forces-isps-to-police-internet.php" rel="noopener noreferrer" target="_blank">banned currency exchange websites in 2013</a>, more than 100 of which have reportedly been blocked.</p>
+<p>Miami-based <a href="https://en.wikipedia.org/wiki/DolarToday" rel="noopener noreferrer" target="_blank">DolarToday</a> is run by the Venezuelan diaspora and is widely used to track the plummeting black market value of the bolivar. It was first reportedly blocked in 2013. In late 2015, <a href="https://en.wikipedia.org/wiki/Central_Bank_of_Venezuela" rel="noopener noreferrer" target="_blank">Venezuela’s central bank</a> <a href="https://www.theguardian.com/world/2015/oct/23/venezuela-sues-dolartoday-currency-website-cyberterrorism" rel="noopener noreferrer" target="_blank">filed suit in the US against</a> <a href="https://dolartoday.com" rel="noopener noreferrer" target="_blank">dolartoday.com</a>, alleging that the site’s managers “committed cyberterrorism” and “sowed economic chaos” in Venezuela. According to recent OONI measurements, dollartoday.com remains blocked on CANTV.</p>
+<p><figure aria-describedby="caption-attachment-323" class="wp-caption alignright" id="attachment_323" style="width: 300px"><a href="../../wp-content/uploads/2018/12/zello-e1545996053749.jpg"><img alt="Zello is a mobile app that serves as a walkie-talkie over cell phone networks." class="size-full wp-image-323" decoding="async" height="425" loading="lazy" src="../../wp-content/uploads/2018/12/zello-e1545996053749.jpg" width="300"/></a><figcaption class="wp-caption-text" id="caption-attachment-323">Zello is a mobile app that serves as a walkie-talkie over cell phone networks.</figcaption></figure><strong>Zello</strong><br/>
+Zello is a mobile app that serves as a walkie-talkie over cell phone networks. Over the last years, <a href="https://edition.cnn.com/2014/02/24/world/venezuela-ukraine-protests-apps/" rel="noopener noreferrer" target="_blank">it has been popular among protesters</a> in Venezuela, Ukraine and <a href="https://blog.zello.com/2017/04/13/russia-blocks-zello" rel="noopener noreferrer" target="_blank">Russia</a>. During Venezuela’s 2014 protests, the app was reportedly blocked for enabling “<a href="https://www.infobae.com/2014/03/06/1548288-zello-la-aplicacion-terrorista-los-estudiantes-venezolanos/" rel="noopener noreferrer" target="_blank">terrorist acts</a>“. Recent testing suggests that the service remains blocked by (at least) three ISPs (CANTV, Movistar, Digitel).</p>
+<h3>Blocking of Tor</h3>
+<p>The Tor network offers online anonymity, privacy, and censorship circumvention. By bouncing communications across a distributed network of relays, Tor hides its users’ IP addresses. In doing so, Tor users not only have online anonymity, but they can also bypass the blocking of sites and services (since they access them from IP addresses allocated to different countries).</p>
+<p>As a result, the Tor network has become a target of censorship in several countries around the world (such as <a href="../../the-state-of-internet-censorship-in-egypt/" rel="noopener noreferrer" target="_blank">Egypt</a> and Iran), where governments attempt to make circumvention harder and improve their online surveillance capabilities. To bypass Tor censorship, Tor bridges have been built to enable users to connect to the Tor network in censored environments. Tor Browser offers built-in (public) bridges that users can enable. If such bridges are blocked, users can request for (private) custom bridges.</p>
+<p>According to recent testing and analysis, Venezuela now also blocks access to the major part of the Tor network and to many public <a href="https://www.torproject.org/docs/pluggable-transports.html" rel="noopener noreferrer" target="_blank">obfs3 and obfs4</a> Tor bridges. State-owned CANTV (AS8048) appears to have started blocking the anonymity network around 20th June 2018, following months of increased censorship, particularly targeting media websites.</p>
+<p><strong>Testing</strong><br/>
+OONI’s Vanilla Tor test is designed to measure the reachability of the Tor network from the local vantage point of the user. If the test does not manage to bootstrap a connection within 300 seconds, access to the Tor network is likely blocked. Similarly, OONI’s Bridge Reachability test measures the reachability of (public) Tor bridges by attempting to successfully bootstrap a connection to them. To confirm the potential blocking with more confidence (and rule out false positives), it’s useful to examine measurements collected from the same network over time.</p>
+<p>All measurements collected up until 6th June 2018 were successful, showing that the Tor network was accessible in Venezuela. On 20th June 2018, however, Tor testing started to fail and civil society group Venezuela Inteligente reported the blocking of the Tor network and Tor bridges by CANTV.</p>
+<blockquote class="twitter-tweet static-tweet" data-lang="de">
+<p dir="ltr" lang="en"><a href="https://twitter.com/hashtag/Venezuela?src=hash&amp;ref_src=twsrc%5Etfw">#Venezuela</a> now blocks the TOR <a href="https://twitter.com/torproject?ref_src=twsrc%5Etfw">@torproject</a> network. <br/>The state-owned ISP CANTV blocks vanilla connections as well as obfs3 and obfs4 bridges with a high rate of sucess; only the meek pluggable transport works reliably. <a href="https://twitter.com/hashtag/keepiton?src=hash&amp;ref_src=twsrc%5Etfw">#keepiton</a> <a href="https://twitter.com/hashtag/internetVE?src=hash&amp;ref_src=twsrc%5Etfw">#internetVE</a> <a href="https://t.co/1X8irlhUrA">pic.twitter.com/1X8irlhUrA</a></p>
+<p>— VE sin Filtro (@vesinfiltro) <a href="https://twitter.com/vesinfiltro/status/1009595373462151173?ref_src=twsrc%5Etfw">21. Juni 2018</a></p></blockquote>
+<p></p>
+<p><strong>Most other measurements collected from 20th June 2018 onwards (from the same network on an almost daily basis) have failed as well, strongly suggesting that state-owned CANTV (AS8048) has been blocking access to the Tor network over the last two months. According to recent mid-August scans from CANTV, around 75% of the Tor network appears to be blocked.</strong></p>
+<p>The lack of measurements between 6th to 20th June 2018 prevents from determining the exact date when Tor first got blocked. It’s worth noting though that the blocking probably started on 20th June 2018, since that’s when local civil society group, Venezuela Inteligente (who’s been monitoring internet censorship in Venezuela over the last years), first reported on it.</p>
+<p>To investigate further, OONI ran tests from a Raspberry Pi connected to CANTV (AS8048) and performed some experiments examining the blocking of Tor relays. Based on the following, OONI was able to successfully confirm that connections to 74% of well-known IP:Port entities of the Tor network were blocked. The blocking was implemented on the reverse path, so it was hard for the client to distinguish it from server-side blocking:</p>
+<ul>
+<li>The client could perform a TCP <a href="https://en.wikipedia.org/wiki/Traceroute" rel="noopener noreferrer" target="_blank">traceroute</a> to all of the hops except for the last one; the client therefore got ICMP TTL Exceeded responses all the way long, but did not receive <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment" rel="noopener noreferrer" target="_blank">SYN-ACK</a>.</li>
+<li>The server sees SYN and sends SYN-ACK.</li>
+<li>If the server rejects SYN with ICMP Port Unreachable – instead of RST – then the client gets the packet and the Linux TCP stack returns the “connection refused” error.</li>
+<li>The server can perform a reverse TCP traceroute back to the client’s IP without anomalies.</li>
+<li>Anomalous packet loss is observed on “parasitic” reverse TCP traceroutes, when the traceroute is executed using 5-tuple of existing connection. The anomaly seems to be located within the <a href="https://en.wikipedia.org/wiki/GlobeNet" rel="noopener noreferrer" target="_blank">GlobeNet network</a>, a US-based company that provides one of the backbone internet links to Venezuela’s state-owned CANTV.</li>
+<li>The “parasitic reverse traceroute” experiment was designed in the following way: a) the client tried to establish 1000+ connections to the TCP port of Tor relay, b) both “blocked” and “non-blocked” relays were tested, c) the relay was replying with a batch of marked SYN-ACKs with varying TTL fields.</li>
+<li>The following chart summarizes the percentage of replies from specific routers and latency to them. It highlights that the network anomaly occurs between two GlobeNet routers.</li>
+</ul>
+<p><a href="../../wp-content/uploads/2018/12/tor-blocking.png"><img alt="" class="aligncenter size-full wp-image-324" decoding="async" height="662" loading="lazy" src="../../wp-content/uploads/2018/12/tor-blocking-e1545996323578.png" width="640"/></a></p>
+<p>In addition to Tor blocking, Venezuela Inteligente also reported that access to a large amount of obfs3 and obfs4 bridges (i.e. Tor bridges enabling Tor censorship circumvention) was blocked as well, making it practically impossible to circumvent Tor blocking with built-in bridges. OONI’s bridge reachability measurements corroborate these reports, showing the blocking of many Tor endpoints.</p>
+<p><strong>Bridge reachability tests run from CANTV (AS8048) in late June 2018 show a failure rate of around 94% to known Tor bridges. Not all of these failures are necessarily caused by blocking, as some bridges might be offline or unreachable at any given moment. The high percentage of connection failures though is highly indicative of blocking targeted to well-known bridges. Repeated testing in mid-August 2018 showed a similar percentage: 88% of running bridges were unreachable from a CANTV vantage point.</strong></p>
+<p>Venezuela Inteligente tested a random sample of unlisted, publicly available bridges from BridgeDB, revealing that the failure rate is around 26% and that <strong>all testing to private Tor bridges resulted in successful connections, regardless of the type of bridge</strong> (including vanilla, obfs3 and obfs4 bridges). Forward TCP traceroutes towards various accessible Tor relays go via GlobeNet, <a href="https://en.wikipedia.org/wiki/Level_3_Communications" rel="noopener noreferrer" target="_blank">Level3</a>, <a href="https://en.wikipedia.org/wiki/Telia_Company" rel="noopener noreferrer" target="_blank">Telia</a> and Seabone. This also refutes the hypothesis that Tor blocking depends on uplink (assuming that forward and reverse paths match).</p>
+<p><strong>It’s worth highlighting that Tor’s website (torproject.org) has remained accessible in CANTV (and other networks), even though access to the Tor network and obfs4 is blocked.</strong></p>
+<p><strong>Tor unblocking</strong><br/>
+Further testing on 2nd October 2018 revealed that around 97% of public Tor nodes were reachable with TLS handshake from the vantage point of CANTV. This corroborates local reports on Tor being accessible again. While the precise date of unblocking is quite unclear, <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2018-05-01&amp;end=2018-10-01&amp;country=ve&amp;events=off" rel="noopener noreferrer" target="_blank">Tor Metrics</a> suggest that Tor may have been unblocked on 30th August 2018, since we observe a spike in Tor usage, as illustrated below.</p>
+<figure aria-describedby="caption-attachment-325" class="wp-caption aligncenter" id="attachment_325" style="width: 640px"><a href="https://metrics.torproject.org/userstats-relay-country.html?start=2018-05-01&amp;end=2018-11-1&amp;country=ve&amp;events=off"><img alt="This graph shows the estimated number of directly-connecting clients between May and November 2018. Clients connecting via bridges are not included." class="size-full wp-image-325" decoding="async" height="400" loading="lazy" src="../../wp-content/uploads/2018/12/userstats-relay-country-ve-2018-05-01-2018-11-01-off-e1545997677546.png" width="640"/></a><figcaption class="wp-caption-text" id="caption-attachment-325">This graph shows the estimated number of directly-connecting clients between May and November 2018. Clients connecting via bridges are not included.</figcaption></figure>
+<h3>Conclusion</h3>
+<p>Censorship in Venezuela appears to be a symptom of its deep economic and political crisis, which is considered the most severe crisis in the country’s history. This is strongly suggested by the blocking of numerous currency exchange websites, as well as by the blocking of independent news outlets and blogs that discuss corruption and express political criticism.</p>
+<p>The recent blocking of the Tor network (which followed the blocking of news websites El Pitazo and El Nacional) may signify that internet censorship is becoming more dynamic in Venezuela, as ISPs are taking extra steps to reinforce censorship and make circumvention harder. The blocking of the Tor network – which offers online anonymity, in addition to circumvention – might also suggest that the government is attempting to improve its online surveillance capabilities.</p>
+<p>While Venezuelan ISPs primarily block sites by means of DNS tampering, they also appear to be implementing HTTP filtering, suggesting a variance in the filtering rules adopted by ISPs. And the variance, both in terms of censorship techniques and censored platforms, across regions and ISPs also indicates that internet censorship is not implemented in a centralized way.</p>
+<p>The censorship events identified as part of this study (particularly the blocking of news websites and blogs) contradict the rights outlined by the <a href="https://en.wikipedia.org/wiki/Inter-American_Commission_on_Human_Rights" rel="noopener noreferrer" target="_blank">Inter-American Commission on Human Rights</a> (IACHR) <a href="https://www.oas.org/en/iachr/expression/docs/publications/internet_2016_eng.pdf" rel="noopener noreferrer" target="_blank">in its report on Standards for a Free, Open and Inclusive Internet</a>. Media censorship and the blocking of blogs limit press freedom and the right to freedom of thought and expression. In examining each right outlined by IACHR, questions around the necessity and proportionality of these censorship events are inevitably raised, particularly in terms of how they relate to human rights.</p>
+<p>Venezuela’s political and economic environment is fragile and as events unfold, its internet censorship apparatus may evolve. Continuing to monitor censorship events in Venezuela is therefore essential. This study can be reproduced and expanded upon through the use of <a href="https://ooni.torproject.org/install/" rel="noopener noreferrer" target="_blank">OONI Probe</a> and <a href="https://api.ooni.io/files/by_country/VE" rel="noopener noreferrer" target="_blank">OONI data</a>.</p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../the-state-of-internet-censorship-in-venezuela/" rel="bookmark"><time class="entry-date published" datetime="2018-12-28T13:55:32+01:00">December 28, 2018</time><time class="updated" datetime="2019-09-24T22:28:20+01:00">September 24, 2019</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../../category/blog/" rel="category tag">Blog</a>, <a href="../../category/censorship/" rel="category tag">Censorship</a>, <a href="../../category/states/venezuela/" rel="category tag">Venezuela</a></span> </footer>
+</article>
+</main>
+</div>
+<aside class="sidebar widget-area" id="secondary">
+<section class="widget widget_recent_entries" id="recent-posts-2">
+<h2 class="widget-title">Recent Posts</h2><nav aria-label="Recent Posts">
+<ul>
+<li>
+<a href="../../torbox-project-discontinued/">⚠️ TorBox Project Discontinued</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-openvpn-update-22-march-2026/">TorBox v.0.5.5 – OpenVPN Update, 22 March 2026</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-debian-13-trixie-update-01-december-2025/">TorBox v.0.5.5 – Debian 13 (Trixie) Update, 01 December 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-and-maintenance-update-20-july-2025/">TorBox v.0.5.4 – Security and Maintenance Update 20 July 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-update-17-april-2025/">TorBox v.0.5.4 – Security Update 17 April 2025</a>
+</li>
+</ul>
+</nav></section><section class="widget widget_search" id="search-widget"><h2 class="widget-title">Search</h2><div class="pagefind-host" id="search"></div><p class="search-hint"><a href="../../search/">Full-page search</a></p></section><section class="widget widget_archive" id="archives-2"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
+<ul>
+<li><a href="../../2026/09/">September 2026</a></li>
+<li><a href="../../2026/04/">April 2026</a></li>
+<li><a href="../../2025/12/">December 2025</a></li>
+<li><a href="../../2025/07/">July 2025</a></li>
+<li><a href="../../2025/04/">April 2025</a></li>
+<li><a href="../../2024/12/">December 2024</a></li>
+<li><a href="../../2024/10/">October 2024</a></li>
+<li><a href="../../2023/12/">December 2023</a></li>
+<li><a href="../../2023/07/">July 2023</a></li>
+<li><a href="../../2023/04/">April 2023</a></li>
+<li><a href="../../2023/03/">March 2023</a></li>
+<li><a href="../../2023/01/">January 2023</a></li>
+<li><a href="../../2022/10/">October 2022</a></li>
+<li><a href="../../2022/07/">July 2022</a></li>
+<li><a href="../../2022/04/">April 2022</a></li>
+<li><a href="../../2022/01/">January 2022</a></li>
+<li><a href="../../2021/11/">November 2021</a></li>
+<li><a href="../../2021/08/">August 2021</a></li>
+<li><a href="../../2021/06/">June 2021</a></li>
+<li><a href="../../2021/04/">April 2021</a></li>
+<li><a href="../../2021/01/">January 2021</a></li>
+<li><a href="../../2020/08/">August 2020</a></li>
+<li><a href="../../2020/06/">June 2020</a></li>
+<li><a href="../../2020/05/">May 2020</a></li>
+<li><a href="../../2020/04/">April 2020</a></li>
+<li><a href="../../2020/01/">January 2020</a></li>
+<li><a href="../../2019/09/">September 2019</a></li>
+<li><a href="../../2019/08/">August 2019</a></li>
+<li><a href="../../2019/06/">June 2019</a></li>
+<li><a href="../../2019/05/">May 2019</a></li>
+<li><a href="../../2019/02/">February 2019</a></li>
+<li><a href="../../2019/01/">January 2019</a></li>
+<li><a aria-current="page" href="./">December 2018</a></li>
+<li><a href="../08/">August 2018</a></li>
+<li><a href="../07/">July 2018</a></li>
+<li><a href="../02/">February 2018</a></li>
+<li><a href="../01/">January 2018</a></li>
+</ul>
+</nav></section><section class="widget widget_categories" id="categories-2"><h2 class="widget-title">Categories</h2><nav aria-label="Categories">
+<ul>
+<li class="cat-item cat-item-16"><a href="../../category/anonymity/">Anonymity</a>
+</li>
+<li class="cat-item cat-item-3"><a href="../../category/blog/">Blog</a>
+</li>
+<li class="cat-item cat-item-8"><a href="../../category/censorship/">Censorship</a>
+</li>
+<li class="cat-item cat-item-13"><a href="../../category/states/china/">China</a>
+</li>
+<li class="cat-item cat-item-10"><a href="../../category/states/egypt/">Egypt</a>
+</li>
+<li class="cat-item cat-item-14"><a href="../../category/github/">GitHub</a>
+</li>
+<li class="cat-item cat-item-4"><a href="../../category/on-our-own-behalf/">On our own behalf</a>
+</li>
+<li class="cat-item cat-item-6"><a href="../../category/security/">Security</a>
+</li>
+<li class="cat-item cat-item-11"><a href="../../category/states/south-sudan/">South Sudan</a>
+</li>
+<li class="cat-item cat-item-9"><a href="../../category/states/">States</a>
+</li>
+<li class="cat-item cat-item-5"><a href="../../category/surveillance/">Surveillance</a>
+</li>
+<li class="cat-item cat-item-7"><a href="../../category/tor-community/">Tor community</a>
+</li>
+<li class="cat-item cat-item-15"><a href="../../category/states/turkey/">Turkey</a>
+</li>
+<li class="cat-item cat-item-12"><a href="../../category/states/venezuela/">Venezuela</a>
+</li>
+</ul>
+</nav></section><section class="widget_text widget widget_custom_html" id="custom_html-3"><h2 class="widget-title">Blogroll</h2><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://www.torproject.org">Tor Project</a> (<a href="http://expyuzz4wqqyqhjn.onion/">onion</a>)</li>
+</ul></div></section> </aside>
+</div>
+<footer class="site-footer" id="colophon">
+<nav aria-label="Footer Primary Menu" class="main-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="../../category/blog/">Blog</a></li>
+</ul></div> </nav>
+<div class="site-info">
+<span class="site-title"><a href="../../" rel="home">TorBox</a></span>
+
+</div>
+</footer>
+</div>
+</div>
+
+
+
+<script src="../../pagefind/pagefind-ui.js"></script><script src="../../assets/torbox-search.js"></script></body>
+</html>

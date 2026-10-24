@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; form-action 'self'; base-uri 'self'" http-equiv="Content-Security-Policy"/><meta content="no-referrer" name="referrer"/><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<script>
+(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+//# sourceURL=twentysixteen_javascript_detection
+</script>
+<title>GitHub – TorBox</title>
+
+
+
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #1a1a1a;--wp--preset--color--medium-gray: #686868;--wp--preset--color--light-gray: #e5e5e5;--wp--preset--color--blue-gray: #4d545c;--wp--preset--color--bright-blue: #007acc;--wp--preset--color--light-blue: #9adffd;--wp--preset--color--dark-brown: #402b30;--wp--preset--color--medium-brown: #774e24;--wp--preset--color--dark-red: #640c1f;--wp--preset--color--bright-red: #ff675f;--wp--preset--color--yellow: #ffef8e;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-color{color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-color{color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-color{color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-color{color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-color{color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-color{color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-color{color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-color{color: var(--wp--preset--color--bright-red) !important;}.has-yellow-color{color: var(--wp--preset--color--yellow) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-background-color{background-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-background-color{background-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-background-color{background-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-background-color{background-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-background-color{background-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-background-color{background-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-background-color{background-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-background-color{background-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-background-color{background-color: var(--wp--preset--color--yellow) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-border-color{border-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-border-color{border-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-border-color{border-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-border-color{border-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-border-color{border-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-border-color{border-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-border-color{border-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-border-color{border-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-border-color{border-color: var(--wp--preset--color--yellow) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/fonts/merriweather-plus-montserrat-plus-inconsolata.css" id="twentysixteen-fonts-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen/genericons/genericons.css" id="genericons-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen-child/style.css" id="twentysixteen-style-css" media="all" rel="stylesheet"/>
+<style id="twentysixteen-style-inline-css">
+
+		/* Custom Link Color */
+		.menu-toggle:hover,
+		.menu-toggle:focus,
+		a,
+		.main-navigation a:hover,
+		.main-navigation a:focus,
+		.dropdown-toggle:hover,
+		.dropdown-toggle:focus,
+		.social-navigation a:hover:before,
+		.social-navigation a:focus:before,
+		.post-navigation a:hover .post-title,
+		.post-navigation a:focus .post-title,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.site-branding .site-title a:hover,
+		.site-branding .site-title a:focus,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.entry-footer a:hover,
+		.entry-footer a:focus,
+		.comment-metadata a:hover,
+		.comment-metadata a:focus,
+		.pingback .comment-edit-link:hover,
+		.pingback .comment-edit-link:focus,
+		.comment-reply-link,
+		.comment-reply-link:hover,
+		.comment-reply-link:focus,
+		.required,
+		.site-info a:hover,
+		.site-info a:focus {
+			color: #dd3333;
+		}
+
+		mark,
+		ins,
+		button:hover,
+		button:focus,
+		input[type="button"]:hover,
+		input[type="button"]:focus,
+		input[type="reset"]:hover,
+		input[type="reset"]:focus,
+		input[type="submit"]:hover,
+		input[type="submit"]:focus,
+		.pagination .prev:hover,
+		.pagination .prev:focus,
+		.pagination .next:hover,
+		.pagination .next:focus,
+		.widget_calendar tbody a,
+		.page-links a:hover,
+		.page-links a:focus {
+			background-color: #dd3333;
+		}
+
+		input[type="date"]:focus,
+		input[type="time"]:focus,
+		input[type="datetime-local"]:focus,
+		input[type="week"]:focus,
+		input[type="month"]:focus,
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="password"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="number"]:focus,
+		textarea:focus,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.menu-toggle:hover,
+		.menu-toggle:focus {
+			border-color: #dd3333;
+		}
+
+		@media screen and (min-width: 56.875em) {
+			.main-navigation li:hover > a,
+			.main-navigation li.focus > a {
+				color: #dd3333;
+			}
+		}
+	
+/*# sourceURL=twentysixteen-style-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/css/blocks.css" id="twentysixteen-block-style-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" src="../../wp-includes/js/jquery/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="../../wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script id="twentysixteen-script-js-extra">
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+//# sourceURL=twentysixteen-script-js-extra
+</script>
+<script data-wp-strategy="defer" defer="" id="twentysixteen-script-js" src="../../wp-content/themes/twentysixteen/js/functions.js"></script>
+
+
+<link href="../../wp-content/plugins/simple-pull-quote/css/simple-pull-quote.css" rel="stylesheet" type="text/css"/>
+<style id="twentysixteen-header-css">
+		.site-branding {
+			margin: 0 auto 0 0;
+		}
+
+		.site-branding .site-title,
+		.site-description {
+			clip-path: inset(50%);
+			position: absolute;
+		}
+		</style>
+<style id="custom-background-css">
+body.custom-background { background-color: #444444; }
+</style>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-150x150.jpg" rel="icon" sizes="32x32"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="icon" sizes="192x192"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="apple-touch-icon"/>
+<meta content="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" name="msapplication-TileImage"/>
+<style id="wp-custom-css">
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+html {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.header-image a:hover img,
+.header-image a:focus img {
+}
+
+.site-header {
+	padding: 2.5em 7.6923%;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.site-content {
+	padding: 0 7.6923%;
+}
+
+.entry-title {
+	font-size: 1.5rem;
+}
+
+ul,
+ol {
+  margin: -36px 0 0 15px; 
+  padding: 18px; 
+}
+
+ul {
+  list-style-type: disc; 
+  list-style-position: outside; 
+}
+
+ol {
+	list-style: decimal;
+	margin-left: 1.5em;
+}
+
+.widget {
+	border-top: 4px solid #1a1a1a;
+	margin-bottom: 1.75em;
+	padding-top: 1.75em;
+}
+
+.widget-area > :last-child,
+.widget > :last-child {
+	margin-bottom: 0;
+}
+
+.widget .widget-title {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.046875em;
+	line-height: 1.3125;
+	margin: 0 0 0em;
+	text-transform: none;
+}
+
+.widget .widget-title:empty {
+	margin-bottom: 0;
+}
+
+.widget-title a {
+	color: #1a1a1a;
+}
+
+.widget ul {
+	margin: 0 0 0 15px; 
+  padding: 0px; 
+}
+</style>
+<link href="@@SITE_BASE_URL@@category/github/" rel="canonical"/><link href="../../assets/torbox-static.css" rel="stylesheet"/><link href="../../pagefind/pagefind-ui.css" rel="stylesheet"/></head>
+<body class="archive category category-github category-14 custom-background wp-embed-responsive wp-theme-twentysixteen wp-child-theme-twentysixteen-child group-blog hfeed">
+<div class="site" id="page">
+<div class="site-inner">
+<a class="skip-link screen-reader-text" href="#content">
+			Skip to content		</a>
+<header class="site-header" id="masthead">
+<div class="site-header-main">
+<div class="site-branding">
+<p class="site-title"><a href="../../" rel="home">TorBox</a></p>
+<p class="site-description">TorBox is an easy-to-use, anonymising router based on Raspberry Pi, which also runs on Debian and Ubuntu-based systems.</p>
+</div>
+<button class="menu-toggle" id="menu-toggle">Menu</button>
+<div class="site-header-menu" id="site-header-menu">
+<nav aria-label="Primary Menu" class="main-navigation" id="site-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8" id="menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647" id="menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178" id="menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695" id="menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649" id="menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919" id="menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001" id="menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892" id="menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003" id="menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161" id="menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055" id="menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683" id="menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934" id="menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640" id="menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935" id="menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943" id="menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947" id="menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701" id="menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721" id="menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455" id="menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431" id="menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265" id="menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124" id="menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802" id="menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148" id="menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419" id="menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29" id="menu-item-29"><a href="../blog/">Blog</a></li>
+</ul></div> </nav>
+</div>
+<a class="search-jump" href="../../search/">Search</a></div>
+<div class="header-image">
+<a href="../../" rel="home">
+<img alt="TorBox" decoding="async" fetchpriority="high" height="420" sizes="(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px" src="../../wp-content/uploads/2015/12/torbox-banner.jpg" srcset="../../wp-content/uploads/2015/12/torbox-banner.jpg 1200w, ../../wp-content/uploads/2015/12/torbox-banner-300x105.jpg 300w, ../../wp-content/uploads/2015/12/torbox-banner-768x269.jpg 768w, ../../wp-content/uploads/2015/12/torbox-banner-1024x358.jpg 1024w" width="1200"/> </a>
+</div>
+</header>
+<div class="site-content" id="content">
+<div class="content-area" id="primary">
+<main class="site-main" data-pagefind-ignore="" id="main">
+<header class="page-header">
+<h1 class="page-title">Category: <span>GitHub</span></h1> </header>
+<article class="post-809 post type-post status-publish format-standard hentry category-blog category-github category-on-our-own-behalf category-tor-community" id="post-809">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../torbox-v-0-2-5-released-featuring-bridge-relay-support/" rel="bookmark">TorBox v.0.2.5 released, featuring Bridge Relay support!</a></h2> </header>
+<div class="entry-content">
+<p>Almost a month ago, <a href="https://blog.torproject.org/run-tor-bridges-defend-open-internet" rel="noopener noreferrer" target="_blank">the Tor Project called for support</a>:</p>
+<blockquote><p>We currently have approximately 1,000 bridges, 600 of which support the obfs4 obfuscation protocol. Unfortunately, these numbers have been stagnant for a while. It’s not enough to have many bridges: eventually, all of them could find themselves in block lists. We therefore need a constant trickle of new bridges that aren’t blocked anywhere yet. <strong>This is where we need your help. By setting up an obfs4 bridge, you can help censored users connect to the open internet through Tor.</strong></p></blockquote>
+<p>Based on this call we put a bridge relay into the net a week ago, and – if everything works out – we will add a second one. However, that was not enough for us. Mostly during the last few weekends, we’ve implemented a TorBox feature that allows anyone with a public IP address, 24/7 internet connectivity over a long time, and a bandwidth of at least 1 Mbps to configure their bridge relay at the touch of a button and put it on the net. Besides, we have added and improved some other details, so that we can now release the resulting image as TorBox v.0.2.5. Below are the corresponding links (typically, you need only the image file):</p>
+<figure aria-describedby="caption-attachment-812" class="wp-caption aligncenter" id="attachment_812" style="width: 790px"><a href="../../wp-content/uploads/2019/09/ain_menu_TorBox025.png"><img alt="Main Menu TorBox v.0.2.5" class="size-full wp-image-812" decoding="async" height="586" src="../../wp-content/uploads/2019/09/ain_menu_TorBox025-e1569232086252.png" width="790"/></a><figcaption class="wp-caption-text" id="caption-attachment-812">Main Menu TorBox v.0.2.5</figcaption></figure>
+<p><strong>Changelog v.0.2.4-rpi4 (08.08.2019) —&gt; v.0.2.5 (24.09.2019) </strong><br/>
+<strong>New</strong>: This version introduces the support for setting up a bridge relay.<br/>
+<strong>Updated</strong> : The system is based on Raspbian “Buster” lite with Linux Kernel 4.19.66 and <a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.4.1.5" rel="noopener noreferrer" target="_blank">Tor version 0.4.1.5</a>.<br/>
+<strong>New</strong>: A little message (“<strong>TOR is working</strong>“) in the right corner of the main menu shows you immediately if you are connected with the Tor network (meaning <a href="https://check.torproject.org" rel="noopener noreferrer" target="_blank">https://check.torproject.org</a> returns a positive result). Since a missing response does not automatically mean that there is no connection to the Tor network, no error message is displayed. In other words, if this message is missing, there may or may not be a connection problem.<br/>
+<strong>New</strong>: We use the same method as mentioned above for the final message box after selecting (or changing) a connection (main menu entry 6-11). In case of success, the message starts with “<strong>CONGRATULATION !!</strong>” otherwise with “<strong>HMMM… THAT DOESN’T LOOK GOOD…</strong>“. In contrast to the positive message, negative feedback does not necessarily mean that an error has occurred. Since the check does not last more than 5 seconds, Tor may not have been ready yet; the check site may have been down, etc.<br/>
+<strong>New</strong>: Support for <a href="https://www.adafruit.com/?q=TFT%20display" rel="noopener noreferrer" target="_blank">Adafruit’s PiTFT displays</a> (PiTFT 3.5″ resistive touch 320×480, PiTFT 2.8“ capacitive touch 240×320, PiTFT 2.4″, 2.8″ or 3.2″ resistive 240×320, PiTFT 2.2″ no touch 240×320, Braincraft 1.54″ display 240×240). Note: TorBox’s menus and dialog boxes have only been adapted for the <a href="https://www.adafruit.com/product/2441" rel="noopener noreferrer" target="_blank">PiTFT 3.5 (320×480)</a> or any other display, which displays in textual mode at least 25×80 characters.<br/>
+<strong>Improved</strong>: Menus and dialog boxes should now work more smoothly on 25×80 textual screens as well as on smartphone and tablet clients. For that reason, we added for some message boxes scroll texts, which are visible with the “scroll down” remark in the title of the message box.<br/>
+<strong>Improved</strong>: Revised version of the Tor reset functionality in the „Countermeasure &amp; Troubleshooting“ menu.<br/>
+<strong>Improved</strong>: Cleaning up in the shell scripts (used more variables, combine certain parts into functions, etc.).<br/>
+<strong>Updated</strong>: Pre-configured Bridges (we also added our bridge relay)<br/>
+<strong>Fixed</strong>: While adding bridges, TorBox activates/deactivates the new bridges depending on the current bridge modus.<br/>
+<strong>Fixed</strong>: Some more non-critical bugs and typos in the text files.</p>
+<p>The pre-v.0.2.6 release is expected at the end of the year.</p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../torbox-v-0-2-5-released-featuring-bridge-relay-support/" rel="bookmark"><time class="entry-date published" datetime="2019-09-23T11:30:13+01:00">September 23, 2019</time><time class="updated" datetime="2020-05-15T21:43:49+01:00">May 15, 2020</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="./" rel="category tag">GitHub</a>, <a href="../on-our-own-behalf/" rel="category tag">On our own behalf</a>, <a href="../tor-community/" rel="category tag">Tor community</a></span><span class="comments-link"><a href="../../torbox-v-0-2-5-released-featuring-bridge-relay-support/#comments">5 Comments<span class="screen-reader-text"> on TorBox v.0.2.5 released, featuring Bridge Relay support!</span></a></span> </footer>
+</article>
+<article class="post-697 post type-post status-publish format-standard hentry category-blog category-github category-on-our-own-behalf" id="post-697">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../torbox-v-0-2-4-rpi4-released-featuring-raspberry-pi-4-model-b-support/" rel="bookmark">TorBox v.0.2.4-rpi4 released, featuring Raspberry Pi 4 Model B support!</a></h2> </header>
+<div class="entry-content">
+<p>I’m pleased to announce this new version of TorBox, which introduces the support for the <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/" rel="noopener noreferrer" target="_blank">Raspberry Pi 4 Model B</a>. The image file was completely rebuilt based on <a href="https://www.raspberrypi.org/software/operating-systems/" rel="noopener noreferrer" target="_blank">Raspbian “Buster” lite</a> with the <a href="https://en.wikipedia.org/wiki/Linux_kernel" rel="noopener noreferrer" target="_blank">Linux Kernel 4.19.58</a> and <a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.4.0.5" rel="noopener noreferrer" target="_blank">Tor version 0.4.0.5</a>. This version does support not only the new Raspberry Pi 4 Model B but also the previous Raspberry Pi 3 (<a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/" rel="noopener noreferrer" target="_blank">Model B</a> / <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/" rel="noopener noreferrer" target="_blank">Model B+</a>).</p>
+<p><a href="../../wp-content/uploads/2019/08/IMG_5138.jpg"><img alt="" class="aligncenter size-full wp-image-701" decoding="async" height="480" loading="lazy" src="../../wp-content/uploads/2019/08/IMG_5138-e1565482609613.jpg" width="640"/></a></p>
+<p>In contrast to the previous versions, the Raspberry Pi 4 Model B has a higher power consumption, which is why we also recommend the use of a <a href="https://shop.pimoroni.com/products/raspberry-pi-4-heatsink" rel="noopener noreferrer" target="_blank">Pimoroni’s chunky heatsink</a> in combination with a <a href="https://shop.pimoroni.com/products/pibow-coupe-4" rel="noopener noreferrer" target="_blank">Pibow Coupé 4 case</a> (see photo above).</p>
+<p>The TorBox pre-v.0.2.5 release is expected at the end of the year.</p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../torbox-v-0-2-4-rpi4-released-featuring-raspberry-pi-4-model-b-support/" rel="bookmark"><time class="entry-date published" datetime="2019-08-11T01:18:31+01:00">August 11, 2019</time><time class="updated" datetime="2020-12-31T17:26:24+01:00">December 31, 2020</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="./" rel="category tag">GitHub</a>, <a href="../on-our-own-behalf/" rel="category tag">On our own behalf</a></span><span class="comments-link"><a href="../../torbox-v-0-2-4-rpi4-released-featuring-raspberry-pi-4-model-b-support/#comments">8 Comments<span class="screen-reader-text"> on TorBox v.0.2.4-rpi4 released, featuring Raspberry Pi 4 Model B support!</span></a></span> </footer>
+</article>
+<article class="post-519 post type-post status-publish format-standard hentry category-blog category-github category-on-our-own-behalf" id="post-519">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../torbox-v-0-24-released-featuring-obfs4-bridges-support/" rel="bookmark">TorBox v.0.2.4 released, featuring OBFS4 Bridges support!</a></h2> </header>
+<div class="entry-content">
+<p>I’m pleased to announce the release of TorBox v.0.2.4. As promised, the focus of this release was on supporting <a href="https://2019.www.torproject.org/docs/pluggable-transports.html" rel="noopener noreferrer" target="_blank">OBFS4</a> bridges, <a href="../../faq/#censorship" rel="noopener noreferrer" target="_blank">which help to overcome censorship measures in certain countries</a> (for example <a href="../../press-and-internet-censorship-in-turkey/" rel="noopener noreferrer" target="_blank">Turkey</a>). Below are the links for the latest TorBox v.0.24 (typically, you need only the image-file):</p>
+<figure aria-describedby="caption-attachment-524" class="wp-caption aligncenter" id="attachment_524" style="width: 620px"><a href="../../wp-content/uploads/2019/05/main_menu_v024.png"><img alt="Main Menu TorBox v.0.2.4" class="size-full wp-image-524" decoding="async" height="431" loading="lazy" src="../../wp-content/uploads/2019/05/main_menu_v024-e1558822794682.png" width="620"/></a><figcaption class="wp-caption-text" id="caption-attachment-524">Main Menu TorBox v.0.2.4</figcaption></figure>
+<p><strong>Changelog v.0.2.3 (09.02.2019) —&gt; v.0.2.4 (25.05.2019) </strong><br/>
+<strong>Updated:</strong> The system is based on Raspbian “Stretch” lite with Linux Kernel 4.19.2 and <a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.3.5.8" rel="noopener noreferrer" target="_blank">Tor version 0.3.5.8</a>.<br/>
+<strong>New</strong>: Instead of the “advanced submenu”, we split old and new functionalities into two separate submenus: “countermeasures &amp; troubleshooting” and “configuration &amp; update”.<br/>
+<strong>New</strong>: We implemented in the “countermeasures &amp; troubleshooting” submenu a user-friendly way to activate, configure, and change the OBFS4 bridge’s functionality. There are 15 pre-configured OBFS4 bridges in the configuration, which were fully functional at the time of the release. We hope to help with this approach beginners. We urgently need your feedback to develop this functionality further.<br/>
+<strong>New</strong>: Since TorBox v.0.2.3, <a href="https://nyx.torproject.org/" rel="noopener noreferrer" target="_blank">nyx</a> does a good job as a statistics tool (main menu entry 1). However, there are certain cases, when Tor hangs during bootstrap, that nyx doesn’t start either. Therefore we have added an alternative method in the submenu “countermeasures &amp; troubleshooting” (entry 11) to quickly display the log file of Tor and update the display if necessary.<br/>
+<strong>New</strong>: TorBox is now providing a <a href="https://en.wikipedia.org/wiki/SOCKS" rel="noopener noreferrer" target="_blank">SOCKS v5 proxy functionality</a> on port 9050 to its connected clients. If you use that capability, applications which support SOCKS v5 proxy connectivity and “DNS over proxy” (for example Firefox or the add-on <a href="https://getfoxyproxy.org/downloads/" rel="noopener noreferrer" target="_blank">FoxyProxy</a>) can access directly .onion sites. For more information, see <a href="../../faq/#SOCKS" rel="noopener noreferrer" target="_blank">here</a>.<br/>
+<strong>Improved</strong>: We again reduced the size of the image file, which is now about 865 Mbyte.<br/>
+<strong>Changed</strong>: All scripts are now executed by bash instead of sh. The change was needed to enable the handling with arrays.<br/>
+<strong>Fixed</strong>: Some minor bugs and cleaned up the code.<br/>
+<strong>Removed</strong>: The experimental section (for now).</p>
+<p>The pre-v.0.2.5 release is expected at the end of the year.</p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../torbox-v-0-24-released-featuring-obfs4-bridges-support/" rel="bookmark"><time class="entry-date published" datetime="2019-05-26T11:20:08+01:00">May 26, 2019</time><time class="updated" datetime="2020-05-15T21:42:19+01:00">May 15, 2020</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="./" rel="category tag">GitHub</a>, <a href="../on-our-own-behalf/" rel="category tag">On our own behalf</a></span><span class="comments-link"><a href="../../torbox-v-0-24-released-featuring-obfs4-bridges-support/#comments">6 Comments<span class="screen-reader-text"> on TorBox v.0.2.4 released, featuring OBFS4 Bridges support!</span></a></span> </footer>
+</article>
+<article class="post-430 post type-post status-publish format-standard hentry category-blog category-github category-on-our-own-behalf" id="post-430">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../torbox-on-github-updated-torbox-v-0-2-3-github-release/" rel="bookmark">TorBox on GitHub / Updated TorBox v.0.2.3 GitHub release</a></h2> </header>
+<div class="entry-content">
+<p><a href="https://github.com/radio24/TorBox" rel="noopener noreferrer" target="_blank">TorBox has now its own GitHub page</a>, which gives you an easy way to contribute to the TorBox project. Especially for that occasion, TorBox v.0.2.3 has been updated. Here are the links for the latest TorBox v.0.23 (usually, you need only the image-file):</p>
+<p><a href="../../wp-content/uploads/2019/01/IMG_4581.jpg"><img alt="" class="aligncenter size-full wp-image-365" decoding="async" height="465" loading="lazy" src="../../wp-content/uploads/2019/01/IMG_4581-e1549819872677.jpg" width="620"/></a></p>
+<p><strong>Changelog v.0.2.3 (09.01.2019) —&gt; v.0.2.3 (09.02.2019)</strong></p>
+<ul>
+<li>Updated: The system is based on Raspbian “Stretch” lite with Linux Kernel 4.14.79 and <a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.3.5.7" rel="noopener noreferrer" target="_blank">Tor version 0.3.5.7</a>.</li>
+<li>Updated: <a href="https://nyx.torproject.org" rel="noopener noreferrer" target="_blank">nyx</a> (the Tor statistics program) from version 2.0.4 to 2.1.0.</li>
+<li>Updated: Reduced logging is now enabled by default. Corresponding menu entry in the advanced menu let you change the amount of logging.</li>
+<li>Updated: “Erase all log files” (entry in the advanced menu) deletes all log files (previous behavior was to reduce them to 0 bytes).</li>
+<li>Minor fix: Fixed some minor bugs, cleaned up the code and especially the configuration files in “<a href="https://github.com/radio24/TorBox/tree/master/etc" rel="noopener noreferrer" target="_blank">/etc</a>“.</li>
+<li>Removed: The Screen Saver (entry in the main menu) and <a href="https://github.com/mattthias/slurm" rel="noopener noreferrer" target="_blank">slurm</a>.</li>
+</ul>
+<p>The pre-v.0.2.4 release is expected at the end of May 2019 and will focus on improved usability of bridges.</p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../torbox-on-github-updated-torbox-v-0-2-3-github-release/" rel="bookmark"><time class="entry-date published" datetime="2019-02-10T18:58:55+01:00">February 10, 2019</time><time class="updated" datetime="2020-05-15T21:41:40+01:00">May 15, 2020</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="./" rel="category tag">GitHub</a>, <a href="../on-our-own-behalf/" rel="category tag">On our own behalf</a></span> </footer>
+</article>
+</main>
+</div>
+<aside class="sidebar widget-area" id="secondary">
+<section class="widget widget_recent_entries" id="recent-posts-2">
+<h2 class="widget-title">Recent Posts</h2><nav aria-label="Recent Posts">
+<ul>
+<li>
+<a href="../../torbox-project-discontinued/">⚠️ TorBox Project Discontinued</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-openvpn-update-22-march-2026/">TorBox v.0.5.5 – OpenVPN Update, 22 March 2026</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-debian-13-trixie-update-01-december-2025/">TorBox v.0.5.5 – Debian 13 (Trixie) Update, 01 December 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-and-maintenance-update-20-july-2025/">TorBox v.0.5.4 – Security and Maintenance Update 20 July 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-update-17-april-2025/">TorBox v.0.5.4 – Security Update 17 April 2025</a>
+</li>
+</ul>
+</nav></section><section class="widget widget_search" id="search-widget"><h2 class="widget-title">Search</h2><div class="pagefind-host" id="search"></div><p class="search-hint"><a href="../../search/">Full-page search</a></p></section><section class="widget widget_archive" id="archives-2"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
+<ul>
+<li><a href="../../2026/09/">September 2026</a></li>
+<li><a href="../../2026/04/">April 2026</a></li>
+<li><a href="../../2025/12/">December 2025</a></li>
+<li><a href="../../2025/07/">July 2025</a></li>
+<li><a href="../../2025/04/">April 2025</a></li>
+<li><a href="../../2024/12/">December 2024</a></li>
+<li><a href="../../2024/10/">October 2024</a></li>
+<li><a href="../../2023/12/">December 2023</a></li>
+<li><a href="../../2023/07/">July 2023</a></li>
+<li><a href="../../2023/04/">April 2023</a></li>
+<li><a href="../../2023/03/">March 2023</a></li>
+<li><a href="../../2023/01/">January 2023</a></li>
+<li><a href="../../2022/10/">October 2022</a></li>
+<li><a href="../../2022/07/">July 2022</a></li>
+<li><a href="../../2022/04/">April 2022</a></li>
+<li><a href="../../2022/01/">January 2022</a></li>
+<li><a href="../../2021/11/">November 2021</a></li>
+<li><a href="../../2021/08/">August 2021</a></li>
+<li><a href="../../2021/06/">June 2021</a></li>
+<li><a href="../../2021/04/">April 2021</a></li>
+<li><a href="../../2021/01/">January 2021</a></li>
+<li><a href="../../2020/08/">August 2020</a></li>
+<li><a href="../../2020/06/">June 2020</a></li>
+<li><a href="../../2020/05/">May 2020</a></li>
+<li><a href="../../2020/04/">April 2020</a></li>
+<li><a href="../../2020/01/">January 2020</a></li>
+<li><a href="../../2019/09/">September 2019</a></li>
+<li><a href="../../2019/08/">August 2019</a></li>
+<li><a href="../../2019/06/">June 2019</a></li>
+<li><a href="../../2019/05/">May 2019</a></li>
+<li><a href="../../2019/02/">February 2019</a></li>
+<li><a href="../../2019/01/">January 2019</a></li>
+<li><a href="../../2018/12/">December 2018</a></li>
+<li><a href="../../2018/08/">August 2018</a></li>
+<li><a href="../../2018/07/">July 2018</a></li>
+<li><a href="../../2018/02/">February 2018</a></li>
+<li><a href="../../2018/01/">January 2018</a></li>
+</ul>
+</nav></section><section class="widget widget_categories" id="categories-2"><h2 class="widget-title">Categories</h2><nav aria-label="Categories">
+<ul>
+<li class="cat-item cat-item-16"><a href="../anonymity/">Anonymity</a>
+</li>
+<li class="cat-item cat-item-3"><a href="../blog/">Blog</a>
+</li>
+<li class="cat-item cat-item-8"><a href="../censorship/">Censorship</a>
+</li>
+<li class="cat-item cat-item-13"><a href="../states/china/">China</a>
+</li>
+<li class="cat-item cat-item-10"><a href="../states/egypt/">Egypt</a>
+</li>
+<li class="cat-item cat-item-14 current-cat"><a aria-current="page" href="./">GitHub</a>
+</li>
+<li class="cat-item cat-item-4"><a href="../on-our-own-behalf/">On our own behalf</a>
+</li>
+<li class="cat-item cat-item-6"><a href="../security/">Security</a>
+</li>
+<li class="cat-item cat-item-11"><a href="../states/south-sudan/">South Sudan</a>
+</li>
+<li class="cat-item cat-item-9"><a href="../states/">States</a>
+</li>
+<li class="cat-item cat-item-5"><a href="../surveillance/">Surveillance</a>
+</li>
+<li class="cat-item cat-item-7"><a href="../tor-community/">Tor community</a>
+</li>
+<li class="cat-item cat-item-15"><a href="../states/turkey/">Turkey</a>
+</li>
+<li class="cat-item cat-item-12"><a href="../states/venezuela/">Venezuela</a>
+</li>
+</ul>
+</nav></section><section class="widget_text widget widget_custom_html" id="custom_html-3"><h2 class="widget-title">Blogroll</h2><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://www.torproject.org">Tor Project</a> (<a href="http://expyuzz4wqqyqhjn.onion/">onion</a>)</li>
+</ul></div></section> </aside>
+</div>
+<footer class="site-footer" id="colophon">
+<nav aria-label="Footer Primary Menu" class="main-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="../blog/">Blog</a></li>
+</ul></div> </nav>
+<div class="site-info">
+<span class="site-title"><a href="../../" rel="home">TorBox</a></span>
+
+</div>
+</footer>
+</div>
+</div>
+
+
+
+<script src="../../pagefind/pagefind-ui.js"></script><script src="../../assets/torbox-search.js"></script></body>
+</html>

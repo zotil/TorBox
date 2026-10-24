@@ -1,0 +1,75 @@
+/* Additions for the static site (search, archived comments, video links). */
+
+.comments-notice, .embed-placeholder {
+	border: 1px solid #d1d1d1;
+	background: #fafafa;
+	padding: 0.7em 1em;
+	font-size: 0.92em;
+}
+.embed-placeholder { margin: 1em 0; }
+
+.comments-area .comments-notice { margin: 0 0 1.5em; }
+
+/* Search (Pagefind) integrated in the sidebar widget */
+.widget_search .pagefind-host {
+	--pagefind-ui-scale: 0.8;
+	--pagefind-ui-primary: #dd3333;
+	--pagefind-ui-text: #1a1a1a;
+	--pagefind-ui-background: #ffffff;
+	--pagefind-ui-border: #d1d1d1;
+	--pagefind-ui-tag: #eeeeee;
+	--pagefind-ui-border-width: 1px;
+	--pagefind-ui-border-radius: 0;
+	--pagefind-ui-font: inherit;
+}
+.search-page-host {
+	--pagefind-ui-scale: 1;
+	--pagefind-ui-primary: #dd3333;
+	--pagefind-ui-text: #1a1a1a;
+	--pagefind-ui-background: #ffffff;
+	--pagefind-ui-border: #d1d1d1;
+	--pagefind-ui-border-radius: 0;
+	--pagefind-ui-font: inherit;
+}
+.widget_search .search-hint { margin: 0.6em 0 0; font-size: 0.85em; }
+.pagefind-ui__result-excerpt mark { background: #ffe9a8; }
+
+/* "Search" link in the header: small screens only, where the sidebar ends up at the bottom */
+.search-jump { display: none; }
+@media screen and (max-width: 56.8125em) {
+	.search-jump {
+		display: inline-block;
+		position: absolute;
+		top: 1.9em;
+		right: 6.5em;
+		padding: 0.65em 0.9em;
+		border: 1px solid #d1d1d1;
+		color: #1a1a1a;
+		font-family: Montserrat, "Helvetica Neue", sans-serif;
+		font-size: 0.75rem;
+		line-height: 1;
+		text-decoration: none;
+	}
+	.site-header-main { position: relative; }
+}
+
+img, iframe { max-width: 100%; }
+table { display: block; overflow-x: auto; }
+.entry-content pre { overflow-x: auto; }
+
+/* Pagefind results: long titles and excerpts (URLs, hashes, unbroken words) must wrap */
+.pagefind-host, .search-page-host, .pagefind-ui, .pagefind-ui__results-area, .pagefind-ui__results,
+.pagefind-ui__result, .pagefind-ui__result-inner, .pagefind-ui__result-nested {
+	min-width: 0;
+	max-width: 100%;
+}
+.pagefind-ui__result-title, .pagefind-ui__result-link, .pagefind-ui__result-excerpt,
+.pagefind-ui__result-nested, .pagefind-ui__result-nested .pagefind-ui__result-link,
+.pagefind-ui__button, .pagefind-ui__message {
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	hyphens: auto;
+	min-width: 0;
+	max-width: 100%;
+}
+.pagefind-ui__result-inner { flex: 1 1 0; }

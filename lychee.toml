@@ -1,0 +1,10 @@
+# lychee configuration for the static site (run against dist/).
+max_concurrency = 12
+max_retries = 2
+retry_wait_time = 3
+timeout = 25
+accept = ["200..=299", "403", "429"]
+exclude_all_private = false
+# The download server placeholder does not resolve, and local/onion addresses cannot be checked
+exclude = ['example\.invalid', '^https://zotil\.github\.io/TorBox/', '\.onion', '^https?://127\.0\.0\.1', '^https?://192\.168\.', '^https?://localhost', '^mailto:']
+user_agent = "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"

@@ -1,0 +1,20 @@
+.simplePullQuote {
+	width:200px;
+	float:right;
+	border-top:3px #868686 solid;
+	border-bottom:3px #868686 solid;
+	background: top left no-repeat url("../images/quote.png");
+	text-indent:10px;
+	padding:6px;
+	margin:10px 0 10px 10px;
+	-webkit-box-shadow: 7px 7px 8px 0px rgba(129,129,129,1);
+	-moz-box-shadow: 7px 7px 8px 0px rgba(129,129,129,1);
+	box-shadow: 7px 7px 8px 0px rgba(129,129,129,1);
+}
+.simplePullQuote.left {
+	float:left;
+	margin:10px 10px 10px 0;
+	-webkit-box-shadow: -7px 7px 8px 0px rgba(129,129,129,1);
+	-moz-box-shadow: -7px 7px 8px 0px rgba(129,129,129,1);
+	box-shadow: -7px 7px 8px 0px rgba(129,129,129,1);
+}

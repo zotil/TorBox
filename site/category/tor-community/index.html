@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; form-action 'self'; base-uri 'self'" http-equiv="Content-Security-Policy"/><meta content="no-referrer" name="referrer"/><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<script>
+(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+//# sourceURL=twentysixteen_javascript_detection
+</script>
+<title>Tor community – TorBox</title>
+
+
+
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #1a1a1a;--wp--preset--color--medium-gray: #686868;--wp--preset--color--light-gray: #e5e5e5;--wp--preset--color--blue-gray: #4d545c;--wp--preset--color--bright-blue: #007acc;--wp--preset--color--light-blue: #9adffd;--wp--preset--color--dark-brown: #402b30;--wp--preset--color--medium-brown: #774e24;--wp--preset--color--dark-red: #640c1f;--wp--preset--color--bright-red: #ff675f;--wp--preset--color--yellow: #ffef8e;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-color{color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-color{color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-color{color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-color{color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-color{color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-color{color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-color{color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-color{color: var(--wp--preset--color--bright-red) !important;}.has-yellow-color{color: var(--wp--preset--color--yellow) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-background-color{background-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-background-color{background-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-background-color{background-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-background-color{background-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-background-color{background-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-background-color{background-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-background-color{background-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-background-color{background-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-background-color{background-color: var(--wp--preset--color--yellow) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-border-color{border-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-blue-gray-border-color{border-color: var(--wp--preset--color--blue-gray) !important;}.has-bright-blue-border-color{border-color: var(--wp--preset--color--bright-blue) !important;}.has-light-blue-border-color{border-color: var(--wp--preset--color--light-blue) !important;}.has-dark-brown-border-color{border-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-border-color{border-color: var(--wp--preset--color--medium-brown) !important;}.has-dark-red-border-color{border-color: var(--wp--preset--color--dark-red) !important;}.has-bright-red-border-color{border-color: var(--wp--preset--color--bright-red) !important;}.has-yellow-border-color{border-color: var(--wp--preset--color--yellow) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/fonts/merriweather-plus-montserrat-plus-inconsolata.css" id="twentysixteen-fonts-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen/genericons/genericons.css" id="genericons-css" media="all" rel="stylesheet"/>
+<link href="../../wp-content/themes/twentysixteen-child/style.css" id="twentysixteen-style-css" media="all" rel="stylesheet"/>
+<style id="twentysixteen-style-inline-css">
+
+		/* Custom Link Color */
+		.menu-toggle:hover,
+		.menu-toggle:focus,
+		a,
+		.main-navigation a:hover,
+		.main-navigation a:focus,
+		.dropdown-toggle:hover,
+		.dropdown-toggle:focus,
+		.social-navigation a:hover:before,
+		.social-navigation a:focus:before,
+		.post-navigation a:hover .post-title,
+		.post-navigation a:focus .post-title,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.site-branding .site-title a:hover,
+		.site-branding .site-title a:focus,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.entry-footer a:hover,
+		.entry-footer a:focus,
+		.comment-metadata a:hover,
+		.comment-metadata a:focus,
+		.pingback .comment-edit-link:hover,
+		.pingback .comment-edit-link:focus,
+		.comment-reply-link,
+		.comment-reply-link:hover,
+		.comment-reply-link:focus,
+		.required,
+		.site-info a:hover,
+		.site-info a:focus {
+			color: #dd3333;
+		}
+
+		mark,
+		ins,
+		button:hover,
+		button:focus,
+		input[type="button"]:hover,
+		input[type="button"]:focus,
+		input[type="reset"]:hover,
+		input[type="reset"]:focus,
+		input[type="submit"]:hover,
+		input[type="submit"]:focus,
+		.pagination .prev:hover,
+		.pagination .prev:focus,
+		.pagination .next:hover,
+		.pagination .next:focus,
+		.widget_calendar tbody a,
+		.page-links a:hover,
+		.page-links a:focus {
+			background-color: #dd3333;
+		}
+
+		input[type="date"]:focus,
+		input[type="time"]:focus,
+		input[type="datetime-local"]:focus,
+		input[type="week"]:focus,
+		input[type="month"]:focus,
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="password"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="number"]:focus,
+		textarea:focus,
+		.tagcloud a:hover,
+		.tagcloud a:focus,
+		.menu-toggle:hover,
+		.menu-toggle:focus {
+			border-color: #dd3333;
+		}
+
+		@media screen and (min-width: 56.875em) {
+			.main-navigation li:hover > a,
+			.main-navigation li.focus > a {
+				color: #dd3333;
+			}
+		}
+	
+/*# sourceURL=twentysixteen-style-inline-css */
+</style>
+<link href="../../wp-content/themes/twentysixteen/css/blocks.css" id="twentysixteen-block-style-css" media="all" rel="stylesheet"/>
+<script id="jquery-core-js" src="../../wp-includes/js/jquery/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="../../wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script id="twentysixteen-script-js-extra">
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+//# sourceURL=twentysixteen-script-js-extra
+</script>
+<script data-wp-strategy="defer" defer="" id="twentysixteen-script-js" src="../../wp-content/themes/twentysixteen/js/functions.js"></script>
+
+
+<link href="../../wp-content/plugins/simple-pull-quote/css/simple-pull-quote.css" rel="stylesheet" type="text/css"/>
+<style id="twentysixteen-header-css">
+		.site-branding {
+			margin: 0 auto 0 0;
+		}
+
+		.site-branding .site-title,
+		.site-description {
+			clip-path: inset(50%);
+			position: absolute;
+		}
+		</style>
+<style id="custom-background-css">
+body.custom-background { background-color: #444444; }
+</style>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-150x150.jpg" rel="icon" sizes="32x32"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="icon" sizes="192x192"/>
+<link href="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" rel="apple-touch-icon"/>
+<meta content="../../wp-content/uploads/2015/12/torbox-icon-300x300.jpg" name="msapplication-TileImage"/>
+<style id="wp-custom-css">
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+html {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.header-image a:hover img,
+.header-image a:focus img {
+}
+
+.site-header {
+	padding: 2.5em 7.6923%;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+.site-header-menu {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.site-content {
+	padding: 0 7.6923%;
+}
+
+.entry-title {
+	font-size: 1.5rem;
+}
+
+ul,
+ol {
+  margin: -36px 0 0 15px; 
+  padding: 18px; 
+}
+
+ul {
+  list-style-type: disc; 
+  list-style-position: outside; 
+}
+
+ol {
+	list-style: decimal;
+	margin-left: 1.5em;
+}
+
+.widget {
+	border-top: 4px solid #1a1a1a;
+	margin-bottom: 1.75em;
+	padding-top: 1.75em;
+}
+
+.widget-area > :last-child,
+.widget > :last-child {
+	margin-bottom: 0;
+}
+
+.widget .widget-title {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.046875em;
+	line-height: 1.3125;
+	margin: 0 0 0em;
+	text-transform: none;
+}
+
+.widget .widget-title:empty {
+	margin-bottom: 0;
+}
+
+.widget-title a {
+	color: #1a1a1a;
+}
+
+.widget ul {
+	margin: 0 0 0 15px; 
+  padding: 0px; 
+}
+</style>
+<link href="../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css" rel="stylesheet"/><link href="../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css" rel="stylesheet"/><link href="@@SITE_BASE_URL@@category/tor-community/" rel="canonical"/><link href="../../assets/torbox-static.css" rel="stylesheet"/><link href="../../pagefind/pagefind-ui.css" rel="stylesheet"/></head>
+<body class="archive category category-tor-community category-7 custom-background wp-embed-responsive wp-theme-twentysixteen wp-child-theme-twentysixteen-child group-blog hfeed">
+<div class="site" id="page">
+<div class="site-inner">
+<a class="skip-link screen-reader-text" href="#content">
+			Skip to content		</a>
+<header class="site-header" id="masthead">
+<div class="site-header-main">
+<div class="site-branding">
+<p class="site-title"><a href="../../" rel="home">TorBox</a></p>
+<p class="site-description">TorBox is an easy-to-use, anonymising router based on Raspberry Pi, which also runs on Debian and Ubuntu-based systems.</p>
+</div>
+<button class="menu-toggle" id="menu-toggle">Menu</button>
+<div class="site-header-menu" id="site-header-menu">
+<nav aria-label="Primary Menu" class="main-navigation" id="site-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8" id="menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647" id="menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178" id="menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695" id="menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649" id="menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919" id="menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001" id="menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892" id="menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003" id="menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161" id="menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055" id="menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683" id="menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934" id="menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640" id="menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935" id="menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943" id="menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947" id="menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701" id="menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721" id="menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455" id="menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431" id="menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265" id="menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124" id="menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802" id="menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148" id="menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419" id="menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29" id="menu-item-29"><a href="../blog/">Blog</a></li>
+</ul></div> </nav>
+</div>
+<a class="search-jump" href="../../search/">Search</a></div>
+<div class="header-image">
+<a href="../../" rel="home">
+<img alt="TorBox" decoding="async" fetchpriority="high" height="420" sizes="(max-width: 709px) 85vw, (max-width: 909px) 81vw, (max-width: 1362px) 88vw, 1200px" src="../../wp-content/uploads/2015/12/torbox-banner.jpg" srcset="../../wp-content/uploads/2015/12/torbox-banner.jpg 1200w, ../../wp-content/uploads/2015/12/torbox-banner-300x105.jpg 300w, ../../wp-content/uploads/2015/12/torbox-banner-768x269.jpg 768w, ../../wp-content/uploads/2015/12/torbox-banner-1024x358.jpg 1024w" width="1200"/> </a>
+</div>
+</header>
+<div class="site-content" id="content">
+<div class="content-area" id="primary">
+<main class="site-main" data-pagefind-ignore="" id="main">
+<header class="page-header">
+<h1 class="page-title">Category: <span>Tor community</span></h1> </header>
+<article class="post-809 post type-post status-publish format-standard hentry category-blog category-github category-on-our-own-behalf category-tor-community" id="post-809">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../torbox-v-0-2-5-released-featuring-bridge-relay-support/" rel="bookmark">TorBox v.0.2.5 released, featuring Bridge Relay support!</a></h2> </header>
+<div class="entry-content">
+<p>Almost a month ago, <a href="https://blog.torproject.org/run-tor-bridges-defend-open-internet" rel="noopener noreferrer" target="_blank">the Tor Project called for support</a>:</p>
+<blockquote><p>We currently have approximately 1,000 bridges, 600 of which support the obfs4 obfuscation protocol. Unfortunately, these numbers have been stagnant for a while. It’s not enough to have many bridges: eventually, all of them could find themselves in block lists. We therefore need a constant trickle of new bridges that aren’t blocked anywhere yet. <strong>This is where we need your help. By setting up an obfs4 bridge, you can help censored users connect to the open internet through Tor.</strong></p></blockquote>
+<p>Based on this call we put a bridge relay into the net a week ago, and – if everything works out – we will add a second one. However, that was not enough for us. Mostly during the last few weekends, we’ve implemented a TorBox feature that allows anyone with a public IP address, 24/7 internet connectivity over a long time, and a bandwidth of at least 1 Mbps to configure their bridge relay at the touch of a button and put it on the net. Besides, we have added and improved some other details, so that we can now release the resulting image as TorBox v.0.2.5. Below are the corresponding links (typically, you need only the image file):</p>
+<figure aria-describedby="caption-attachment-812" class="wp-caption aligncenter" id="attachment_812" style="width: 790px"><a href="../../wp-content/uploads/2019/09/ain_menu_TorBox025.png"><img alt="Main Menu TorBox v.0.2.5" class="size-full wp-image-812" decoding="async" height="586" src="../../wp-content/uploads/2019/09/ain_menu_TorBox025-e1569232086252.png" width="790"/></a><figcaption class="wp-caption-text" id="caption-attachment-812">Main Menu TorBox v.0.2.5</figcaption></figure>
+<p><strong>Changelog v.0.2.4-rpi4 (08.08.2019) —&gt; v.0.2.5 (24.09.2019) </strong><br/>
+<strong>New</strong>: This version introduces the support for setting up a bridge relay.<br/>
+<strong>Updated</strong> : The system is based on Raspbian “Buster” lite with Linux Kernel 4.19.66 and <a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.4.1.5" rel="noopener noreferrer" target="_blank">Tor version 0.4.1.5</a>.<br/>
+<strong>New</strong>: A little message (“<strong>TOR is working</strong>“) in the right corner of the main menu shows you immediately if you are connected with the Tor network (meaning <a href="https://check.torproject.org" rel="noopener noreferrer" target="_blank">https://check.torproject.org</a> returns a positive result). Since a missing response does not automatically mean that there is no connection to the Tor network, no error message is displayed. In other words, if this message is missing, there may or may not be a connection problem.<br/>
+<strong>New</strong>: We use the same method as mentioned above for the final message box after selecting (or changing) a connection (main menu entry 6-11). In case of success, the message starts with “<strong>CONGRATULATION !!</strong>” otherwise with “<strong>HMMM… THAT DOESN’T LOOK GOOD…</strong>“. In contrast to the positive message, negative feedback does not necessarily mean that an error has occurred. Since the check does not last more than 5 seconds, Tor may not have been ready yet; the check site may have been down, etc.<br/>
+<strong>New</strong>: Support for <a href="https://www.adafruit.com/?q=TFT%20display" rel="noopener noreferrer" target="_blank">Adafruit’s PiTFT displays</a> (PiTFT 3.5″ resistive touch 320×480, PiTFT 2.8“ capacitive touch 240×320, PiTFT 2.4″, 2.8″ or 3.2″ resistive 240×320, PiTFT 2.2″ no touch 240×320, Braincraft 1.54″ display 240×240). Note: TorBox’s menus and dialog boxes have only been adapted for the <a href="https://www.adafruit.com/product/2441" rel="noopener noreferrer" target="_blank">PiTFT 3.5 (320×480)</a> or any other display, which displays in textual mode at least 25×80 characters.<br/>
+<strong>Improved</strong>: Menus and dialog boxes should now work more smoothly on 25×80 textual screens as well as on smartphone and tablet clients. For that reason, we added for some message boxes scroll texts, which are visible with the “scroll down” remark in the title of the message box.<br/>
+<strong>Improved</strong>: Revised version of the Tor reset functionality in the „Countermeasure &amp; Troubleshooting“ menu.<br/>
+<strong>Improved</strong>: Cleaning up in the shell scripts (used more variables, combine certain parts into functions, etc.).<br/>
+<strong>Updated</strong>: Pre-configured Bridges (we also added our bridge relay)<br/>
+<strong>Fixed</strong>: While adding bridges, TorBox activates/deactivates the new bridges depending on the current bridge modus.<br/>
+<strong>Fixed</strong>: Some more non-critical bugs and typos in the text files.</p>
+<p>The pre-v.0.2.6 release is expected at the end of the year.</p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../torbox-v-0-2-5-released-featuring-bridge-relay-support/" rel="bookmark"><time class="entry-date published" datetime="2019-09-23T11:30:13+01:00">September 23, 2019</time><time class="updated" datetime="2020-05-15T21:43:49+01:00">May 15, 2020</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="../github/" rel="category tag">GitHub</a>, <a href="../on-our-own-behalf/" rel="category tag">On our own behalf</a>, <a href="./" rel="category tag">Tor community</a></span><span class="comments-link"><a href="../../torbox-v-0-2-5-released-featuring-bridge-relay-support/#comments">5 Comments<span class="screen-reader-text"> on TorBox v.0.2.5 released, featuring Bridge Relay support!</span></a></span> </footer>
+</article>
+<article class="post-771 post type-post status-publish format-standard hentry category-anonymity category-blog category-security category-tor-community" id="post-771">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../the-functionality-of-tor-easily-explained/" rel="bookmark">The functionality of Tor easily explained</a></h2> </header>
+<div class="entry-content">
+<p>If you look at the <a href="https://www.reddit.com/r/TOR/" rel="noopener noreferrer" target="_blank">various forums about Tor</a>, there is a lot of skepticism, misunderstandings, and questions, especially among newcomers, about how Tor works and the possibilities (or limitations) it offers. This is due in particular to the fact that many people are unfamiliar with how Tor works, and feel that it is far too complicated to understand. With an excellent video of <a href="https://twitter.com/computer_phile" rel="noopener noreferrer" target="_blank">Computerphile</a>, <a href="https://en.wikipedia.org/wiki/Michael_Pound" rel="noopener noreferrer" target="_blank">Dr. Mike Pound</a> shows that it doesn’t have to be complicated. Very simple and easy for beginners to understand, he shows how Tor works and mentions its limitations.</p>
+<p><p class="embed-placeholder">Embedded video not loaded (to avoid contacting third parties). <a href="https://www.youtube.com/watch?v=QRYzre4bf7I" rel="noopener noreferrer">Watch it on YouTube</a> (external site; opening the link contacts YouTube).</p></p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../the-functionality-of-tor-easily-explained/" rel="bookmark"><time class="entry-date published" datetime="2019-09-21T22:37:51+01:00">September 21, 2019</time><time class="updated" datetime="2019-11-19T23:44:51+01:00">November 19, 2019</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../anonymity/" rel="category tag">Anonymity</a>, <a href="../blog/" rel="category tag">Blog</a>, <a href="../security/" rel="category tag">Security</a>, <a href="./" rel="category tag">Tor community</a></span><span class="comments-link"><a href="../../the-functionality-of-tor-easily-explained/#comments">1 Comment<span class="screen-reader-text"> on The functionality of Tor easily explained</span></a></span> </footer>
+</article>
+<article class="post-757 post type-post status-publish format-standard hentry category-blog category-censorship category-on-our-own-behalf category-tor-community" id="post-757">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../sneak-peek-on-torbox-0-2-5/" rel="bookmark">Sneak Peek on TorBox 0.2.5</a></h2> </header>
+<div class="entry-content">
+<p><a href="https://metrics.torproject.org/rs.html#details/354954874308B1656073AD24F982DF47B6E46BA1"><img alt="" class="aligncenter size-full wp-image-758" decoding="async" height="508" loading="lazy" src="../../wp-content/uploads/2019/09/bridge_relay-e1568561097374.png" width="960"/></a></p>
+<p>My first Tor Bridge Relay is properly working – see <a href="https://metrics.torproject.org/rs.html#details/354954874308B1656073AD24F982DF47B6E46BA1" rel="noopener noreferrer" target="_blank">here</a>.</p>
+<p>With TorBox v.0.2.5 (coming soon) everyone with direct internet connection will be able to set up a Tor Bridge Relay — only with a view „clicks“.</p>
+<p>Bridges are essential for people in authoritarian countries to reach the open internet. TorBox v.0.2.4 offers such client functionality already, but soon, users with a direct internet connection can help others by setting up their relay.</p>
+<p><strong>More information</strong><br/>
+<a href="https://blog.torproject.org/run-tor-bridges-defend-open-internet" rel="noopener noreferrer" target="_blank">Run Tor Bridges to Defend the Open Internet</a></p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../sneak-peek-on-torbox-0-2-5/" rel="bookmark"><time class="entry-date published" datetime="2019-09-15T16:30:25+01:00">September 15, 2019</time><time class="updated" datetime="2019-09-15T16:32:21+01:00">September 15, 2019</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="../censorship/" rel="category tag">Censorship</a>, <a href="../on-our-own-behalf/" rel="category tag">On our own behalf</a>, <a href="./" rel="category tag">Tor community</a></span> </footer>
+</article>
+<article class="post-231 post type-post status-publish format-standard hentry category-blog category-censorship category-south-sudan category-states category-tor-community" id="post-231">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../the-state-of-internet-censorship-in-south-sudan/" rel="bookmark">The State of Internet Censorship in South Sudan</a></h2> </header>
+<div class="entry-content">
+<p>This post <a href="https://ooni.torproject.org/post/south-sudan-censorship/" rel="noopener noreferrer" target="_blank">has been published</a> by <a href="https://ooni.torproject.org/" rel="noopener noreferrer" target="_blank">OONI</a>, a censorship measurement project under the <a href="https://www.torproject.org/" rel="noopener noreferrer" target="_blank">Tor Project</a>, and South Sudan’s “<a href="https://twitter.com/tahuridsouthsud" rel="noopener noreferrer" target="_blank">The Advocates for Human Rights and Democracy</a>” (TAHURID)</p>
+<figure aria-describedby="caption-attachment-232" class="wp-caption aligncenter" id="attachment_232" style="width: 640px"><img alt="" class="size-full wp-image-232" decoding="async" height="449" loading="lazy" src="../../wp-content/uploads/2018/08/949070668-1024x1024-e1533354278367.jpg" width="640"/><figcaption class="wp-caption-text" id="caption-attachment-232">South Sudan Map Triangle Pattern Blue</figcaption></figure>
+<h3>Background</h3>
+<p>South Sudan has been plagued by civil wars over the last century. The <a href="https://en.wikipedia.org/wiki/First_Sudanese_Civil_War" rel="noopener noreferrer" target="_blank">First Sudanese Civil War</a> was a conflict from 1955 to 1972 between the northern part of Sudan and the southern Sudan region that demanded more autonomy. Following the first civil war, the <a href="https://en.wikipedia.org/wiki/Southern_Sudan_Autonomous_Region_(1972%E2%80%9383)" rel="noopener noreferrer" target="_blank">Southern Sudan Autonomous Region</a> was temporarily formed, but a second civil war erupted in 1983 and lasted until the end of 2004. After the second civil war, the <a href="https://en.wikipedia.org/wiki/Southern_Sudan_Autonomous_Region_(2005%E2%80%9311)" rel="noopener noreferrer" target="_blank">Autonomous Government of Southern Sudan</a> was created. South Sudan became an <a href="https://www.nytimes.com/2011/07/10/world/africa/10sudan.html" rel="noopener noreferrer" target="_blank">independent state on 9th July 2011</a>, following a referendum.</p>
+<p>The country though remains in turmoil. Two years after independence, <a href="https://en.m.wikipedia.org/wiki/South_Sudanese_Civil_War">a civil war erupted within South Sudan</a> between the government and opposition forces. In 2015, <a href="https://www.aljazeera.com/news/2015/08/south-sudan-expected-sign-peace-deal-rebels-150826084550000.html">an agreement</a> to end South Sudan’s civil war was threatened by ceasefire violations and <a href="https://www.theguardian.com/world/2016/jul/12/south-sudan-is-the-renewed-violence-the-restart-of-civil-war">the war restarted by July 2016</a>. South Sudan’s ongoing civil war has resulted in the <a href="http://www.unhcr.org/south-sudan-emergency.html">displacement of millions</a> (who have seeked refuge in neighbouring Uganda, Sudan, and Kenya) and in <a href="https://www.aljazeera.com/news/2016/03/tens-thousands-killed-south-sudan-war-160303054110110.html">tens of thousands of deaths</a> (though <a href="https://www.news24.com/Africa/News/south-sudan-is-dying-and-nobody-is-counting-20160311-4">aid workers reported in 2016</a> that the true figure might be as high as 300,000 deaths, which is comparable to the number killed in Syria during five years of war).</p>
+<p>At the end of May 2018, <a href="https://www.un.org/press/en/2018/sc13361.doc.htm">the Security Council of the United Nations renewed sanctions</a> (previously imposed in 2015) on South Sudan for 45 days, <a href="http://www.africanews.com/2018/06/02/un-security-council-renews-south-sudan-sanctions-sets-peace-deadline/">setting a deadline for the civil war to end by 30th June 2018</a>. Even though South Sudan’s main belligerents came to a peace agreement in late June 2018, <a href="http://africanarguments.org/2018/06/29/south-sudan-peace-deal-missing-something-details-khartoum/">experts worry</a> that it fails to solve issues that have been at the heart of the civil war.</p>
+<p><img alt="" class="aligncenter size-full wp-image-239" decoding="async" height="357" loading="lazy" src="../../wp-content/uploads/2018/08/20180714_WOC780-e1533395062159.png" width="640"/></p>
+<p>Amid conflict and political turbulence, South Sudan has one of the least developed telecommunications and internet systems in the world. Fifteen Internet Service Providers (ISPs) operate in South Sudan, but the lack of fibre-optic cables and the limited availability of public power hinder connectivity. <a href="https://en.wikipedia.org/wiki/MTN_Group">MTN</a> enjoys the <a href="https://www.balancingact-africa.com/news/telecoms-en/35234/south-sudan-mtn-becomes-the-number-one-player-in-africas-newest-country-market">greatest share</a> within the mobile phone market, followed by Vivacell and <a href="https://en.wikipedia.org/wiki/Zain_Group">Zain</a>. Earlier this year however, <a href="https://www.reuters.com/article/southsudan-telecoms/south-sudan-suspends-mobile-operator-vivacell-idUSL8N1R25VV">Vivacell’s license was suspended</a> for not paying <a href="https://www.nation.co.ke/news/africa/South-Sudan-shuts-down-telecom-firm-Vivacell/1066-4360596-l8h28yz/index.html">USD 60 million</a> in fees.</p>
+<p>Internet penetration levels have <a href="http://www.internetlivestats.com/internet-users/south-sudan/">increased since independence in 2011</a>, but remain quite low. <a href="http://www.intgovforum.org/multilingual/es/system/files/filedepot/78/paradigmhq-digital_rights_in_africa_report_2017.pdf">According to the National Communication Authority,</a> around 20.5% of South Sudan’s population is estimated to have access to the internet, mostly concentrated in Juba and largely based on mobile internet subscriptions.</p>
+<p><a href="https://www.sudantribune.com/IMG/pdf/The_Draft_Transitional_Constitution_of_the_ROSS2-2.pdf">South Sudan’s Transitional Constitution of 2011</a> guarantees freedom of expression and press freedom under Article 24, with possible exceptions for public order, safety, or morality. The Article also calls on media to abide by professional ethics. Article 32 of the Transitional Constitution guarantees the right to access official information, with exemptions for public security and personal privacy. The regime though <a href="http://www.jubamonitor.com/overview-of-the-media-landscape-forum/">regularly violates media freedom protections in practice</a>, and government officials have engaged in rhetoric that contributes to a hostile environment for the press.</p>
+<p>Two media websites and two independent blogs <a href="https://cpj.org/2017/07/south-sudan-authorities-block-access-to-at-least-f.php">were reportedly blocked in South Sudan in July 2017</a>. The censored sites include Paris-backed <a href="https://en.wikipedia.org/wiki/Sudan_Tribune">Sudan Tribune</a> and Dutch-backed <a href="http://radiotamazuj.org/en">Radio Tamazuj</a>, as well as the <a href="http://nyamile.com">Nyamilepedia</a> and <a href="https://paanluelwel.com">Paanluel Wel</a> blogs of the <a href="https://en.wikipedia.org/wiki/Nuer_people">Nuer</a> and <a href="https://en.wikipedia.org/wiki/Dinka_people">Dinka</a> tribes, South Sudan’s two largest ethnic groups.</p>
+<figure aria-describedby="caption-attachment-241" class="wp-caption aligncenter" id="attachment_241" style="width: 620px"><a href="../../wp-content/uploads/2018/08/South_Sudan_Civil_War.JPG_t2500.jpg"><img alt="South Sudanese people cheer as they await the arrival back in the country of South Sudan’s President Salva Kiir, at the airport in Juba, South Sudan Friday, June 22, 2018. (Photo: Bullen Chol)." class="size-full wp-image-241" decoding="async" height="413" loading="lazy" src="../../wp-content/uploads/2018/08/South_Sudan_Civil_War.JPG_t2500-e1533396726682.jpg" width="620"/></a><figcaption class="wp-caption-text" id="caption-attachment-241">South Sudanese people cheer as they await the arrival back in the country of South Sudan’s President Salva Kiir, at the airport in Juba, South Sudan Friday, June 22, 2018. (Photo: Bullen Chol).</figcaption></figure>
+<h3>Measuring internet censorship</h3>
+<p>In an attempt to verify <a href="https://en.wikipedia.org/wiki/Dinka_people">reports on the blocking of websites</a> and to examine South Sudan’s internet landscape more broadly, OONI did some network measurement tests in South Sudan.</p>
+<p><a href="https://github.com/TheTorProject/ooni-probe">OONI Probe</a> consists of a number of <a href="https://ooni.io/nettest/">software tests</a> that scan TCP, DNS, HTTP and TLS connections for signs of network tampering. Some tests request data over an unencrypted connection and compare against a known good value. Others check for HTTP transparent proxies, <a href="https://en.wikipedia.org/wiki/DNS_spoofing">DNS spoofing,</a> and network speed and performance.</p>
+<p>To measure the blocking of websites, OONI started off by carrying out some research to identify South Sudanese URLs to test. They subsequently <a href="https://github.com/citizenlab/test-lists/pull/366/">added</a> these URLs to the <a href="https://github.com/citizenlab/test-lists">Citizen Lab’s test list repository on GitHub</a>, since OONI Probe is designed to measure the blocking of URLs included in these test lists. Over the last few months, OONI primarily ran <a href="https://ooni.torproject.org/nettest/web-connectivity/">OONI Probe’s Web Connectivity test </a>(among other OONI Probe tests) in two networks: MTN South Sudan (AS37594) and IPTEC Limited (AS36892).</p>
+<p>As part of their testing, they measured the blocking of URLs included in the <a href="https://github.com/citizenlab/test-lists/blob/master/lists/global.csv">global</a> (including internationally relevant sites) and <a href="https://github.com/citizenlab/test-lists/blob/master/lists/ss.csv">South Sudanese</a> (including sites relevant to South Sudan) test lists. Once they collected <a href="https://api.ooni.io/files/by_country/SS">OONI Probe network measurements from South Sudan</a>,they analyzed them with the aim of identifying network anomalies that could serve as signs of internet censorship.</p>
+<p><strong>Blocked websites</strong><br/>
+Last year, media outlets Sudan Tribune and Radio Tamazuj, and independent blogs Nyamilepedia and Paanluel Wel, were reportedly blocked in July 2017. OONI recent testing not only corroborates these reports, but also suggests that these sites remain blocked one year later.</p>
+<p>The following table links to network measurements pertaining to the recent testing of each of these sites across two ISPs:</p>
+<p><img alt="" class="aligncenter size-full wp-image-243" decoding="async" height="390" loading="lazy" src="../../wp-content/uploads/2018/08/South_Sudan-001-e1533397128316.png" width="640"/></p>
+<p>OONI findings suggest that MTN (AS37594) blocks TCP/IP connections to these sites, while IPTEC (AS36892) blocks access by means of DNS tampering. It’s worth noting that both MTN and IPTEC block access to both http://sudantribune.com and http://www.sudantribune.com.</p>
+<p>South Sudanese authorities blocked these sites for publishing “subversive content” and <a href="https://cpj.org/2017/07/south-sudan-authorities-block-access-to-at-least-f.php">stated</a> that the bans would not be lifted until those institutions “behaved well”. Sudan Tribune and Radio Tamazuj are foreign-based media outlets <a href="http://www.ifj.org/nc/en/news-single-view/backpid/1/category/campaigns-1/article/south-sudan-government-blocks-two-news-websites/">accused of hostile reporting against the government</a>.</p>
+<p>Paanluel Wel is a leading blog for the Dinka tribe, known for spearheading tribal political interests for the Dinka people and inciting hatred and violence against the Nuer people and other tribes. Nyamilepedia, on the other hand, is a leading blog for the Nuer tribe, known for promoting Nuer political interests and spearheading hatred against the Dinka and other Nuer who left the rebellion to join the Dinka-led government.</p>
+<p>TAHURID reports that <a href="http://www.almshaheer.com">Almshaheer</a> and <a href="https://en.wikipedia.org/wiki/Centre_for_Conflict_Resolution">South Africa’s Centre for Conflict Resolution</a> are inaccessible on IPTEC, but accessible on MTN (the accessibility of which is also confirmed by OONI data testing almshaheer.com and ccr.org.za).</p>
+<p><a href="https://api.ooni.io/files/by_country/SS">Many other URLs</a> presented network anomalies (such as HTTP failures) as part of our testing, but such anomalies were most likely caused due to poor network performance and transient network failures. This suggests that South Sudanese internet users may encounter challenges in accessing sites in various points in time, even if they’re not intentionally being blocked.</p>
+<p>It’s worth highlighting, however, that many of the URLs that OONI tested (including internationally popular and local sites) were found to be <a href="https://explorer.ooni.torproject.org/country/SS">accessible</a> in South Sudan during this study. These include sites related to conflict resolution and peacekeeping, such as the <a href="https://explorer.ooni.torproject.org/measurement/20180710T121021Z_AS36892_jFS7l6OqpHDaCHgyce42vBpqi7zxK9sTNGsR9jwpr4k9NRHZhn?input=https:%2F%2Funmiss.unmissions.org%2Fradio-miraya-news">United Nations Mission in South Sudan</a> (UNMISS) site.</p>
+<p><strong>HTTP proxy</strong><br/>
+<a href="https://explorer.ooni.torproject.org/country/SS">Measurements previously collected in 2017</a> highlight the presence of an HTTP transparent proxy (Mikrotik).</p>
+<p><img alt="" class="aligncenter size-full wp-image-245" decoding="async" height="199" loading="lazy" src="../../wp-content/uploads/2018/08/South_Sudan-002-e1533397341584.png" width="640"/></p>
+<p>This proxy is revealed in the HTTP response body in OONI Probe measurements (linked below) pertaining to the testing of the following sites:</p>
+<pre class="brush: xml; title: ; notranslate" title="">
+http://deoxy.org
+http://dextroverse.org
+http://warc.jalb.de
+http://www.bloglines.com
+http://www.foreignword.com
+http://www.gamenode.com
+http://www.interactworldwide.org
+http://www.iwantim.com
+http://www.kazaa.com
+http://www.kcna.kp
+http://www.law-lib.utoronto.ca/Diana/
+http://www.pornhub.com
+http://www.proxyweb.net
+http://www.wzo.org.il
+</pre>
+<p>These measurements clearly show that the Mikrotik HTTP transparent proxy was present last year in the network path to the above sites through South Sudan’s 4G Telecom (AS327786) network. It remains unclear though if this proxy is still in use, since measurements haven’t been collected from this network in recent months.</p>
+<p>It’s worth noting that this equipment may potentially be used for implementing internet censorship and/or for caching (the Mikrotik HTTP proxy has this feature) to improve connectivity. Given though that <a href="https://explorer.ooni.torproject.org/country/SS">most of these sites were accessible</a> (and the ones that weren’t presented different errors, sometimes triggered as part of <a href="https://en.wikipedia.org/wiki/DDoS_mitigation">anti-DDoS protection</a>), it may be the case that this proxy was primarily deployed for improving connectivity and network performance.</p>
+<h3><strong>Conclusion</strong></h3>
+<p>South Sudan is a young nation in politically turbulent times. Within the context of conflict, <a href="http://www.jubamonitor.com/overview-of-the-media-landscape-forum/">local experts discuss the challenges of drawing a line</a> between freedom of expression and <a href="http://www.africanews.com/2016/10/26/un-concerned-about-rise-in-hate-speech-in-south-sudan//">hate speech</a>, which spurs violence.</p>
+<p>Internet censorship does <em>not</em> appear to be pervasive, but limited to sites that authorities <a href="https://cpj.org/2017/07/south-sudan-authorities-block-access-to-at-least-f.php">deem</a> to publish “subversive content” and incite violence. This is evident through the blocking of Nyamilepedia and Paanluel Wel, the leading blogs of the Nuer and Dinka tribes who are known to incite violence. <a href="https://api.ooni.io/files/by_country/SS">OONI data</a> also corroborates the blocking of media outlets Sudan Tribune and Radio Tamazuj, both of which are hosted <em>outside</em> of South Sudan. Local journalists and media organizations though face different (non-digital) forms of censorship.</p>
+<p><img alt="" class="aligncenter size-full wp-image-248" decoding="async" height="360" loading="lazy" src="../../wp-content/uploads/2018/08/SOUTH-SUDAN-MEDIA-696x392-e1533410223956.jpg" width="640"/></p>
+<p><a href="http://www.jubamonitor.com/">Juba Monitor</a>, for example, is an independent South Sudanese newspaper critical of the government. Their website was <a href="https://explorer.ooni.torproject.org/measurement/20180709T222326Z_AS37594_FFQFSoqLJWYMgU0EnSbIK7PxicwJTFenIz9PupZYZWoXwtpCTy?input=http:%2F%2Fwww.jubamonitor.com">found to be accessible</a>, but <a href="https://cpj.org/2016/07/south-sudan-authorities-arrest-editor-order-juba-m.php">their editor was jailed in 2016</a> as a result of his reporting and <a href="https://www.voanews.com/a/south-sudan-media-rights-juba-monitor/2601838.html">the newspaper has been ordered</a> to cease its publishing over reports that the government considered “against the system”. <a href="http://www.jubamonitor.com/overview-of-the-media-landscape-forum/">Security personnel has been deployed at the printing press</a>, forcing journalists to remove or edit articles critical of the government and its officials prior to publication.</p>
+<p>Self-censorship might be one of the most effective forms of censorship in South Sudan, as suggested by the reported <a href="https://www.theguardian.com/world/2016/jul/07/south-sudan-is-wiping-out-its-free-press-one-journalist-at-a-time">intimidation</a> and <a href="https://cpj.org/africa/south-sudan/">killing</a> of journalists. <a href="http://www.jubamonitor.com/overview-of-the-media-landscape-forum/">Local experts argue</a> that the media in South Sudan operate in a state of fear. Earlier this year, <a href="https://cpj.org/2018/03/south-sudan-suspends-broadcast-of-un-backed-radio-.php">even UN-backed Radio Miraya was suspended</a> on the grounds of not having acquired a broadcasting license.</p>
+<p>Nonetheless, the fact that South Sudan has already started implementing internet censorship raises questions as to whether its internet censorship apparatus will expand as internet penetration levels increase and political events unfold. Further research and testing is therefore required to better understand the country’s internet landscape and monitor any new censorship events.</p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../the-state-of-internet-censorship-in-south-sudan/" rel="bookmark"><time class="entry-date published" datetime="2018-08-04T08:44:03+01:00">August 4, 2018</time><time class="updated" datetime="2019-05-25T21:48:30+01:00">May 25, 2019</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="../censorship/" rel="category tag">Censorship</a>, <a href="../states/south-sudan/" rel="category tag">South Sudan</a>, <a href="../states/" rel="category tag">States</a>, <a href="./" rel="category tag">Tor community</a></span> </footer>
+</article>
+<article class="post-221 post type-post status-publish format-standard hentry category-blog category-censorship category-egypt category-states category-surveillance category-tor-community" id="post-221">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../the-state-of-internet-censorship-in-egypt/" rel="bookmark">The State of Internet Censorship in Egypt</a></h2> </header>
+<div class="entry-content">
+<p>This post and the full report <a href="https://blog.torproject.org/egypt-internet-censorship" rel="noopener" target="_blank">have been published</a> by <a href="https://ooni.torproject.org/" rel="noopener" target="_blank">OONI</a>, a censorship measurement project under the <a href="https://www.torproject.org/" rel="noopener" target="_blank">Tor Project</a>, and Egypt’s <a href="https://afteegypt.org/" rel="noopener" target="_blank">Association for Freedom of Thought and Expression</a> (AFTE).</p>
+<p><a href="../../wp-content/uploads/2018/08/eg-image.jpg.png"><img alt="" class="aligncenter size-full wp-image-222" decoding="async" height="451" loading="lazy" src="../../wp-content/uploads/2018/08/eg-image.jpg-e1533090049192.png" width="640"/></a></p>
+<p>Throughout the testing period, between January 2017 to May 2018, <a href="https://ooni.io/post/egypt-internet-censorship/eg-anomalous-urls.csv" rel="noopener" target="_blank">more than 1,000 URLs</a> presented network anomalies. <a href="https://ooni.io/post/egypt-internet-censorship/eg-blocked-sites.csv" rel="noopener" target="_blank">178 of which</a> consistently presented a high ratio of HTTP failures, strongly suggesting that they were blocked. Rather than serving block pages (which would have provided a notification of the blocking), Egyptian Internet Service Providers (ISP) appear to primarily block sites through the use of <a href="https://en.wikipedia.org/wiki/Deep_packet_inspection" rel="noopener" target="_blank">Deep Packet Inspection</a> (DPI) technology that resets connections.</p>
+<p>In some cases, instead of <a href="https://nets.ec/TCP-RST_Injection" rel="noopener" target="_blank">RST injection</a>, ISPs drop packets, suggesting a variance in filtering rules. In other cases, ISPs interfere with the <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" rel="noopener" target="_blank">SSL encrypted traffic</a> between <a href="https://en.wikipedia.org/wiki/Cloudflare" rel="noopener" target="_blank">Cloudflare’s</a> Point-of-Presence in Cairo and the backend servers of sites (<a href="https://explorer.ooni.torproject.org/measurement/20180326T100410Z_AS8452_gn91NHg6tJwnsfwGML6PDsOErBReeB02oh9isOrkRIRgKs30R7?input=https:%2F%2Fpsiphon.ca" rel="noopener" target="_blank">psiphon.ca</a>, <a href="https://explorer.ooni.torproject.org/measurement/20180318T090929Z_AS8452_gf96lwrIRx9WnZ1ed8QRhi1sMu2ONRcdleOPfxVGw2yd3Yvf7o?input=https:%2F%2Fwww.purevpn.com%2F" rel="noopener" target="_blank">purevpn.com</a> and <a href="https://explorer.ooni.torproject.org/measurement/20180103T093454Z_AS8452_sVEGr9loIPSudsem4KhVtVUT7MYgSonjcQ0itRWWo1DmMGAPEW?input=https:%2F%2Fwww.ultrasawt.com" rel="noopener" target="_blank">ultrasawt.com</a>) hosted outside of Egypt. Latency measurements over the last year and a half also suggest that Egyptian ISPs may have changed their filtering equipment and/or techniques, since the latency-based detection of middleboxes has become more challenging.</p>
+<p><a href="../../wp-content/uploads/2018/08/eg-blocked-sites-chart-e1533090126329.png"><img alt="" class="alignright size-full wp-image-223" decoding="async" height="316" loading="lazy" src="../../wp-content/uploads/2018/08/eg-blocked-sites-chart-e1533090126329.png" width="350"/></a>The chart at the right illustrates the types of sites that presented the highest amount of network anomalies and are therefore considered to more likely have been blocked.</p>
+<p><a href="https://ooni.io/post/egypt-internet-censorship/eg-blocked-news.csv" rel="noopener" target="_blank">More than 100 URLs</a> that belong to media organizations appear to have been blocked, even though Egyptian authorities only <a href="https://cpj.org/2017/05/egypt-blocks-access-to-21-news-websites.php" rel="noopener" target="_blank">ordered the blocking of 21 news websites</a> last year. These include Egyptian news outlets (such as <a href="https://explorer.ooni.torproject.org/measurement/20170524T220659Z_AS36935_KOMTdBwGsyVovBhs8tYihdTP4ucPSWA5iMH4PqXEfX5TU1ZWK3?input=https:%2F%2Fwww.madamasr.com" rel="noopener" target="_blank">Mada Masr</a>, <a href="https://explorer.ooni.torproject.org/measurement/20170711T093730Z_AS8452_JpTTfKV4CebXaq18Vi2xNqgrkh7tmtIpFHUsHgDxLDEecVk1sm?input=http:%2F%2Fwww.almesryoon.com" rel="noopener" target="_blank">Almesryoon</a>, <a href="https://explorer.ooni.torproject.org/measurement/20180417T120217Z_AS8452_GSsK1LV6eTr9eP664dZm8U8vqvtmgKa4pR1PEX3B3WdyVMFQ5B?input=http:%2F%2Fwww.masralarabia.com" rel="noopener" target="_blank">Masr Al Arabia</a> and <a href="https://explorer.ooni.torproject.org/measurement/20170615T131624Z_AS36935_XbM7CT7wIvIDj338bud9oonjQNKYae4blQfuwMY4ZCrpCO5GJY?input=http:%2F%2Fwww.dailynewsegypt.com%2F" rel="noopener" target="_blank">Daily News Egypt</a>), as well as international media sites (such as <a href="https://explorer.ooni.torproject.org/measurement/20180520T073156Z_AS24863_iWUATOpTygIDRHTrgFtxPNlACi2P2m6VeCOeANwu0udfBdTKom?input=http:%2F%2Fwww.aljazeera.com" rel="noopener" target="_blank">Al Jazeera</a> and <a href="https://explorer.ooni.torproject.org/measurement/20170615T131624Z_AS36935_XbM7CT7wIvIDj338bud9oonjQNKYae4blQfuwMY4ZCrpCO5GJY?input=http:%2F%2Fwww.huffpostarabi.com%2F" rel="noopener" target="_blank">Huffington Post Arabic</a>). Various Turkish and Iranian news websites were blocked (such as <a href="https://explorer.ooni.torproject.org/measurement/20180517T122830Z_AS8452_BQDNLmRk7yc1k0j06HQumDnsZMHP4OQ1Y4OUSqHqdf2rezSpi5?input=http:%2F%2Fturkpress.co" rel="noopener" target="_blank">turkpress.co</a> and <a href="https://explorer.ooni.torproject.org/measurement/20180520T073156Z_AS24863_iWUATOpTygIDRHTrgFtxPNlACi2P2m6VeCOeANwu0udfBdTKom?input=http:%2F%2Fwww.alalam.ir" rel="noopener" target="_blank">alalam.ir</a>), suggesting that politics and security concerns may have influenced censorship decisions. In an attempt to circumvent censorship, some Egyptian media organizations set up alternative domains, but (in a few cases) they got blocked as well.</p>
+<p>To examine the impact of these censorship events, AFTE interviewed staff members working with some of the Egyptian media organizations whose websites got blocked. They reported that the censorship has had a severe impact on their work. In addition to not being able to publish and losing part of their audience, the censorship has also had a financial impact on their operations and deterred sources from reaching out to their journalists. A number of Egyptian media organizations have suspended their work entirely, as a result of persisting internet censorship.</p>
+<p>Many other websites, beyond media, appear to have been blocked as well. These include human rights websites (such as <a href="https://explorer.ooni.torproject.org/measurement/20180519T000039Z_AS24863_QA46GNkhtspz364ER9SJtRDd6fBWrGMZNm8RIheeNRd3QaKRMH?input=https:%2F%2Fwww.hrw.org%2F" rel="noopener" target="_blank">Human Rights Watch</a>, <a href="https://explorer.ooni.torproject.org/measurement/20180520T131028Z_AS8452_5VILUU3mOu51zwtD1E6n2E6Q0KGyq5cuWApNkAaZSCMoHZXxJc?input=https:%2F%2Frsf.org%2F" rel="noopener" target="_blank">Reporters without Borders</a>, the <a href="https://explorer.ooni.torproject.org/measurement/20170818T190042Z_AS8452_cNDTrIxYihq4jRlmoqnn8EUoa6scX0v8HwdEmXx67tX3LUMpj2?input=http:%2F%2Fanhri.net" rel="noopener" target="_blank">Arabic Network for Human Rights Information</a>, the <a href="https://explorer.ooni.torproject.org/measurement/20180512T065418Z_AS24863_YaAAZE3p4CPwmBElLdEKSMMUH3XD2zCo41NLphcbO5vqS6GsjH?input=http:%2F%2Fwww.ec-rf.org" rel="noopener" target="_blank">Egyptian Commission for Rights and Freedoms</a>, and the <a href="https://explorer.ooni.torproject.org/measurement/20180513T124516Z_AS8452_J5Orre5l0MAo8uwzg76CCJ7XcRm8Ya1K6NAI9ASskCFsShUZHI?input=http:%2F%2Fwww.jatoeg.org" rel="noopener" target="_blank">Journalists Observatory against Torture</a>) and sites expressing political criticism (such as the <a href="https://explorer.ooni.torproject.org/measurement/nbqhw5kWI9gMrX2qLs2ogfVk0Ukul7imncvAaDCs0kDabAxKQXNfrl6Mfk3fJZyZ?input=http:%2F%2F6april.org" rel="noopener" target="_blank">April 6 Youth Movement</a>), raising the question of whether censorship decisions were politically motivated.</p>
+<p><a href="../../wp-content/uploads/2018/08/censored-622x225.jpg"><img alt="" class="aligncenter size-full wp-image-226" decoding="async" height="225" loading="lazy" sizes="auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" src="../../wp-content/uploads/2018/08/censored-622x225.jpg" srcset="../../wp-content/uploads/2018/08/censored-622x225.jpg 622w, ../../wp-content/uploads/2018/08/censored-622x225-300x109.jpg 300w" width="622"/></a></p>
+<p> <br/>
+<strong>“Defense in depth” tactics for network filtering</strong><br/>
+Security experts are probably familiar with the “<a href="https://en.wikipedia.org/wiki/Defense_in_depth_(computing)" rel="noopener" target="_blank">defense in depth</a>” concept in which multiple layers of security controls (defense) are placed throughout an IT system, providing redundancy in the event that a security control fails. In Egypt, ISPs seem to apply “defense in depth” tactics for network filtering by creating multiple layers of censorship that make circumvention harder.</p>
+<p>This is particularly evident when looking at <a href="https://explorer.ooni.torproject.org/measurement/20180601T082146Z_AS24835_zCgwzOSmbXDftZn5OftmYZCDf5tw6SrDclPlgiMJ7YREynuOu0?input=http:%2F%2Fwww.fj-p.com" rel="noopener" target="_blank">the blocking of Egypt’s Freedom and Justice Party</a> (FJP) site. Our testing shows that different versions of this site (<a href="http://www.fj-p.com/" rel="noopener" target="_blank">http://www.fj-p.com</a> and <a href="http://fj-p.com" rel="noopener" target="_blank">http://fj-p.com</a>) were blocked by two different middleboxes. In doing so, Egyptian ISPs added extra layers of censorship, ensuring that circumvention requires extra effort.</p>
+<p>Not only were numerous circumvention tool sites (including <a href="https://explorer.ooni.torproject.org/measurement/20180520T131028Z_AS8452_5VILUU3mOu51zwtD1E6n2E6Q0KGyq5cuWApNkAaZSCMoHZXxJc?input=http:%2F%2Fwww.torproject.org" rel="noopener" target="_blank">torproject.org</a> and <a href="https://explorer.ooni.torproject.org/measurement/20180520T063449Z_AS24863_dWOpnp9jqv4jOJxMWgAjRLyuWDLEXA1i22J88Y4eTrglGo8g2u?input=https:%2F%2Fpsiphon.ca%2F" rel="noopener" target="_blank">psiphon.ca</a>) blocked, <strong>but access to the Tor network appears to be blocked as well</strong>. Measurements collected from <a href="https://explorer.ooni.torproject.org/measurement/20180522T161301Z_AS24863_oOvnh7hhWXOXQZ4GQfe83vDoB4ORpWotUvDhJeVM50NTcI1d15" rel="noopener" target="_blank">Link Egypt (AS24863)</a> and <a href="https://explorer.ooni.torproject.org/measurement/20180521T131355Z_AS8452_BVPG1Lh8gTJJfdphKQKRH38XF2XYwlolxFEiwGlGrKhEt8wUuy" rel="noopener" target="_blank">Telecom Egypt (AS8452)</a> suggest that the Tor network is inaccessible, since <strong>the tests weren’t able to bootstrap connections to the Tor network within 300 seconds. In recent months, more than 460 measurements show connections to the Tor network failing consistently. Similarly, measurements collected from <a href="https://explorer.ooni.torproject.org/measurement/20171125T004035Z_AS36992_vGkIUAMBKLcmFEcrRVIl9G80tqnl2Xpq95s0xz2vHhDe6KZgyC" rel="noopener" target="_blank">Etisalat Misr (AS36992)</a>, <a href="https://explorer.ooni.torproject.org/measurement/20171125T003356Z_AS37069_CpepgnxXwaPzD4OfMwcKnrxwsvlFZLyZKEHtLYRDZua3zN7kM7" rel="noopener" target="_blank">Mobinil (AS37069)</a> and <a href="https://explorer.ooni.torproject.org/measurement/20171124T002601Z_AS36935_EjL8eS55NuackoBc1YTlLPYLU4uqhIRpAxltWVhSHooLpN8ZtX" rel="noopener" target="_blank">Vodafone (AS36935)</a> indicate that access to the Tor network is blocked. The Tor bootstrap process is likely being disrupted via the <a href="https://ooni.torproject.org/post/egypt-network-interference/#attempts-to-block-tor" rel="noopener" target="_blank">blocking of requests to directory authorities</a>.</strong></p>
+<p>“Defense in depth” tactics also seem to be applied in relation to the blocking of <a href="https://bridges.torproject.org/" rel="noopener" target="_blank">Tor bridges</a>, which enable Tor censorship circumvention. <a href="https://en.wikipedia.org/wiki/Vodafone#Egypt" rel="noopener" target="_blank">Vodafone</a> appears to be blocking <a href="https://github.com/Yawning/obfs4/blob/master/doc/obfs4-spec.txt" rel="noopener" target="_blank">obfs4</a> (shipped as part of <a href="https://www.torproject.org/projects/torbrowser.html" rel="noopener" target="_blank">Tor Browser</a>), since all attempted connections were unsuccessful (though it remains unclear if private bridges work). <strong>All measurements collected from <a href="https://en.wikipedia.org/wiki/Telecom_Egypt" rel="noopener" target="_blank">Telecom Egypt</a> show that obfs4 works. Given that <a href="https://explorer.ooni.torproject.org/measurement/20180618T063810Z_AS24835_VbotQZ97S1Ma1fMhdiLfCVsPpjYw7xbNGtWbmvogC0xtHZyCIj?input=https:%2F%2Fbridges.torproject.org" rel="noopener" target="_blank">bridges.torproject.org is blocked</a>, users can alternatively get Tor bridges by sending an email to <a href="mailto:bridges@torproject.org" rel="noopener" target="_blank">bridges@torproject.org</a> (from a <a href="https://riseup.net/" rel="noopener" target="_blank">Riseup</a>, <a href="https://mail.google.com/" rel="noopener" target="_blank">Gmail</a>, or <a href="https://mail.yahoo.com/" rel="noopener" target="_blank">Yahoo</a> account)</strong>.</p>
+<p><a href="https://freedomhouse.org/report/freedom-net/2017/egypt"><img alt="" class="alignright size-full wp-image-228" decoding="async" height="154" loading="lazy" sizes="auto, (max-width: 328px) 85vw, 328px" src="../../wp-content/uploads/2018/08/images.png" srcset="../../wp-content/uploads/2018/08/images.png 328w, ../../wp-content/uploads/2018/08/images-300x141.png 300w" width="328"/></a><strong>Ad campaign</strong><br/>
+Back in 2016, <a href="https://ooni.torproject.org/post/egypt-network-interference/#advertisement-and-malware-injection" rel="noopener" target="_blank">OONI uncovered</a> that state-owned Telecom Egypt was using DPI (or similar networking equipment) to <strong>hijack users’ unencrypted HTTP connections</strong> and inject redirects to revenue-generating content, such as affiliate ads. <a href="https://en.wikipedia.org/wiki/Citizen_Lab" rel="noopener" target="_blank">The Citizen Lab</a> expanded upon this research, <a href="https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-deploy-government-spyware-turkey-syria/" rel="noopener" target="_blank">identifying</a> the use of Sandvine PacketLogic devices (<a href="https://en.wikipedia.org/wiki/Sandvine" rel="noopener" target="_blank">Sandvine</a> is a company based in Waterloo, Ontario, Canada) and redirects being injected by (at least) 17 Egyptian ISPs.</p>
+<p>Over the last year, <a href="https://api.ooni.io/files/by_country/EG" rel="noopener" target="_blank">hundreds of OONI Probe network measurements</a> (collected from multiple ASNs) <a href="https://ooni.io/post/egypt-internet-censorship/eg-ad-campaign.csv" rel="noopener" target="_blank">show the hijacking of unencrypted HTTP connections</a> and the injection of redirects to affiliate ads and cryptocurrency mining scripts. A wide range of different types of URLs were affected, including the sites of the <a href="https://explorer.ooni.torproject.org/measurement/20170814T100330Z_AS8452_dBRZHbzwg0CQy5iGYZn4IXW8xki1TcvvjTd2KxXagPsr2u7ArP?input=http:%2F%2Fwww.ppsmo.org%2F" rel="noopener" target="_blank">Palestinian Prisoner Society</a> and the <a href="https://explorer.ooni.torproject.org/measurement/20170622T111520Z_AS24863_HjEg5xCsNPntFqu7BbweBxBXvRVbYgnrXU9USKOUJayrumRpUF?input=http:%2F%2F4genderjustice.org%2F" rel="noopener" target="_blank">Women’s Initiatives for Gender Justice</a>, as well as LGBTQI, VPN and Israeli sites. Even the sites of the United Nations, such as <a href="https://explorer.ooni.torproject.org/measurement/20171228T105443Z_AS8452_27e7Pg7AwCoT66hN3mSsEZr75YIzpClxFoYmYTa92r7w627Yta?input=http:%2F%2Fwww.un.org%2Frights%2F" rel="noopener" target="_blank">un.org</a> and <a href="https://explorer.ooni.torproject.org/measurement/20170622T111520Z_AS24863_HjEg5xCsNPntFqu7BbweBxBXvRVbYgnrXU9USKOUJayrumRpUF?input=http:%2F%2Fwww.ohchr.org%2Fenglish%2Fbodies%2Fhrcouncil%2F" rel="noopener" target="_blank">ohchr.org</a>, were among those affected by redirects to ads.</p>
+<p><strong><em>To learn more about this study, read the full report <a href="https://ooni.io/post/egypt-internet-censorship/" rel="noopener" target="_blank">here</a>.</em></strong></p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../the-state-of-internet-censorship-in-egypt/" rel="bookmark"><time class="entry-date published updated" datetime="2018-08-01T16:51:24+01:00">August 1, 2018</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="../censorship/" rel="category tag">Censorship</a>, <a href="../states/egypt/" rel="category tag">Egypt</a>, <a href="../states/" rel="category tag">States</a>, <a href="../surveillance/" rel="category tag">Surveillance</a>, <a href="./" rel="category tag">Tor community</a></span> </footer>
+</article>
+<article class="post-214 post type-post status-publish format-standard hentry category-blog category-tor-community" id="post-214">
+<header class="entry-header">
+<h2 class="entry-title"><a href="../../the-onion-report-from-the-latest-hope-conference/" rel="bookmark">The Onion Report from the latest HOPE conference</a></h2> </header>
+<div class="entry-content">
+<p>A handful of Tor contributors reported about the state of the Onion (all activity in the community, which is related to the Tor network and its community) at the latest <a href="https://en.wikipedia.org/wiki/Hackers_on_Planet_Earth" rel="noopener" target="_blank">HOP conference</a>, occurred 20–22 July 2018. They talked about adding new security features, improving Tor Browser on Android, deploying the next generation of onion services, making Tor more usable, lowering the network overhead, making Tor more maintainable, and growing the Tor community with new outreach initiatives. They also shared some of what you can expect from Tor in the coming year, and answered questions from the community.</p>
+<p><p class="embed-placeholder">Embedded video not loaded (to avoid contacting third parties). <a href="https://livestream.com/accounts/686369/events/8286143/videos/178158095" rel="noopener noreferrer">Watch it on Livestream</a> (external site; opening the link contacts Livestream).</p></p>
+<p>For more videos from the latest HOPE conference, see <a href="https://livestream.com/internetsociety/hope" rel="noopener" target="_blank">here</a>.</p>
+</div>
+<footer class="entry-footer">
+<span class="byline"><span class="screen-reader-text">Author </span><span class="author vcard">John Doe</span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="../../the-onion-report-from-the-latest-hope-conference/" rel="bookmark"><time class="entry-date published" datetime="2018-07-31T18:57:50+01:00">July 31, 2018</time><time class="updated" datetime="2018-08-01T17:31:48+01:00">August 1, 2018</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="../blog/" rel="category tag">Blog</a>, <a href="./" rel="category tag">Tor community</a></span> </footer>
+</article>
+</main>
+</div>
+<aside class="sidebar widget-area" id="secondary">
+<section class="widget widget_recent_entries" id="recent-posts-2">
+<h2 class="widget-title">Recent Posts</h2><nav aria-label="Recent Posts">
+<ul>
+<li>
+<a href="../../torbox-project-discontinued/">⚠️ TorBox Project Discontinued</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-openvpn-update-22-march-2026/">TorBox v.0.5.5 – OpenVPN Update, 22 March 2026</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-5-debian-13-trixie-update-01-december-2025/">TorBox v.0.5.5 – Debian 13 (Trixie) Update, 01 December 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-and-maintenance-update-20-july-2025/">TorBox v.0.5.4 – Security and Maintenance Update 20 July 2025</a>
+</li>
+<li>
+<a href="../../torbox-v-0-5-4-security-update-17-april-2025/">TorBox v.0.5.4 – Security Update 17 April 2025</a>
+</li>
+</ul>
+</nav></section><section class="widget widget_search" id="search-widget"><h2 class="widget-title">Search</h2><div class="pagefind-host" id="search"></div><p class="search-hint"><a href="../../search/">Full-page search</a></p></section><section class="widget widget_archive" id="archives-2"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
+<ul>
+<li><a href="../../2026/09/">September 2026</a></li>
+<li><a href="../../2026/04/">April 2026</a></li>
+<li><a href="../../2025/12/">December 2025</a></li>
+<li><a href="../../2025/07/">July 2025</a></li>
+<li><a href="../../2025/04/">April 2025</a></li>
+<li><a href="../../2024/12/">December 2024</a></li>
+<li><a href="../../2024/10/">October 2024</a></li>
+<li><a href="../../2023/12/">December 2023</a></li>
+<li><a href="../../2023/07/">July 2023</a></li>
+<li><a href="../../2023/04/">April 2023</a></li>
+<li><a href="../../2023/03/">March 2023</a></li>
+<li><a href="../../2023/01/">January 2023</a></li>
+<li><a href="../../2022/10/">October 2022</a></li>
+<li><a href="../../2022/07/">July 2022</a></li>
+<li><a href="../../2022/04/">April 2022</a></li>
+<li><a href="../../2022/01/">January 2022</a></li>
+<li><a href="../../2021/11/">November 2021</a></li>
+<li><a href="../../2021/08/">August 2021</a></li>
+<li><a href="../../2021/06/">June 2021</a></li>
+<li><a href="../../2021/04/">April 2021</a></li>
+<li><a href="../../2021/01/">January 2021</a></li>
+<li><a href="../../2020/08/">August 2020</a></li>
+<li><a href="../../2020/06/">June 2020</a></li>
+<li><a href="../../2020/05/">May 2020</a></li>
+<li><a href="../../2020/04/">April 2020</a></li>
+<li><a href="../../2020/01/">January 2020</a></li>
+<li><a href="../../2019/09/">September 2019</a></li>
+<li><a href="../../2019/08/">August 2019</a></li>
+<li><a href="../../2019/06/">June 2019</a></li>
+<li><a href="../../2019/05/">May 2019</a></li>
+<li><a href="../../2019/02/">February 2019</a></li>
+<li><a href="../../2019/01/">January 2019</a></li>
+<li><a href="../../2018/12/">December 2018</a></li>
+<li><a href="../../2018/08/">August 2018</a></li>
+<li><a href="../../2018/07/">July 2018</a></li>
+<li><a href="../../2018/02/">February 2018</a></li>
+<li><a href="../../2018/01/">January 2018</a></li>
+</ul>
+</nav></section><section class="widget widget_categories" id="categories-2"><h2 class="widget-title">Categories</h2><nav aria-label="Categories">
+<ul>
+<li class="cat-item cat-item-16"><a href="../anonymity/">Anonymity</a>
+</li>
+<li class="cat-item cat-item-3"><a href="../blog/">Blog</a>
+</li>
+<li class="cat-item cat-item-8"><a href="../censorship/">Censorship</a>
+</li>
+<li class="cat-item cat-item-13"><a href="../states/china/">China</a>
+</li>
+<li class="cat-item cat-item-10"><a href="../states/egypt/">Egypt</a>
+</li>
+<li class="cat-item cat-item-14"><a href="../github/">GitHub</a>
+</li>
+<li class="cat-item cat-item-4"><a href="../on-our-own-behalf/">On our own behalf</a>
+</li>
+<li class="cat-item cat-item-6"><a href="../security/">Security</a>
+</li>
+<li class="cat-item cat-item-11"><a href="../states/south-sudan/">South Sudan</a>
+</li>
+<li class="cat-item cat-item-9"><a href="../states/">States</a>
+</li>
+<li class="cat-item cat-item-5"><a href="../surveillance/">Surveillance</a>
+</li>
+<li class="cat-item cat-item-7 current-cat"><a aria-current="page" href="./">Tor community</a>
+</li>
+<li class="cat-item cat-item-15"><a href="../states/turkey/">Turkey</a>
+</li>
+<li class="cat-item cat-item-12"><a href="../states/venezuela/">Venezuela</a>
+</li>
+</ul>
+</nav></section><section class="widget_text widget widget_custom_html" id="custom_html-3"><h2 class="widget-title">Blogroll</h2><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://www.torproject.org">Tor Project</a> (<a href="http://expyuzz4wqqyqhjn.onion/">onion</a>)</li>
+</ul></div></section> </aside>
+</div>
+<footer class="site-footer" id="colophon">
+<nav aria-label="Footer Primary Menu" class="main-navigation">
+<div class="menu-main-menu-container"><ul class="primary-menu" id="menu-main-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8"><a href="../../">What’s this all about?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647"><a href="#">Installation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1178"><a href="../../installation/">TorBox</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695"><a href="../../installation-torbox-on-a-cloud/">TorBox on a Cloud</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3649"><a href="../../torbox-mini/">TorBox mini</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3919"><a href="https://github.com/radio24/TorBox/discussions/358">TorBox on a Local VM</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1001"><a href="#">For Advanced</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3892"><a href="../../torbox-to-go-4-0/">TorBox to Go 4.0</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003"><a href="../../torbox-tft/">TorBox TFT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161"><a href="../../torbox-cellular/">TorBox Cellular</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2055"><a href="../../using-5-ghz-usb-wifi-adapter/">TorBox with 5 GHz USB WiFi adapter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3683"><a href="../../using-a-wifi-6-usb-adapter-802-11ax/">Using a WiFi 6 USB adapter (802.11ax)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-934"><a href="#">Documentation</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2640"><a href="../../first-start-up-dialogue/">First Start-up Dialogue</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-935"><a href="../../main-menu/">Main Menu</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="../../submenu-countermeasures-troubleshooting/">Sub-menu: Countermeasure</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a href="../../submenu-configuration-update/">Sub-menu: Configuration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2701"><a href="../../sub-menu-obfs4-bridge-relay/">Sub-menu: OBFS4 Bridge Relay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721"><a href="../../sub-menu-onion-services/">Sub-menu: Onion Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3455"><a href="../../sub-menu-danger-zone/">Sub-menu: Danger Zone</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1431"><a href="../../sub-menu-update-and-reset/">Sub-menu: Update and Maintenance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265"><a href="../../using-tor-browser-and-torbox-together/">Using Tor Browser and TorBox together</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124"><a href="../../faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802"><a href="../../how-to-pass-through-captive-portals/">How to pass through captive portals?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1148"><a href="../../sha-256-hashes-of-all-files/">SHA-256 hashes of all files</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-419"><a href="https://github.com/radio24/TorBox">GitHub</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="../blog/">Blog</a></li>
+</ul></div> </nav>
+<div class="site-info">
+<span class="site-title"><a href="../../" rel="home">TorBox</a></span>
+
+</div>
+</footer>
+</div>
+</div>
+
+<script id="syntaxhighlighter-core-js" src="../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js"></script>
+<script id="syntaxhighlighter-brush-xml-js" src="../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js"></script>
+<script type="text/javascript">SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+
+	// Infinite scroll support
+	if ( typeof( jQuery ) !== 'undefined' ) {
+		jQuery( function( $ ) {
+			$( document.body ).on( 'post-load', function() {
+				SyntaxHighlighter.highlight();
+			} );
+		} );
+	}
+</script>
+
+
+<script src="../../pagefind/pagefind-ui.js"></script><script src="../../assets/torbox-search.js"></script></body>
+</html>
