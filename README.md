@@ -2,14 +2,23 @@
 [![License](https://img.shields.io/github/license/radio24/torbox.svg?style=flat-square)](https://github.com/radio24/TorBox/blob/master/LICENSE)
 [![Latest Release](https://img.shields.io/github/release/radio24/torbox.svg?style=flat-square)](https://github.com/radio24/TorBox/releases/latest)
 - - -
+> [!IMPORTANT]
+> ## ⚠️ Project Discontinued
+>
+> **TorBox is no longer actively maintained.**
+>
+> Due to a lack of community interest and user engagement, development of this project has been discontinued. No further updates, bug fixes, or feature additions are planned.
+>
+> **The repository will remain publicly available as-is** — feel free to browse the code, fork it, or use it as a reference. However, please be aware that dependencies may become outdated and no support will be provided.
+>
+> Thank you to everyone who contributed or used TorBox over the years.
+- - -
 # TorBox
 TorBox is an easy-to-use, anonymising router based on Raspberry Pi, which also runs on Debian, DietPi and Ubuntu-based systems. TorBox can create a separate WiFi that routes the encrypted network data over the Tor network. However, TorBox also supports clients who are connected to a cable. As [TorBox mini](https://www.torbox.ch/?page_id=3544), it can be plugged into an USB socket and be used as a network device which sends all the traffic to the Tor network. [TorBox on a Cloud](https://www.torbox.ch/?page_id=3687) can be used on a cloud combined with an OpenVPN server -- it is literally a private VPN with tor functionality. Locally installed or on a cloud, TorBox also helps to publish data easily and safely through Onion Services. The type of client (desktop, laptop, tablet, mobile, etc.) and the operating system on the client don’t matter. For more information, visit the [TorBox website](https://www.torbox.ch).
 
-**TorBox Image (about 2 GB)**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox-20260322-v055.img.xz) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)  
-**TorBox mini Image (about 2 GB)**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox-mini-20260322-v055.img.xz) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)  
-**TorBox Menu only**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox055-20260322.zip) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)  
-
-Alternatively, you can download the image from [our TorBox cloud test installation](http://x63xkeiw3cgczc6lcwf62aoe35rp6hfcz3mympmuha7xhj63qdf3ngid.onion/).
+**TorBox Image (about 2 GB)**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox-20260322-v055.img.xz) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)
+**TorBox mini Image (about 2 GB)**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox-mini-20260322-v055.img.xz) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)
+**TorBox Menu only**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox055-20260322.zip) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)
 
 ![What’s it all about?](https://www.torbox.ch/wp-content/uploads/2019/01/TorBox400-e1548096878388.jpg)
 
