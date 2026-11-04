@@ -2,14 +2,23 @@
 [![License](https://img.shields.io/github/license/radio24/torbox.svg?style=flat-square)](https://github.com/radio24/TorBox/blob/master/LICENSE)
 [![Latest Release](https://img.shields.io/github/release/radio24/torbox.svg?style=flat-square)](https://github.com/radio24/TorBox/releases/latest)
 - - -
+> [!IMPORTANT]
+> ## ⚠️ Project Discontinued
+>
+> **TorBox is no longer actively maintained.**
+>
+> Due to a lack of community interest and user engagement, development of this project has been discontinued. No further updates, bug fixes, or feature additions are planned.
+>
+> **The repository will remain publicly available as-is** — feel free to browse the code, fork it, or use it as a reference. However, please be aware that dependencies may become outdated and no support will be provided.
+>
+> Thank you to everyone who contributed or used TorBox over the years.
+- - -
 # TorBox
 TorBox is an easy-to-use, anonymising router based on Raspberry Pi, which also runs on Debian, DietPi and Ubuntu-based systems. TorBox can create a separate WiFi that routes the encrypted network data over the Tor network. However, TorBox also supports clients who are connected to a cable. As [TorBox mini](https://www.torbox.ch/?page_id=3544), it can be plugged into an USB socket and be used as a network device which sends all the traffic to the Tor network. [TorBox on a Cloud](https://www.torbox.ch/?page_id=3687) can be used on a cloud combined with an OpenVPN server -- it is literally a private VPN with tor functionality. Locally installed or on a cloud, TorBox also helps to publish data easily and safely through Onion Services. The type of client (desktop, laptop, tablet, mobile, etc.) and the operating system on the client don’t matter. For more information, visit the [TorBox website](https://www.torbox.ch).
 
-**TorBox Image (about 2 GB)**: [v.0.5.5 (01.12.2025)](https://www.torbox.ch/data/torbox-20251201-v055.img.xz) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)  
-**TorBox mini Image (about 1 GB)**: [v.0.5.5 (01.12.2025)](https://www.torbox.ch/data/torbox-mini-20251201-v055.img.xz) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)  
-**TorBox Menu only**: [v.0.5.5 (01.12.2025)](https://www.torbox.ch/data/torbox055-20251201.zip) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)  
-
-Alternatively, you can download the image from [our TorBox cloud test installation](http://x63xkeiw3cgczc6lcwf62aoe35rp6hfcz3mympmuha7xhj63qdf3ngid.onion/).
+**TorBox Image (about 2 GB)**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox-20260322-v055.img.xz) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)
+**TorBox mini Image (about 2 GB)**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox-mini-20260322-v055.img.xz) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)
+**TorBox Menu only**: [v.0.5.5 (22.03.2026)](https://www.torbox.ch/data/torbox055-20260322.zip) – [SHA-256 values](https://www.torbox.ch/?page_id=1128)
 
 ![What’s it all about?](https://www.torbox.ch/wp-content/uploads/2019/01/TorBox400-e1548096878388.jpg)
 
@@ -19,8 +28,8 @@ Alternatively, you can download the image from [our TorBox cloud test installati
 TorBox is ideal for providing additional protection for the entire data stream and overcoming censorship. However, **anonymity is hard to get – solely using Tor doesn’t guarantee it**. [Traffic correlation analysis](https://www.torbox.ch/?p=3634), malware, cookies, Java, Flash, Javascript and more will most certainly compromise your anonymity. Even the people from the [Tor Project themselves state](https://2019.www.torproject.org/about/overview.html.en#stayinganonymous) that “Tor can’t solve all anonymity problems. It focuses only on protecting the transport of data.” Therefore, **it is strongly advised not to use TorBox alone, should your well-being depend on your anonymity**. In such a situation, it may be better to use [Tails](https://tails.net/). Please, [read in the FAQ more about tracking and fingerprinting in web browsers](https://www.torbox.ch/?page_id=112#can-tor-protect-me-against-tracking-andor-fingerprinting-in-web-browser-to-guaranty-my-anonymity-accessing-a-website).
 
 ### Quick Installation Guide
-1. [Download the latest TorBox image file](https://www.torbox.ch/data/torbox-20251201-v055.img.xz) and [verify the integrity of the downloaded file](https://www.torbox.ch/?page_id=1128).
-2. Transfer the downloaded image file on an [SD Card](https://en.wikipedia.org/wiki/Secure_Digital). Because of the significantly better compression rate, we compress the images with [xz](https://en.wikipedia.org/wiki/XZ_Util). By default, [Balena Etcher](https://etcher.balena.io/) and the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) support this kind of compressed image, but sometimes one or the other fails with an error message to flash it correctly on a SD Card. In this case, [you need to decompress the .xz file first](https://www.perplexity.ai/search/how-can-i-decompress-a-xz-file-72DH3Nq1Q5quofx8wu02SQ#0). TorBox needs at least a 16 GB SD Card.
+1. [Download the latest TorBox image file](https://www.torbox.ch/data/torbox-20260322-v055.img.xz) and [verify the integrity of the downloaded file](https://www.torbox.ch/?page_id=1128).
+2. Transfer the downloaded image file on an [SD Card](https://en.wikipedia.org/wiki/Secure_Digital). Because of the significantly better compression rate, we compress the images with [xz](https://en.wikipedia.org/wiki/XZ_Util). By default, [Balena Etcher](https://etcher.balena.io/) and the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) support this kind of compressed image, but sometimes one or the other fails with an error message to flash it correctly on a SD Card. In this case, [you need to decompress the .xz file first](https://kagi.com/assistant/dd4e22e4-7706-489c-b33d-4c17d02cc96d). TorBox needs at least a 16 GB SD Card.
 3. Put the SD Card into your Raspberry Pi, link it with an Internet router using an Ethernet cable, or place an USB WiFi adapter in one of the Raspi's USB ports to use an existing WiFi. Afterwards, start the Raspberry Pi. During the start, the system on the SD card automatically expands over the entire free partition – user interaction, screen, and peripherals are not required yet.
 4. After 2-3 minutes, when the green LED stops to flicker, connect your client to the new WiFi “**TorBox055**” (password: **CHANGE-IT**).
 5. Login to the TorBox by using a [SSH client](https://www.torbox.ch/?page_id=112#how-can-i-access-the-torbox-menu) (**192.168.42.1** on a WiFi client, **192.168.43.1** on a cable client or **192.168.44.1** when connected via VPN or if you use [TorBox mini](https://www.torbox.ch/?page_id=3544) on a [Raspberry Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/) as a RNDIS/Ethernet Gadget) or a web browser (http://192.168.42.1 on a WiFi client, http://192.168.43.1 on a cable client or http://192.168.44.1 when connected via VPN or when using TorBox mini; username: **torbox** / password: **CHANGE-IT**).
@@ -89,5 +98,5 @@ gNKTldrMtAg=
 =eGoI
 -----END PGP PUBLIC KEY BLOCK-----
 ```
- 
+
 <img src="https://www.torbox.ch/wp-content/uploads/2021/08/pgp_asc-e1628022322939.jpeg" width="32" height="32">OpenPGP key file: [publickey.anonym@torbox.ch-69e114c5c446133a0489a6c0e84929538341e840.asc](https://torbox.ch/data/publickey.anonym@torbox.ch-69e114c5c446133a0489a6c0e84929538341e840.asc)
