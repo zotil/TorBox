@@ -1,6 +1,6 @@
 import {InputTextarea} from "primereact/inputtextarea";
 import {Button} from "primereact/button";
-import {BsEmojiLaughing, BsSendFill} from "react-icons/all.js";
+import {BsEmojiLaughing, BsSendFill} from "react-icons/bs";
 import data from '@emoji-mart/data'
 import Picker from '@emoji-mart/react'
 import {useContext, useEffect, useRef, useState} from "react";
