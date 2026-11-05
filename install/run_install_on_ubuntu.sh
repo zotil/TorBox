@@ -975,6 +975,15 @@ if [ "$STEP_NUMBER" -le "8" ]; then
 		mv TorBox-$TORBOXMENU_BRANCHNAME torbox
 		echo -e "${RED}[+]         Cleaning up...${NOCOLOR}"
 		(rm -r $TORBOXMENU_BRANCHNAME.zip) 2>/dev/null
+		# Compile TorBox ChatSecure (TCS) and TorBox File Sharing (TFS)
+		echo -e "${RED}[+]         Compiling TCS and TFS...${NOCOLOR}"
+		export PATH=$PATH:/usr/local/go/bin
+		(cd "$HOME/torbox/lib/chatsecure" && CGO_ENABLED=0 go build -ldflags="-s -w" -o tcs .)
+		(cd "$HOME/torbox/lib/fileshare" && CGO_ENABLED=0 go build -ldflags="-s -w" -o tfs .)
+		if [ ! -x "$HOME/torbox/lib/chatsecure/tcs" ] || [ ! -x "$HOME/torbox/lib/fileshare/tfs" ]; then
+			echo -e "${YELLOW}[!] COULDN'T COMPILE TCS/TFS! File sharing and chat via Onion Services will not work.${NOCOLOR}"
+		fi
+		(go clean -modcache) 2>/dev/null
 		echo ""
 	else
 		echo ""

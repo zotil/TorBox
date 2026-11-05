@@ -81,6 +81,12 @@ ENTRY_NUMBERS=0
 # include lib
 .  /home/torbox/torbox/lib/torbox.lib
 
+# Make sure the TCS/TFS binaries exist (they are compiled from Go sources)
+if ! compile_tcs_tfs; then
+	echo -e "${YELLOW}[!] TCS/TFS could not be compiled. File sharing and chat via Onion Services will not work.${NOCOLOR}"
+	sleep 3
+fi
+
 # This function imports the configuration and makes some preparations
 # TOGGLE16 / TOGGLE17 represents the status of the Onion Servcie mode
 read_config()

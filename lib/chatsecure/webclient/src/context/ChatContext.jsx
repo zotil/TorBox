@@ -94,6 +94,11 @@ export const ChatProvider = (props) => {
 
 	function onMessage(value) {
 		if (value.sender !== userId) {
+			// Sender not in the local user list yet (e.g. a missed user_connected
+			// event): refresh the list so the message can show its name and avatar.
+			if (!userListRef.current.some(u => u.id === value.sender)) {
+				api.getUserList().then(r => { if (r) updateUserList(r) })
+			}
 			if (chatIdRef.current === "default" && value.recipient === "default") {
 				setChatMessages([...chatMessagesRef.current, value])
 			}
@@ -120,10 +125,24 @@ export const ChatProvider = (props) => {
 				updateUserList([...userListRef.current, data])
 			}
 
+			// Central system notification in general chat
+			if (chatIdRef.current === "default") {
+				const sysMsg = {
+					id: "sys_" + Date.now() + "_" + Math.random(),
+					sender: 0,
+					recipient: "default",
+					msg: `${data.name} connected`,
+					is_system: true,
+					ts: new Date().toISOString()
+				}
+				setChatMessages([...chatMessagesRef.current, sysMsg])
+			}
 		}
 	}
 
 	function onUserDisconnected (data) {
+		const targetUser = userListRef.current.find(obj => obj.id === data.id)
+		const userName = data.name || (targetUser ? targetUser.name : "A user")
 		updateUserList(
 			userListRef.current.map(obj => {
 				if (obj.id === data.id) {
@@ -132,6 +151,19 @@ export const ChatProvider = (props) => {
 				return obj
 			})
 		)
+
+		// Central system notification in general chat
+		if (chatIdRef.current === "default") {
+			const sysMsg = {
+				id: "sys_" + Date.now() + "_" + Math.random(),
+				sender: 0,
+				recipient: "default",
+				msg: `${userName} disconnected`,
+				is_system: true,
+				ts: new Date().toISOString()
+			}
+			setChatMessages([...chatMessagesRef.current, sysMsg])
+		}
 	}
 
 	const initSocket = () => {
@@ -141,8 +173,11 @@ export const ChatProvider = (props) => {
 	}
 
 	const initSocketEvents = () => {
-		// socket.on('connect', onConnect)
-		// socket.on('disconnect', onDisconnect)
+		socket.on('connect', () => {
+			// Refresh user list once the socket is established to catch any
+			// user_connected events that may have fired during the handshake.
+			api.getUserList().then(r => { if (r) updateUserList(r) })
+		})
 		socket.on('message', onMessage)
 		socket.on('user_connected', onUserConnected)
 		socket.on('user_disconnected', onUserDisconnected)
