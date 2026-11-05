@@ -12,11 +12,3 @@
 8. Sidebar must show the chat room as a group at top.
 9. User can send messages to chat room and in private to each user.
 10. Messages can contain text and emojis
-
-### Peewee
-
-![Peewee](https://docs.peewee-orm.com/projects/flask-peewee/en/latest/_static/peewee.jpg)
-
-- Migrations https://github.com/klen/peewee_migrate
-- Serialization https://github.com/klen/marshmallow-peewee
-

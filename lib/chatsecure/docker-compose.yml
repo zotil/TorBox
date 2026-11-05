@@ -1,9 +1,0 @@
-version: '3'
-
-services:
-  backend:
-    build: .
-    volumes:
-      - ./:/app
-    ports:
-      - "127.0.0.1:5000:5000"
