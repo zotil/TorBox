@@ -18,13 +18,17 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 # DESCRIPTION
-# This file fetches THREE new bridges. The return values are:
+# This file fetches new bridges from the Tor Project's bridge distribution
+# (rdsys, moat "circumvention" API). The return values are one bridge line per
+# line, for example:
 # obfs4 <IP address>:<Port> <Fingerprint> <Certificate> <iat-mode>
-# or -1 if fetching the bridge fails over tor and clearnet.
+# or an error code (see below).
 #
 # IMPORTANT
-# The bridge database delivers only 1-3 bridges approximately every 24 hours,
-# of which we pick one. With the bridges already delivered this should be sufficient.
+# Since BridgeDB was replaced by rdsys (September 2024), bridges are no longer
+# requested with a CAPTCHA. Without a country, the "defaults" endpoint is used;
+# with a country, the "settings" endpoint returns the bridges recommended for
+# that country. Built-in bridges are only used for Snowflake.
 #
 # SYNTAX
 # Usage: bridges_get.py [OPTIONS]
@@ -32,8 +36,7 @@
 # Options:
 #   -n, --network TEXT  Force to get bridges over specific network
 #   -c, --country TEXT  Circumvention country setting - <TEXT> has to be in lowercase
-#   --snowflake         Get snowflake bridges instead of obfs4 (circumvention
-#                       country need to be set)
+#   --snowflake         Get snowflake bridges instead of obfs4
 #   --help              Show this message and exit.
 #
 # ERROR CODES:
@@ -41,13 +44,14 @@
 # -2: Bridges not found
 
 
-import click
 import sys
-import base64
+
+import click
 import requests
-import numpy as np
-import cv2 as cv
-from pytesseract import image_to_string
+
+MOAT_URL = "https://bridges.torproject.org/moat/circumvention"
+HEADERS = {"Content-Type": "application/vnd.api+json"}
+TIMEOUT = 60
 
 
 def get_proxy(network=''):
@@ -60,8 +64,8 @@ def get_proxy(network=''):
     if not network:
         # Check if Tor proxy is up, otherwise set inet network
         try:
-            r = requests.get("https://torproject.org", proxies=proxy, timeout=5)
-        except:  # noqa
+            requests.get("https://torproject.org", proxies=proxy, timeout=5)
+        except requests.exceptions.RequestException:
             network = 'inet'
 
     if network == "inet":
@@ -72,138 +76,65 @@ def get_proxy(network=''):
     return proxy
 
 
-def get_challenge(proxy):
-    moat_fetch = "https://bridges.torproject.org/moat/fetch"
-    headers = {"Content-type": "application/vnd.api+json"}
-    data = {
-        "data": [{
-            "version": "0.1.0",
-            "type": "client-transports",
-            "supported": ["obfs4"],
-        }]
-    }
-
+def moat_request(endpoint, data, proxy):
+    """POST to a moat circumvention endpoint and return the list of settings."""
     try:
-        r = requests.post(moat_fetch, json=data, proxies=proxy, headers=headers)
-        r = r.json()
-        r = r["data"][0]
-    except:
+        r = requests.post(f"{MOAT_URL}/{endpoint}", json=data, proxies=proxy,
+                          headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        return r.json().get("settings") or []
+    except (requests.exceptions.RequestException, ValueError):
         print(-1)
-        quit()
-    return r["image"], r["challenge"], r["transport"]
+        sys.exit(1)
 
 
-def readb64(encoded_data):
-   nparr = np.frombuffer(base64.b64decode(encoded_data), np.uint8)
-   img = cv.imdecode(nparr, cv.IMREAD_COLOR)
-   return img
-
-
-def beat_captcha(image):
-    img = readb64(image)
-    ret, img = cv.threshold(img, 100, 255, cv.THRESH_BINARY)
-
-    kernel = np.ones((5, 5), np.uint8)
-    img = cv.morphologyEx(img, cv.MORPH_OPEN, kernel)
-
-    # Read chars from img
-    captcha_text = image_to_string(img,
-                                   config='-c tessedit_char_whitelist=' \
-                                          '0123456789' \
-                                          'ABCDEFGHIJKMNLOPKRSTUVWXYZ' \
-                                          'abcdefghijklmnopqrstuvwxyz')
-    captcha_text = captcha_text.strip()
-    return captcha_text
-
-
-def solve_challenge(captcha_text, challenge, transport, proxy):
-    moat_check = "https://bridges.torproject.org/moat/check"
-    headers = {"Content-type": "application/vnd.api+json"}
-    data = {
-        "data": [{
-            "id": "2",
-            "type": "moat-solution",
-            "version": "0.1.0",
-            "transport": transport,
-            "challenge": challenge,
-            "solution": captcha_text,
-            "qrcode": "false",
-        }]
-    }
-    r = requests.post(moat_check, json=data, proxies=proxy, headers=headers)
-    r = r.json()
-    if r.get('errors'):
-        return False
-    return r["data"][0]["bridges"]
-
-
-def get_bridges(network):
-    proxy = get_proxy(network)
-    bridges = False
-    while not bridges:
-        captcha_img, challenge, transport = get_challenge(proxy)
-        captcha_text = beat_captcha(captcha_img)
-        bridges = solve_challenge(captcha_text, challenge, transport, proxy)
-
+def pick_bridges(settings, transport, sources):
+    """Return the unique bridge lines of a transport from the given sources."""
+    bridges = []
+    for setting in settings:
+        b = setting.get("bridges") or {}
+        if b.get("type") == transport and b.get("source") in sources:
+            for line in b.get("bridge_strings") or []:
+                if line not in bridges:
+                    bridges.append(line)
     return bridges
 
 
-def get_circumvention_bridges(country, network, snowflake):
+def get_bridges(network, country, snowflake):
     proxy = get_proxy(network)
-    url = "https://bridges.torproject.org/moat/circumvention/settings"
-    headers = {"Content-type": "application/vnd.api+json"}
-    data = {"country": country}
+    transport = "snowflake" if snowflake else "obfs4"
+    # obfs4: only newly distributed bridges; snowflake: built-in lines are fine
+    sources = ("bridgedb", "builtin") if snowflake else ("bridgedb",)
 
-    try:
-        r = requests.get(url, json=data, proxies=proxy, headers=headers)
-        r = r.json()
-        r = r["settings"]
-        if len(r):
-            if snowflake:
-                for i in r:
-                    bridge = i["bridges"]
-                    if bridge["type"] == "snowflake":
-                        return bridge["bridge_strings"]
-                print(-2)
-                sys.exit(1)
-            else:
-                for i in r:
-                    bridge = i["bridges"]
-                    if bridge["type"] == "obfs4" and bridge["source"] == "bridgedb":
-                        return bridge["bridge_strings"]
-            print(-2)
-            sys.exit(1)
-        else:
-            print(-2)
-            sys.exit(1)
+    bridges = []
+    if country:
+        settings = moat_request("settings", {"country": country, "transports": [transport]}, proxy)
+        bridges = pick_bridges(settings, transport, sources)
 
-    except requests.exceptions.ConnectionError:
-        print(-1)
-        sys.exit(1)
+    # No country, or no special settings for that country: use the defaults
+    if not bridges:
+        settings = moat_request("defaults", {"transports": [transport]}, proxy)
+        bridges = pick_bridges(settings, transport, sources)
+
+    return bridges
+
 
 # fmt: off
 @click.command()
 @click.option('--network', '-n', default='', type=str, help="Force to get bridges over specific network. Example: -n <tor|inet>")
 @click.option('--country', '-c', default='', type=str, help="Circumvention country setting in lowercase")
-@click.option('--snowflake', is_flag=True, default=False, show_default=True, help="Get snowflake bridges instead of obfs4 (circumvention country need to be set)")
+@click.option('--snowflake', is_flag=True, default=False, show_default=True, help="Get snowflake bridges instead of obfs4")
 # fmt: on
 def main(network, country, snowflake):
     # Validate options
-    if country:
-        if len(country) > 2:
-            print("[X] Invalid country")
-            sys.exit(1)
-    if snowflake:
-        if country == '':
-            print("[x] Country must be set")
-            sys.exit(1)
+    if country and len(country) > 2:
+        print("[X] Invalid country")
+        sys.exit(1)
 
-    # If country is set get circumvention bridges
-    if country:
-        bridges = get_circumvention_bridges(country=country, network=network, snowflake=snowflake)
-    # BridgeDB obfs4 bridges
-    else:
-        bridges = get_bridges(network)
+    bridges = get_bridges(network=network, country=country.lower(), snowflake=snowflake)
+    if not bridges:
+        print(-2)
+        sys.exit(1)
 
     print("\n".join(bridges))
 

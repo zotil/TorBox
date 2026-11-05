@@ -5,10 +5,8 @@ name = "pypi"
 
 [packages]
 click = "*"
-opencv-python-headless = "<5"
 paramiko = "*"
 PySocks = "*"
-pytesseract = "*"
 requests = "*"
 stem = "1.8.2"
 tornado = "*"
