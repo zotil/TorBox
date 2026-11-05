@@ -1202,3 +1202,24 @@ check_ssh_status()
 				SSH_USB_VPN_CHECK="ON"
     fi
 }
+
+# compile_tcs_tfs()
+# Compiles TorBox ChatSecure (TCS) and TorBox File Sharing (TFS) from their Go
+# sources if a binary is missing (for example after an update with an older
+# version of menu-update).
+# Syntax compile_tcs_tfs
+# Used predefined variables: none
+compile_tcs_tfs()
+{
+	local TORBOX_LIB="/home/torbox/torbox/lib"
+	if [ -x "$TORBOX_LIB/chatsecure/tcs" ] && [ -x "$TORBOX_LIB/fileshare/tfs" ]; then
+		return 0
+	fi
+	export PATH=$PATH:/usr/local/go/bin
+	if ! command -v go &>/dev/null; then
+		return 1
+	fi
+	[ -x "$TORBOX_LIB/chatsecure/tcs" ] || (cd "$TORBOX_LIB/chatsecure" && CGO_ENABLED=0 go build -ldflags="-s -w" -o tcs .) &>/dev/null
+	[ -x "$TORBOX_LIB/fileshare/tfs" ] || (cd "$TORBOX_LIB/fileshare" && CGO_ENABLED=0 go build -ldflags="-s -w" -o tfs .) &>/dev/null
+	[ -x "$TORBOX_LIB/chatsecure/tcs" ] && [ -x "$TORBOX_LIB/fileshare/tfs" ]
+}

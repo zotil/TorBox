@@ -47,6 +47,9 @@ NGINX_DIR="/etc/nginx"
 # include lib
 .  /home/torbox/torbox/lib/torbox.lib
 
+# Make sure the TCS/TFS binaries exist (they are compiled from Go sources)
+compile_tcs_tfs
+
 ######## MAIN ########
 
 n=$(grep -c "^TFS-" "${RUNFILE}")

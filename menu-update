@@ -662,7 +662,7 @@ update_torbox_menu()
 				cp $TMP_DIR/torbox/lib/fileshare/pid/$TFS_NAME torbox/lib/fileshare/pid/
 			done
 		fi
-		TFS_NAME_LIST=$(ls $TMP_DIR/torbox/lib/chatsecure/pid/)
+		TCS_NAME_LIST=$(ls $TMP_DIR/torbox/lib/chatsecure/pid/)
 		if [ ! -z "$TCS_NAME_LIST" ]; then
 			for TCS_NAME in $TCS_NAME_LIST; do
 				cp $TMP_DIR/torbox/lib/chatsecure/pid/$TCS_NAME torbox/lib/chatsecure/pid/
@@ -672,6 +672,16 @@ update_torbox_menu()
 		if [ -d "$TMP_DIR" ]; then
 			sudo rm -r $TMP_DIR
 		fi
+		# Compile TorBox ChatSecure (TCS) and TorBox File Sharing (TFS)
+		echo -e "${RED}[+] Compiling TCS and TFS...${NOCOLOR}"
+		export PATH=$PATH:/usr/local/go/bin
+		(cd "$HOME/torbox/lib/chatsecure" && CGO_ENABLED=0 go build -ldflags="-s -w" -o tcs .)
+		(cd "$HOME/torbox/lib/fileshare" && CGO_ENABLED=0 go build -ldflags="-s -w" -o tfs .)
+		if [ ! -x "$HOME/torbox/lib/chatsecure/tcs" ] || [ ! -x "$HOME/torbox/lib/fileshare/tfs" ]; then
+			echo -e "${YELLOW}[!] COULDN'T COMPILE TCS/TFS! File sharing and chat via Onion Services will not work.${NOCOLOR}"
+			sleep 5
+		fi
+		(go clean -modcache) 2>/dev/null
 		cd torbox
     echo -e "${YELLOW}[+] DONE! TorBox menu is now updated!${NOCOLOR}"
     sleep 5
