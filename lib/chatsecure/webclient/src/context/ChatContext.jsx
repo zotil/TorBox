@@ -94,6 +94,11 @@ export const ChatProvider = (props) => {
 
 	function onMessage(value) {
 		if (value.sender !== userId) {
+			// Sender not in the local user list yet (e.g. a missed user_connected
+			// event): refresh the list so the message can show its name and avatar.
+			if (!userListRef.current.some(u => u.id === value.sender)) {
+				api.getUserList().then(r => { if (r) updateUserList(r) })
+			}
 			if (chatIdRef.current === "default" && value.recipient === "default") {
 				setChatMessages([...chatMessagesRef.current, value])
 			}
@@ -137,7 +142,7 @@ export const ChatProvider = (props) => {
 
 	function onUserDisconnected (data) {
 		const targetUser = userListRef.current.find(obj => obj.id === data.id)
-		const userName = data.name || (targetUser ? targetUser.name : "Un usuario")
+		const userName = data.name || (targetUser ? targetUser.name : "A user")
 		updateUserList(
 			userListRef.current.map(obj => {
 				if (obj.id === data.id) {
