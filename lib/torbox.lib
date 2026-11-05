@@ -1219,7 +1219,13 @@ compile_tcs_tfs()
 	if ! command -v go &>/dev/null; then
 		return 1
 	fi
+	echo -e "${RED}[+] Compiling TorBox ChatSecure (TCS) and TorBox File Sharing (TFS)...${NOCOLOR}"
+	echo -e "${RED}[+] This is only needed once and can take a few minutes. Please wait...${NOCOLOR}"
 	[ -x "$TORBOX_LIB/chatsecure/tcs" ] || (cd "$TORBOX_LIB/chatsecure" && CGO_ENABLED=0 go build -ldflags="-s -w" -o tcs .) &>/dev/null
 	[ -x "$TORBOX_LIB/fileshare/tfs" ] || (cd "$TORBOX_LIB/fileshare" && CGO_ENABLED=0 go build -ldflags="-s -w" -o tfs .) &>/dev/null
-	[ -x "$TORBOX_LIB/chatsecure/tcs" ] && [ -x "$TORBOX_LIB/fileshare/tfs" ]
+	if [ -x "$TORBOX_LIB/chatsecure/tcs" ] && [ -x "$TORBOX_LIB/fileshare/tfs" ]; then
+		echo -e "${RED}[+] Done!${NOCOLOR}"
+		return 0
+	fi
+	return 1
 }
