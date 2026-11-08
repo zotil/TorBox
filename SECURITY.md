@@ -6,30 +6,26 @@ TorBox is ideal for providing additional protection for the entire data stream u
 
 ## Supported Versions / SHA-256 hashes
 
-If you [download](https://www.torbox.ch/?page_id=1128) the TorBox image file and/or the TorBox menu package from the [TorBox website](https://www.torbox.ch), you can check the integrity of the downloaded files with the provided SHA-256 hashes (for details, see [here](https://www.torbox.ch/?page_id=1128)).
+If you [download](https://zotil.github.io/TorBox/sha-256-hashes-of-all-files/) the TorBox image file and/or the TorBox menu package from the [TorBox website](https://zotil.github.io/TorBox/), you can check the integrity of the downloaded files with the provided SHA-256 hashes (for details, see [here](https://zotil.github.io/TorBox/sha-256-hashes-of-all-files/)).
 
-Updates (for example, by using entry 5 in the [Update and Reset menu](https://www.torbox.ch/?page_id=1410)) are made only for the latest version. If possible, we describe the update path from the previous to the last version in the [Blog post to a new version](https://www.torbox.ch/?cat=3). Nevertheless, we recommend, if possible, using the new image.
+Updates (for example, by using entry 5 in the [Update and Reset menu](https://zotil.github.io/TorBox/sub-menu-update-and-reset/)) are made only for the latest version. If possible, we describe the update path from the previous to the last version in the [Blog post to a new version](https://zotil.github.io/TorBox/category/blog/). Nevertheless, we recommend, if possible, using the new image.
 
 ## Reporting a Vulnerability
 
-To report security issues, send an email to [anonym@torbox.ch](mailto:anonym@torbox.ch).
+Please report security issues privately through [GitHub's private vulnerability reporting](https://github.com/zotil/TorBox/security/advisories/new), or by email to [zotil.dev@proton.me](mailto:zotil.dev@proton.me).
 
-For secure email communication, we are using [Protonmail](https://protonmail.com). All messages between Protonmail users are automatically [end-to-end encrypted](https://protonmail.com/blog/what-is-end-to-end-encryption/). Additionally, all messages in Protonmail inboxes are protected with [PGP encryption](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) to prevent Protonmail (or anyone else) from reading or sharing emails, a concept known as [zero-access encryption](https://protonmail.com/blog/zero-access-encryption/). Creating a Protonmail email address is free and takes less than a minute. With Protonmail, anyone can use PGP regardless of their technical knowledge. However, technically versed, can also use [our public PGP key](https://raw.githubusercontent.com/radio24/TorBox/master/PUBLICKEY.asc) to communicate with us:
+For encrypted email, use the maintainer's PGP key:
+
+- Fingerprint: `F914 0269 F3EB A109 5B93  17AA 3B39 0D54 D028 1EBE`
+- Key: [PUBLICKEY-zotil.asc](PUBLICKEY-zotil.asc) (also available on [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/F9140269F3EBA1095B9317AA3B390D54D0281EBE))
+
+## Verifying the Maintainer's Key
+
+The maintainer's key is certified by the former TorBox project key ([PUBLICKEY.asc](PUBLICKEY.asc), fingerprint `69E1 14C5 C446 133A 0489  A6C0 E849 2953 8341 E840`). That key is kept in the repository only to verify the maintainer's key; its email address is no longer a contact for the project. To verify it:
 
 ```
------BEGIN PGP PUBLIC KEY BLOCK-----
-Version: OpenPGP.js v4.10.10
-Comment: https://openpgpjs.org
-
-xjMEXemNYRYJKwYBBAHaRw8BAQdAH22RKj/kZRqZds03njk7tSFEgrYkbeFo
-PRC3CwA2JwPNI2Fub255bUB0b3Jib3guY2ggPGFub255bUB0b3Jib3guY2g+
-wncEEBYKAB8FAl3pjWEGCwkHCAMCBBUICgIDFgIBAhkBAhsDAh4BAAoJEOhJ
-KVODQehAkY8A/A7vPC+6nPaGBiv7P6wryQ+THA97uEwRK0Rsx3TYlKHuAQDN
-M4XH5G++eqqptaEv1daJEofwOnYxahJoHzYvdfZUBM44BF3pjWESCisGAQQB
-l1UBBQEBB0Cp+yT4Ec5kmGaGWneulB/KSgXLkkMSVaD++dC9mrcTfQMBCAfC
-YQQYFggACQUCXemNYQIbDAAKCRDoSSlTg0HoQArZAQD94cT2csOWOsqqx7+q
-Ps0P1Udn2/jXRbO+XbfzBzjM6wEAq4Z4g0w03KkHC3aU8/fATEnbN2+TInLV
-gNKTldrMtAg=
-=eGoI
------END PGP PUBLIC KEY BLOCK-----
+gpg --import PUBLICKEY.asc PUBLICKEY-zotil.asc
+gpg --check-sigs F9140269F3EBA1095B9317AA3B390D54D0281EBE
 ```
+
+Each user ID of the maintainer's key must show a valid signature (`sig!`) from `E84929538341E840`.
