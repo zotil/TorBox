@@ -10,7 +10,7 @@ PySocks = "*"
 requests = "*"
 stem = "1.8.2"
 tornado = "*"
-urwid = "<4"
+urwid = "<5"
 
 [dev-packages]
 
