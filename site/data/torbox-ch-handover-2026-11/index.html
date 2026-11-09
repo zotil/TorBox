@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'none'; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; form-action 'self'; base-uri 'self'">
+<meta name="referrer" content="no-referrer">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TorBox — maintained by Zotil</title>
+<meta name="description" content="TorBox is an anonymising router based on Tor. The project has been handed over to Zotil. Repository: github.com/zotil/TorBox.">
+<link rel="icon" href="img/torbox-icon-300x300.png" sizes="300x300">
+<link rel="apple-touch-icon" href="img/torbox-icon-300x300.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{color-scheme:light}
+body{background:#444;margin:0;padding:2rem 1rem;
+     font:16px/1.6 Montserrat,"Helvetica Neue",Arial,sans-serif;color:#1a1a1a}
+.card{background:#fff;max-width:700px;margin:0 auto;border-radius:8px;
+      box-shadow:0 2px 12px rgba(0,0,0,.35);overflow:hidden}
+img.banner{display:block;width:100%;height:auto}
+.notice{background:#1a1a1a;color:#fff;padding:.85rem 1.25rem;font-weight:700}
+.card-body{padding:1.5rem 1.75rem}
+h1{font-size:24px;font-weight:700;color:#1a1a1a;margin:.4rem 0 1rem}
+h2{font-size:16px;font-weight:700;color:#1a1a1a;margin:1.5rem 0 .5rem;letter-spacing:.02em}
+.divider{text-align:center;color:#999;letter-spacing:.4em;margin:1.5rem 0}
+p{font-size:16px;line-height:1.6}
+a{color:#21759B;font-weight:700;text-decoration:none;background:#f1f1f1;padding:1px 5px;border-radius:3px}
+a:hover{background:#e3e3e3}
+code,pre{font-family:ui-monospace,Menlo,Consolas,monospace}
+pre{background:#f3f3f3;padding:.75rem 1rem;font-size:.85em;border-radius:6px;
+     white-space:pre;overflow-x:auto;overflow-y:hidden;
+     scrollbar-width:auto;scrollbar-color:#8a8a8a #e6e6e6}
+pre::-webkit-scrollbar{height:16px;background:#e6e6e6}
+pre::-webkit-scrollbar-track{background:#e6e6e6}
+pre::-webkit-scrollbar-thumb{background:#8a8a8a;border-radius:8px;border:4px solid #e6e6e6}
+pre::-webkit-scrollbar-thumb:hover{background:#5f5f5f}
+.key{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;word-break:break-all}
+.muted{color:#555;font-size:.9em}
+ul.links li{margin:.35rem 0}
+footer{padding:1rem 1.75rem;color:#777;font-size:.85em;border-top:1px solid #eee}
+.archive-note{max-width:700px;margin:0 auto 1rem;background:#fff8d6;color:#1a1a1a;border-radius:8px;padding:.75rem 1.25rem;font-size:.9em;line-height:1.5}
+.archive-note a{font-weight:400}
+</style>
+</head>
+<body>
+<div class="archive-note">Archived copy of <strong>https://www.torbox.ch/</strong> as published by the former maintainer, captured on 9 November 2026. Only change: Cloudflare's email obfuscation was replaced by the plain addresses. <a href="../../torbox-continues/">Back to the TorBox website</a></div>
+<div class="card">
+  <img class="banner" src="img/torbox-banner-768x269.jpg" alt="TorBox — anonymising router banner">
+  <div class="notice">🔐 Project handed over — <strong>Zotil</strong> is the new maintainer of TorBox.</div>
+  <div class="card-body">
+    <h1>TorBox</h1>
+    <p>TorBox is an easy-to-use, anonymising router based on Raspberry Pi, which
+    also runs on Debian, DietPi and Ubuntu-based systems. TorBox can create a
+    separate WiFi that routes the encrypted network data over the Tor network.
+    However, TorBox also supports clients who are connected to a cable. As TorBox
+    mini, it can be plugged into a USB socket and be used as a network device
+    which sends all the traffic to the Tor network. TorBox on a Cloud can be used
+    on a cloud combined with an OpenVPN server — it is literally a private VPN
+    with tor functionality. Locally installed or on a cloud, TorBox also helps to
+    publish data easily and safely through Onion Services. The type of client
+    (desktop, laptop, tablet, mobile, etc.) and the operating system on the client
+    don't matter.</p>
+
+    <div class="divider">• • •</div>
+
+    <h2>Maintainer handover</h2>
+    <p>After many years of developing and maintaining TorBox, I have decided to
+    hand the project over to Zotil, who will continue its development from now
+    on.</p>
+    <p>The decision didn't come overnight. Over time, my motivation for the
+    project faded, and my interests shifted towards artificial intelligence,
+    especially local language models. I want to put my time and energy into that
+    field. TorBox deserves a maintainer who can give it the attention it needs.</p>
+    <p>I couldn't imagine a better successor. Zotil has been contributing to
+    TorBox for more than six years and is responsible for its Python components,
+    such as the excellent TorBox Wireless Manager. He knows the project inside
+    out, and I am convinced that it is in the best of hands with him.</p>
+    <p>I would like to thank everyone who used, tested, and supported TorBox over
+    the years, and especially Zotil for taking over. Please direct all
+    questions, bug reports, and contributions to him from now on.</p>
+    <p>Zotil, I wish you every success with TorBox!</p>
+
+    <div class="divider">• • •</div>
+
+    <p>The project continues here:</p>
+    <ul class="links">
+      <li>Source code &amp; releases: <a href="https://github.com/zotil/TorBox">github.com/zotil/TorBox</a></li>
+      <li>Website &amp; documentation: <a href="https://zotil.github.io/TorBox/">zotil.github.io/TorBox</a></li>
+      <li>Security reports: <a href="https://github.com/zotil/TorBox/security/advisories/new">report a security issue</a></li>
+      <li>Support &amp; contact: <a href="mailto:zotil.dev@proton.me">zotil.dev@proton.me</a></li>
+    </ul>
+
+    <div class="divider">• • •</div>
+
+    <h2>Verifying the handover</h2>
+    <p>For <strong>cryptographically verifiable</strong> confirmation that this
+    handover is legitimate, download the <a href="handover.txt">handover
+    notice</a> and <a href="handover.txt.asc">its PGP signature</a>. The TorBox
+    key lives in the repository as <code>PUBLICKEY.asc</code>, so this stays
+    verifiable even after the old website is retired:</p>
+    <pre><code># 1) get the TorBox key (in the repo, not on the retired site)
+curl -fsSL https://raw.githubusercontent.com/zotil/TorBox/master/PUBLICKEY.asc | gpg --import
+# 2) verify
+gpg --verify handover.txt.asc handover.txt
+# expect: "Good signature from ... TorBox &lt;anonym@torbox.ch&gt;"
+# (a "not certified"/untrusted note is normal)</code></pre>
+    <p class="muted">Archived copies of both keys are also on this page:
+    <a href="torbox-public.asc">torbox-public.asc</a> (former maintainer,
+    69E1…E840) and <a href="zotil-signed.asc">zotil-signed.asc</a> (Zotil, cross-signed by the TorBox key).</p>
+
+    <div class="divider">• • •</div>
+
+    <h2>PGP keys</h2>
+    <p><strong>Former maintainer (TorBox project key)</strong><br>
+    <span class="key">69E1 14C5 C446 133A 0489 A6C0 E849 2953 8341 E840</span><br>
+    uid <code><a href="mailto:anonym@torbox.ch">anonym@torbox.ch</a></code> ·
+    <a href="torbox-public.asc">download .asc</a> · also in the repo as
+    <a href="https://github.com/zotil/TorBox/blob/master/PUBLICKEY.asc">PUBLICKEY.asc</a></p>
+    <p><strong>New maintainer (Zotil)</strong><br>
+    <span class="key">F914 0269 F3EB A109 5B93 17AA 3B39 0D54 D028 1EBE</span><br>
+    <a href="zotil-signed.asc">download .asc</a> ·
+    <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/F9140269F3EBA1095B9317AA3B390D54D0281EBE">keys.openpgp.org</a></p>
+    <p class="muted">zotil-signed.asc is cross-signed by the TorBox key (69E1…E840), so its authenticity is verifiable end-to-end.</p>
+  </div>
+  <footer>Created 2026 by radio24 · using Hermes v0.23.0</footer>
+</div>
+</body>
+</html>

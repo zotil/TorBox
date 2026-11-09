@@ -333,7 +333,7 @@ ol {
 <header class="entry-header">
 <h1 class="entry-title">TorBox v.0.5.2 released — Chat Secure</h1> </header>
 <div class="entry-content">
-<p class="wp-block-paragraph"><strong>Update – 10.03.2023</strong><br/>With this update, we brought TorBox’s software to the latest state: <a href="https://www.raspberrypi.org/software/operating-systems/" rel="noreferrer noopener" target="_blank">Raspberry Pi OS “Bullseye” lite 64bit</a> (Release date: February 21st, 2023) with the <a href="https://kernelnewbies.org/Linux_5.15" rel="noreferrer noopener" target="_blank">Linux Kernel 5.15.84</a> and <a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.4.7.13" rel="noreferrer noopener" target="_blank">Tor version 0.4.7.13</a> with <a href="https://salsa.debian.org/pkg-privacy-team/obfs4proxy/-/blob/master/ChangeLog" rel="noreferrer noopener" target="_blank">obfs4proxy version 0.0.14</a> and Snowflake 2.5.1. We also fixed some critical bugs in connection with Snowflake and Meek, which blocked the correct functioning of these two bridges (see below). We added a better time synchronization to avoid problems with building tor circuits, especially in cases without Internet connectivity. As always, we appreciate <a href="mailto:anonym@torbox.ch" rel="noreferrer noopener" target="_blank">feedback, ideas, bug reports, pull requests etc</a>.</p>
+<p class="wp-block-paragraph"><strong>Update – 10.03.2023</strong><br/>With this update, we brought TorBox’s software to the latest state: <a href="https://www.raspberrypi.org/software/operating-systems/" rel="noreferrer noopener" target="_blank">Raspberry Pi OS “Bullseye” lite 64bit</a> (Release date: February 21st, 2023) with the <a href="https://kernelnewbies.org/Linux_5.15" rel="noreferrer noopener" target="_blank">Linux Kernel 5.15.84</a> and <a href="https://gitweb.torproject.org/tor.git/plain/ChangeLog?id=tor-0.4.7.13" rel="noreferrer noopener" target="_blank">Tor version 0.4.7.13</a> with <a href="https://salsa.debian.org/pkg-privacy-team/obfs4proxy/-/blob/master/ChangeLog" rel="noreferrer noopener" target="_blank">obfs4proxy version 0.0.14</a> and Snowflake 2.5.1. We also fixed some critical bugs in connection with Snowflake and Meek, which blocked the correct functioning of these two bridges (see below). We added a better time synchronization to avoid problems with building tor circuits, especially in cases without Internet connectivity. As always, we appreciate <a href="mailto:zotil.dev@proton.me" rel="noreferrer noopener" target="_blank">feedback, ideas, bug reports, pull requests etc</a>.</p>
 <p class="wp-block-paragraph"><strong>TorBox Image</strong> (about 1.1 GB): v.0.5.2 (10.03.2023) – <a href="../sha-256-hashes-of-all-files/">SHA-256 values</a><br/><strong>TorBox Menu only:</strong> <a href="https://github.com/radio24/TorBox/tags">v.0.5.2 (10.03.2023)</a> – <a href="../sha-256-hashes-of-all-files/">SHA-256 values</a></p>
 <p class="wp-block-paragraph"><strong>Update – 16.02.2023</strong><br/>If TorBox is started for the first time, and the connection is selected through WiFi by the “first run” script, then synchronising the system clock certainly fails. As a consequence, tor will not be able to build a circuit. With this update, the “first run” script will newly display the system time and allow the user to synchronise the system clock automatically or manually. Also, we integrated a new menu entry in the Update and Maintenance submenu to synchronise the system clock.</p>
 <p class="wp-block-paragraph">More than a year ago, we started to integrate Onion Services into TorBox. In the <a href="../sub-menu-onion-services/" rel="noreferrer noopener" target="_blank">sub-menu Onion Services</a>, it is easy to set up an Onion Service and to share a folder or a simple website, as well as TorBox File Sharing (TFS). With TorBox v.0.5.2, we additionally integrated TorBox Chat Secure (TCS). This is a secure way to communicate between two people using a specific onion domain. We still have some ideas for Onion Services for the following TorBox versions, for example, to allow users to install MariaDB/MySQL, PHP and WordPress through the menu so that dynamic website can be easily hosted on TorBox as an Onion service. Another idea currently under review is the further development of TCS into a chat room where several people can chat. With all these or other ideas, as well as eliminating errors and simplifying processes, active feedback from users is essential. Also, some bugs have been fixed in the new version, mainly as they occurred in our daily use. However, we still hear far too little from users. </p>
@@ -422,6 +422,9 @@ previous WordPress site was running and are kept as an archive. To ask a questio
 <h2 class="widget-title">Recent Posts</h2><nav aria-label="Recent Posts">
 <ul>
 <li>
+<a href="../torbox-continues/">TorBox continues</a>
+</li>
+<li>
 <a href="../torbox-project-discontinued/">⚠️ TorBox Project Discontinued</a>
 </li>
 <li>
@@ -433,12 +436,10 @@ previous WordPress site was running and are kept as an archive. To ask a questio
 <li>
 <a href="../torbox-v-0-5-4-security-and-maintenance-update-20-july-2025/">TorBox v.0.5.4 – Security and Maintenance Update 20 July 2025</a>
 </li>
-<li>
-<a href="../torbox-v-0-5-4-security-update-17-april-2025/">TorBox v.0.5.4 – Security Update 17 April 2025</a>
-</li>
 </ul>
 </nav></section><section class="widget widget_search" id="search-widget"><h2 class="widget-title">Search</h2><div class="pagefind-host" id="search"></div><p class="search-hint"><a href="../search/">Full-page search</a></p></section><section class="widget widget_archive" id="archives-2"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
 <ul>
+<li><a href="../2026/11/">November 2026</a></li>
 <li><a href="../2026/09/">September 2026</a></li>
 <li><a href="../2026/04/">April 2026</a></li>
 <li><a href="../2025/12/">December 2025</a></li>

@@ -1,0 +1,10 @@
+# SHA-256 of the files as served by https://www.torbox.ch/ on 2026-11-09
+f8fd83a4de76731b8d94ef649585cb925d50dea20973090896885c96d29ee247  handover.txt
+94d4f45f102fd2e686bbeaa0c09517e41c3e51d199f491994c98e3dd3738cd97  handover.txt.asc
+f178da4cb76daa99745070437e4632e9377100e2e1df3d4d932d3ea3dd6675f1  torbox-public.asc
+307571b5f0fe2847f225769f9a4415ef616895b24ca77a820d444d0641b62ead  zotil-signed.asc
+6bb7e0a487e6e0e779027a29468c32eb4d0a2da08a52de99ece477b60ca0f6f2  img/torbox-icon-300x300.png
+bb1400335f065e0b6098dcd2938af4fdac62672cf7829b388c9f5f603eda62f4  img/torbox-banner-768x269.jpg
+51acde21a15dbfc214cda9ea9b69401f7dbca61df290b9f14d47cc41282e9153  fonts/fonts.css
+ddc148b8a0a27b1449fda6033f4a0defac9bd43210117b50d5d7ad1eda09f394  fonts/montserrat-latin-400-normal.woff2
+f31b80562610135edd91a86ec7f243c5eeaec2ec08337e6a20c2d135d8e217da  fonts/montserrat-latin-700-normal.woff2
