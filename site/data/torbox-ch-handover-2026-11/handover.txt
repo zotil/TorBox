@@ -1,0 +1,26 @@
+TorBox project handover notice
+==============================
+
+Effective 2026-11-07, the TorBox project is handed over from the former
+maintainer radio24 to Zotil.
+
+Zotil is the new and sole maintainer. The project continues at:
+  - Repository & releases:   https://github.com/zotil/TorBox
+  - Website & documentation:  https://zotil.github.io/TorBox/
+  - Security reports:        https://github.com/zotil/TorBox/security/advisories/new
+  - Support:                 zotil.dev@proton.me
+  - Zotil's key:             F914 0269 F3EB A109 5B93 17AA 3B39 0D54 D028 1EBE
+                             https://keys.openpgp.org/vks/v1/by-fingerprint/
+                              F9140269F3EBA1095B9317AA3B390D54D0281EBE
+
+This notice is signed with the TorBox project key
+  69E1 14C5 C446 133A 0489 A6C0 E849 2953 8341 E840  (anonym@torbox.ch)
+that is published as PUBLICKEY.asc in the zotil/TorBox repository.
+Because that key lives in the repository, this handover stays verifiable
+even after the old website is retired:
+
+  curl -fsSL https://raw.githubusercontent.com/zotil/TorBox/master/PUBLICKEY.asc | gpg --import
+  gpg --verify handover.txt.asc handover.txt
+  # expect: "Good signature from ... TorBox <anonym@torbox.ch>"
+
+-- end of notice --

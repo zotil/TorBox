@@ -1,0 +1,6 @@
+/* Self-hosted Montserrat, SIL Open Font License 1.1. See LICENSE.txt.
+   Full theme font css kept as full-fonts.css. */
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:400;
+  src:url('montserrat-latin-400-normal.woff2') format('woff2');font-display:swap}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:700;
+  src:url('montserrat-latin-700-normal.woff2') format('woff2');font-display:swap}
